@@ -6,24 +6,30 @@
     }
   
     .logo-text {
-      font-size: 0.9rem;
-    }
+        font-size: 10px;
+        }
   
     .tagline {
       font-size: 1rem;
     }
-  
+
+
     #coming-soon {
-      font-size: 3em;
-      margin-top: 1rem;
+        font-size: 2em;
+        margin-top: .2rem;
     }
   
     #desc {
         width: 100%;
-        font-size: 0.9rem;
+        font-size: small;
+        margin-top: 10px;
+        text-align: justify;
+        word-spacing: -2px;
     }
+
+    
     .newsletter-container {
-        margin: 30px 0;
+        margin: 10px 0;
         max-width: 500px;
       }
 
@@ -38,9 +44,89 @@
 
       .slider{
         background-size: contain ;
+        background-position: right;
+      }
+
+      
+      .slide{
+        background-size: cover ;
         background-position: center;
       }
 
+      .image-grid {
+        display: flex !important;
+        height: fit-content;
+        width: 100%;
+        align-self: center;
+        border-radius: 10px;
+        gap: 10px;
+        padding: 10px;
+        /* margin-top: 1rem; */
+        flex-direction: row;
+        /* background-color: red; */
+    }
+
+    #cube-one{
+    background-image: url("./media/grid/grid1.JPG") !important;
+    background-size: cover;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    }
+
+    #cube-two{
+        background-image: url("./media/grid/grid2.png") !important;
+        background-size: cover;
+        background-position: center !important;
+
+        background-repeat: no-repeat;
+        }
+
+        
+        #cube-three{
+            background-image: url("./media/grid/grid4.jpg") !important;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center !important;
+            }
+        
+
+            
+    #cube-four{
+        background-image: url("./media/grid/grid5.jpg") !important;
+        background-size: cover;
+        background-position: center !important;
+        background-repeat: no-repeat;
+        }
+    
+        #cube-five{
+            background-image: url("./media/grid/grid3.jpg") !important;
+            background-size: cover;
+            background-position: center !important;
+    
+            background-repeat: no-repeat;
+            }
+    
+            
+            #cube-six{
+                background-image: url("./media/grid/grid6.jpg") !important;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center !important;
+                }
+            
+    
+
+    .image-sec {
+        background-color: blue;
+        width: 100%;
+        height: 10rem;
+        border-radius: 10px;
+    }
 
 
+
+  }
+
+  .image-grid{
+    display: none;
   }

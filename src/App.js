@@ -26,7 +26,25 @@ function App() {
         {/* <CountdownTimer targetDate={launchDate.toISOString()} /> */}
         <NewsletterSignup />
         {/* <SocialLinks /> */}
-      </div>
+        {/* image grid */}
+    <div className="image-grid">
+    <div id="cube-one" className="image-sec">
+    </div>
+    <div id="cube-two" className="image-sec">
+    </div>
+    <div id="cube-three" className="image-sec">
+    </div>
+    </div>
+    <div className="image-grid">
+    <div id="cube-four" className="image-sec">
+    </div>
+    <div id='cube-five' className="image-sec">
+    </div>
+    <div id="cube-six" className="image-sec">
+    </div>
+    </div>
+    </div>
+
     </div>
   );
 }
