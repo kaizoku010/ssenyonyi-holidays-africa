@@ -1,0 +1,76 @@
+.visitor-stats {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.stats-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #ffc107;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.stat-icon i {
+  font-size: 24px;
+  color: #333;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #777;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 992px) {
+  .stats-container {
+    flex-wrap: wrap;
+  }
+  
+  .stat-item {
+    flex-basis: 33.33%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stat-item {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .stat-item {
+    flex-basis: 100%;
+  }
+}

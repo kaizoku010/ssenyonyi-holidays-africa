@@ -16,7 +16,7 @@ const NewsletterSignup = () => {
 
   return (
     <div className="newsletter-container">
-      <h3>Get notified when we launch</h3>
+      <h4>Get notified when we launch</h4>
       <form className="newsletter-form" onSubmit={handleSubmit}>
         <div className="input-group">
           <input
