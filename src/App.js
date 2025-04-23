@@ -26,7 +26,6 @@ function App() {
         {/* <CountdownTimer targetDate={launchDate.toISOString()} /> */}
         <NewsletterSignup />
         {/* <SocialLinks /> */}
-        {/* image grid */}
     <div className="image-grid">
     <div id="cube-one" className="image-sec">
     </div>
