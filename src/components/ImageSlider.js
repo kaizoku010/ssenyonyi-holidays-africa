@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import kitandra from '../media/kitandra.jpg';
 import kitandra2 from '../media/kitandra2.jpg';
-
 import Slide0 from '../media/slide.jpg';
 import Slide1 from '../media/slide1.jpg';
 import Slide2 from '../media/slide2.jpg';
@@ -21,7 +20,7 @@ const ImageSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
+    }, 3000);
     
     return () => clearInterval(interval);
   }, [images.length]);
