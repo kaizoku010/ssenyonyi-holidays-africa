@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import ImageSlider from './components/ImageSlider';
+import CountdownTimer from './components/CountdownTimer';
+import NewsletterSignup from './components/NewsletterSignup';
+import SocialLinks from './components/SocialLinks';
+import './mobile.css';
 
 function App() {
+  // Set launch date to 3 months from now
+  const launchDate = new Date();
+  launchDate.setMonth(launchDate.getMonth() + 3);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+      <ImageSlider />
+      <div className="content-container">
+        <div className="logo"><h4 className='logo-text'>SSENYONYI HOLIDAYS AFRICA</h4></div>
+        {/* <div className="tagline">Experience the Uganda differently</div> */}
+        <h1 id="coming-soon">COMING SOON</h1>
+        <p id="desc">
+          Get ready for an extraordinary travel experience with Ssenyonyi holidays Africa.
+          We're crafting unforgettable adventures that will take you off the beaten path
+          to discover hidden gems and authentic cultural experiences around the Uganda.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        {/* <CountdownTimer targetDate={launchDate.toISOString()} /> */}
+        <NewsletterSignup />
+        {/* <SocialLinks /> */}
+      </div>
     </div>
   );
 }

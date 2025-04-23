@@ -1,0 +1,27 @@
+.countdown-container {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  margin: 0px;
+}
+
+.countdown-segment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* min-width: 80px; */
+}
+
+.countdown-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.countdown-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 1px;
+}

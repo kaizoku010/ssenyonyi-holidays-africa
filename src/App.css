@@ -1,5 +1,56 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.content-container {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.logo {
+
+}
+
+.logo-text{
+ margin-bottom: 0px;
+ font-size: 1rem;
+ font-weight: bold;
+ /* letter-spacing: 2px;  */
+}
+
+.tagline {
+  font-size: 1.2rem;
+  /* margin-bottom: 10px; */
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#coming-soon {
+  margin-bottom: 0px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 200;
+  font-size: 5em;
+  margin-top: 0px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+#desc {
+  width: 60%;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0px;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .App-logo {
