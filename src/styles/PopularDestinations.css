@@ -1,0 +1,138 @@
+.popular-destinations {
+  padding: 80px 60px;
+  background-color: #f8f9fa;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.destination-item {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+}
+
+.destination-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.destination-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.destination-price {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background-color: rgba(255, 165, 0, 0.9);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.destination-details {
+  padding: 20px;
+}
+
+.destination-details h3 {
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.destination-details p {
+  margin: 0 0 20px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.destination-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  color: #666;
+}
+
+.rating i {
+  color: #ffc107;
+  margin-right: 5px;
+}
+
+.book-button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: #ff5252;
+}
+
+.view-all-container {
+  text-align: center;
+}
+
+.view-all-button {
+  background-color: transparent;
+  color: #ff6b6b;
+  border: 2px solid #ff6b6b;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.view-all-button:hover {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .popular-destinations {
+    padding: 60px 20px;
+  }
+  
+  .destinations-grid {
+    grid-template-columns: 1fr;
+  }
+}

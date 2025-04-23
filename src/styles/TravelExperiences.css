@@ -1,0 +1,99 @@
+.travel-experiences {
+  padding: 80px 60px;
+  background-color: white;
+}
+
+.travel-experiences .section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.travel-experiences .section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.travel-experiences .section-header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.experiences-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.experience-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.experience-icon {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(255, 165, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.experience-icon i {
+  font-size: 30px;
+  color: #ff9800;
+}
+
+.experience-card h3 {
+  margin: 0 0 15px;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.experience-card p {
+  margin: 0 0 20px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.experience-link {
+  color: #ff6b6b;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.experience-link i {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.experience-link:hover {
+  color: #ff5252;
+}
+
+.experience-link:hover i {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .travel-experiences {
+    padding: 60px 20px;
+  }
+  
+  .experiences-container {
+    grid-template-columns: 1fr;
+  }
+}
