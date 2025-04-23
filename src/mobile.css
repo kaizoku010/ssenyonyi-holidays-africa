@@ -1,0 +1,46 @@
+@media screen and (max-width: 768px) {
+    .content-container {
+      padding: 0 5%;
+      width: unset !important;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+    }
+  
+    .logo-text {
+      font-size: 0.9rem;
+    }
+  
+    .tagline {
+      font-size: 1rem;
+    }
+  
+    #coming-soon {
+      font-size: 3em;
+      margin-top: 1rem;
+    }
+  
+    #desc {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    .newsletter-container {
+        margin: 30px 0;
+        max-width: 500px;
+      }
+
+      .newsletter-form {
+
+      }
+  
+      .input-group {
+        width: 100%;
+      }
+
+
+      .slider{
+        background-size: contain ;
+        background-position: center;
+      }
+
+
+
+  }
