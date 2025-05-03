@@ -21,30 +21,30 @@ function App() {
     setShowFullSite(!showFullSite);
   };
 
-  if (showFullSite) {
-    return (
-      <>
-        <HomePage />
-        <button
-          onClick={toggleView}
-          style={{
-            position: 'fixed',
-            bottom: '20px',
-            left: '20px',
-            zIndex: 1000,
-            padding: '10px 15px',
-            backgroundColor: '#333',
-            color: 'white',
-            border: 'none',
-            borderRadius: '5px',
-            cursor: 'pointer'
-          }}
-        >
-          View Coming Soon Page
-        </button>
-      </>
-    );
-  }
+  // if (showFullSite) {
+  //   return (
+  //     <>
+  //       <HomePage />
+  //       <button
+  //         onClick={toggleView}
+  //         style={{
+  //           position: 'fixed',
+  //           bottom: '20px',
+  //           left: '20px',
+  //           zIndex: 1000,
+  //           padding: '10px 15px',
+  //           backgroundColor: '#333',
+  //           color: 'white',
+  //           border: 'none',
+  //           borderRadius: '5px',
+  //           cursor: 'pointer'
+  //         }}
+  //       >
+  //         View Coming Soon Page
+  //       </button>
+  //     </>
+  //   );
+  // }
 
   return (
     <div className="App">
@@ -71,7 +71,7 @@ function App() {
           <div id='cube-five' className="image-sec"></div>
           <div id="cube-six" className="image-sec"></div>
         </div>
-        <button
+        {/* <button
           onClick={toggleView}
           style={{
             marginTop: '20px',
@@ -84,7 +84,7 @@ function App() {
           }}
         >
           Preview Full Site
-        </button>
+        </button> */}
       </div>
     </div>
   );
