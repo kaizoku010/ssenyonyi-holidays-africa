@@ -54,7 +54,7 @@ function App() {
         {/* <div className="tagline">Experience the Uganda differently</div> */}
         <h1 id="coming-soon">COMING SOON</h1>
         <p id="desc">
-          Get ready for an extraordinary travel experience with Nyonyi holidays Africa.
+          Get ready for an extraordinary travel experience with Ssenyonyi holidays Africa.
           We're crafting unforgettable adventures that will take you off the beaten path
           to discover hidden gems and authentic cultural experiences around Uganda.
         </p>
