@@ -137,7 +137,7 @@ const FeaturedExhibit = () => {
             >
               <div className="exhibit-content">
                 <div className="exhibit-text">
-                  <h2>{t('featuredExhibit.featuredExperience')}</h2>
+                  <h2>FEATURED EXPERIENCE</h2>
                   <h3>{experience.title}</h3>
                   <p>{experience.description}</p>
                   <p>{experience.additionalInfo}</p>
@@ -147,7 +147,7 @@ const FeaturedExhibit = () => {
                     ))}
                   </ul>
                   <button className="book-now-button">
-                    {t('featuredExhibit.bookButton')}
+                    Book This Adventure
                   </button>
                 </div>
                 <div className="exhibit-image">

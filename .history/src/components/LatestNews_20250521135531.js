@@ -56,7 +56,7 @@ const LatestNews = () => {
         </div>
 
         <div className="view-all-container">
-          <a href="#" className="view-all-button">{t('latestNews.viewAll')}</a>
+          <a href="#" className="view-all-button">View All News</a>
         </div>
       </div>
     </section>

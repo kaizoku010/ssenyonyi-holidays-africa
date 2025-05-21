@@ -35,8 +35,8 @@ const LatestNews = () => {
     <section className="latest-news">
       <div className="news-container">
         <div className="section-header">
-          <h2>{t('latestNews.header.title')}</h2>
-          <p>{t('latestNews.header.subtitle')}</p>
+          <h2>LATEST UPDATES</h2>
+          <p>Stay informed about our newest offerings and travel tips</p>
         </div>
 
         <div className="news-grid">
@@ -49,14 +49,14 @@ const LatestNews = () => {
               <div className="news-content">
                 <h3>{item.title}</h3>
                 <p>{item.excerpt}</p>
-                <a href="#" className="read-more">{t('latestNews.readMore')} <i className="fas fa-arrow-right"></i></a>
+                <a href="#" className="read-more">Read More <i className="fas fa-arrow-right"></i></a>
               </div>
             </div>
           ))}
         </div>
 
         <div className="view-all-container">
-          <a href="#" className="view-all-button">{t('latestNews.viewAll')}</a>
+          <a href="#" className="view-all-button">View All News</a>
         </div>
       </div>
     </section>

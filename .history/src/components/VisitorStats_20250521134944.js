@@ -3,49 +3,51 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import '../styles/VisitorStats.css';
 
-const VisitorStats = () => {
-  const { t } = useTranslation();
-  
-  const stats = [
-    {
-      id: 1,
-      number: t('visitorStats.stats.gorillaTrekking.number'),
-      label: t('visitorStats.stats.gorillaTrekking.label'),
-      description: t('visitorStats.stats.gorillaTrekking.description')
-    },
-    {
-      id: 4,
-      number: t('visitorStats.stats.wildlife.number'),
-      label: t('visitorStats.stats.wildlife.label'),
-      description: t('visitorStats.stats.wildlife.description')
-    },
-    {
-      id: 2,
-      number: t('visitorStats.stats.satisfaction.number'),
-      label: t('visitorStats.stats.satisfaction.label'),
-      description: t('visitorStats.stats.satisfaction.description')
-    },
-    {
-      id: 3,
-      number: t('visitorStats.stats.departures.number'),
-      label: t('visitorStats.stats.departures.label'),
-      description: t('visitorStats.stats.departures.description')
-    },
-  ];
+const stats = [
+  {
+    id: 1,
+    number: '78%',
+    label: 'Gorilla Trekking Success',
+    description: 'Guests who see gorillas on first trek'
+  },
 
+
+  {
+    id: 4,
+    number: '81+',
+    label: 'Wildlife Encounters',
+    description: 'From Big Five to rare birds—every trip is packed with sightings'
+  },
+
+{
+    id: 2,
+    number: '4.9/5',
+    label: 'Guest Satisfaction',
+    description: 'Based on over 2,000 verified traveler reviews'
+  },
+
+   {
+    id: 3,
+    number: '100%',
+    label: 'On-Time Departures',
+    description: 'Every safari starts and ends exactly as planned'
+  },
+];
+
+const VisitorStats = () => {
   return (
     <section className="visitor-stats">
       <div className="stats-card">
         <div className="stats-header">
           <div>
-            <h2 className="stats-title">{t('visitorStats.title')}</h2>
-            <p className="stats-subtitle">{t('visitorStats.subtitle')}</p>
+            <h2 className="stats-title">We Deliver Wild Results.</h2>
+            <p className="stats-subtitle">We don’t do excuses—only unforgettable safaris.</p>
           </div>
           <div className="stats-buttons">
             <button className="demo-btn">
-              <span className="btn-icon">◎</span> {t('visitorStats.buttons.explore')}
+              <span className="btn-icon">◎</span> Explore Our Adventures
             </button>
-            <button className="get-started-btn">{t('visitorStats.buttons.startHere')} <span className="btn-arrow">→</span></button>
+            <button className="get-started-btn">Start Here <span className="btn-arrow">→</span></button>
           </div>
         </div>
 

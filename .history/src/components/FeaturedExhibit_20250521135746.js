@@ -47,6 +47,8 @@ const FeaturedExhibit = () => {
       image: kitandra2
     }
   ];
+
+const FeaturedExhibit = () => {
   const sectionRef = useRef(null);
   const containerRef = useRef(null);
   const panelsRef = useRef([]);
@@ -117,8 +119,8 @@ const FeaturedExhibit = () => {
   return (
     <section className="featured-exhibit" ref={sectionRef}>
       <div className="section-header">
-        <h2>{t('featuredExhibit.header.title')}</h2>
-        <p>{t('featuredExhibit.header.subtitle')}</p>
+        <h2>FEATURED EXPERIENCES</h2>
+        <p>Discover our most extraordinary travel adventures</p>
       </div>
 
       <div className="exhibit-scroll-container">
@@ -137,7 +139,7 @@ const FeaturedExhibit = () => {
             >
               <div className="exhibit-content">
                 <div className="exhibit-text">
-                  <h2>{t('featuredExhibit.featuredExperience')}</h2>
+                  <h2>FEATURED EXPERIENCE</h2>
                   <h3>{experience.title}</h3>
                   <p>{experience.description}</p>
                   <p>{experience.additionalInfo}</p>
@@ -147,7 +149,7 @@ const FeaturedExhibit = () => {
                     ))}
                   </ul>
                   <button className="book-now-button">
-                    {t('featuredExhibit.bookButton')}
+                    Book This Adventure
                   </button>
                 </div>
                 <div className="exhibit-image">

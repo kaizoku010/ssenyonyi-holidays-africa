@@ -368,60 +368,6 @@ const enTranslations = {
         excerpt: "Dive deep into local traditions and authentic experiences with our new cultural tours."
       }
     }
-  },
-  featuredExhibit: {
-    header: {
-      title: "FEATURED EXPERIENCES",
-      subtitle: "Discover our most extraordinary travel adventures"
-    },
-    featuredExperience: "FEATURED EXPERIENCE",
-    bookButton: "Book This Adventure",
-    experiences: {
-      serengeti: {
-        title: "Serengeti Safari Adventure",
-        description: "Embark on an unforgettable journey through the vast plains of the Serengeti. Witness the majestic wildlife in their natural habitat, from lions and elephants to giraffes and zebras.",
-        additionalInfo: "Our expert guides will ensure you experience the best of African wildlife while staying in luxurious safari lodges under the starlit sky.",
-        features: [
-          "7-day immersive safari experience",
-          "Witness the Great Migration",
-          "Luxury accommodations included",
-          "Professional wildlife photography tips"
-        ]
-      },
-      gorilla: {
-        title: "Mountain Gorilla Expedition",
-        description: "Trek through the misty forests of Bwindi to encounter endangered mountain gorillas in their natural habitat. A once-in-a-lifetime wildlife experience.",
-        additionalInfo: "Our experienced trackers will guide you safely through the forest to observe these magnificent creatures up close in a responsible and sustainable way.",
-        features: [
-          "Official gorilla trekking permits",
-          "Expert local guides and trackers",
-          "Comfortable forest accommodations",
-          "Conservation contribution included"
-        ]
-      },
-      cultural: {
-        title: "Cultural Immersion Tour",
-        description: "Experience the rich cultural heritage of East Africa through immersive village visits, traditional ceremonies, and authentic interactions with local communities.",
-        additionalInfo: "Learn traditional crafts, participate in dance ceremonies, and gain insights into the daily lives and customs of diverse ethnic groups across Uganda and Rwanda.",
-        features: [
-          "Village homestay experiences",
-          "Traditional cooking lessons",
-          "Craft workshops with local artisans",
-          "Authentic cultural performances"
-        ]
-      },
-      victoria: {
-        title: "Lake Victoria Adventure",
-        description: "Explore the shores and islands of Africa's largest lake with activities ranging from boat safaris to sport fishing and bird watching in this biodiverse ecosystem.",
-        additionalInfo: "Relax on pristine beaches, visit traditional fishing villages, and enjoy spectacular sunsets over the vast waters of this magnificent freshwater lake.",
-        features: [
-          "Island hopping boat tours",
-          "Premium sport fishing excursions",
-          "Lakeside luxury accommodations",
-          "Bird watching with expert guides"
-        ]
-      }
-    }
   }
 };
 
@@ -788,60 +734,6 @@ const zhTranslations = {
         title: "布尼奥尼湖位于乌干达西南部",
         date: "2023年4月10日",
         excerpt: "通过我们的新文化之旅，深入了解当地传统和真实体验。"
-      }
-    }
-  },
-  featuredExhibit: {
-    header: {
-      title: "精选体验",
-      subtitle: "探索我们最非凡的旅行冒险"
-    },
-    featuredExperience: "精选体验",
-    bookButton: "预订此冒险",
-    experiences: {
-      serengeti: {
-        title: "塞伦盖蒂野生动物园冒险",
-        description: "踏上穿越塞伦盖蒂广阔平原的难忘旅程。在自然栖息地观赏雄伟的野生动物，从狮子和大象到长颈鹿和斑马。",
-        additionalInfo: "我们的专业向导将确保您在星空下的豪华野生动物园旅馆中体验非洲野生动物的精华。",
-        features: [
-          "7天沉浸式野生动物园体验",
-          "见证大迁徙",
-          "包含豪华住宿",
-          "专业野生动物摄影技巧"
-        ]
-      },
-      gorilla: {
-        title: "山地大猩猩探险",
-        description: "穿越布温迪的迷雾森林，在自然栖息地遇见濒危的山地大猩猩。一生一次的野生动物体验。",
-        additionalInfo: "我们经验丰富的追踪者将安全地引导您穿越森林，以负责任和可持续的方式近距离观察这些壮观的生物。",
-        features: [
-          "官方大猩猩追踪许可证",
-          "专业当地向导和追踪者",
-          "舒适的森林住宿",
-          "包含保护贡献"
-        ]
-      },
-      cultural: {
-        title: "文化沉浸之旅",
-        description: "通过沉浸式村庄访问、传统仪式和与当地社区的真实互动，体验东非丰富的文化遗产。",
-        additionalInfo: "学习传统工艺，参与舞蹈仪式，了解乌干达和卢旺达各民族群体的日常生活和习俗。",
-        features: [
-          "村庄寄宿体验",
-          "传统烹饪课程",
-          "与当地工匠一起的工艺工作坊",
-          "真实的文化表演"
-        ]
-      },
-      victoria: {
-        title: "维多利亚湖冒险",
-        description: "探索非洲最大湖泊的海岸和岛屿，活动包括从船上野生动物园到运动钓鱼和观鸟，体验这个生物多样性生态系统。",
-        additionalInfo: "在原始海滩上放松，参观传统渔村，欣赏这个壮丽淡水湖上的壮观日落。",
-        features: [
-          "岛屿跳跃船游",
-          "高级运动钓鱼之旅",
-          "湖畔豪华住宿",
-          "专业向导观鸟"
-        ]
       }
     }
   }

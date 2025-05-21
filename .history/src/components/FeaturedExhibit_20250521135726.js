@@ -10,43 +10,62 @@ import Dance from "../media/danc.JPG"
 
 gsap.registerPlugin(ScrollTrigger);
 
-const FeaturedExhibit = () => {
-  const { t } = useTranslation();
+const featuredExperiences = [
+  {
+    id: 1,
+    title: 'Serengeti Safari Adventure',
+    description: 'Embark on an unforgettable journey through the vast plains of the Serengeti. Witness the majestic wildlife in their natural habitat, from lions and elephants to giraffes and zebras.',
+    additionalInfo: 'Our expert guides will ensure you experience the best of African wildlife while staying in luxurious safari lodges under the starlit sky.',
+    features: [
+      '7-day immersive safari experience',
+      'Witness the Great Migration',
+      'Luxury accommodations included',
+      'Professional wildlife photography tips'
+    ],
+    image: Sere
+  },
+  {
+    id: 2,
+    title: 'Mountain Gorilla Expedition',
+    description: 'Trek through the misty forests of Bwindi to encounter endangered mountain gorillas in their natural habitat. A once-in-a-lifetime wildlife experience.',
+    additionalInfo: 'Our experienced trackers will guide you safely through the forest to observe these magnificent creatures up close in a responsible and sustainable way.',
+    features: [
+      'Official gorilla trekking permits',
+      'Expert local guides and trackers',
+      'Comfortable forest accommodations',
+      'Conservation contribution included'
+    ],
+    image: Mount
+  },
+  {
+    id: 3,
+    title: 'Cultural Immersion Tour',
+    description: 'Experience the rich cultural heritage of East Africa through immersive village visits, traditional ceremonies, and authentic interactions with local communities.',
+    additionalInfo: 'Learn traditional crafts, participate in dance ceremonies, and gain insights into the daily lives and customs of diverse ethnic groups across Uganda and Rwanda.',
+    features: [
+      'Village homestay experiences',
+      'Traditional cooking lessons',
+      'Craft workshops with local artisans',
+      'Authentic cultural performances'
+    ],
+    image: Dance
+  },
+  {
+    id: 4,
+    title: 'Lake Victoria Adventure',
+    description: 'Explore the shores and islands of Africa\'s largest lake with activities ranging from boat safaris to sport fishing and bird watching in this biodiverse ecosystem.',
+    additionalInfo: 'Relax on pristine beaches, visit traditional fishing villages, and enjoy spectacular sunsets over the vast waters of this magnificent freshwater lake.',
+    features: [
+      'Island hopping boat tours',
+      'Premium sport fishing excursions',
+      'Lakeside luxury accommodations',
+      'Bird watching with expert guides'
+    ],
+    image: kitandra2
+  }
+];
 
-  const featuredExperiences = [
-    {
-      id: 1,
-      title: t('featuredExhibit.experiences.serengeti.title'),
-      description: t('featuredExhibit.experiences.serengeti.description'),
-      additionalInfo: t('featuredExhibit.experiences.serengeti.additionalInfo'),
-      features: t('featuredExhibit.experiences.serengeti.features', { returnObjects: true }),
-      image: Sere
-    },
-    {
-      id: 2,
-      title: t('featuredExhibit.experiences.gorilla.title'),
-      description: t('featuredExhibit.experiences.gorilla.description'),
-      additionalInfo: t('featuredExhibit.experiences.gorilla.additionalInfo'),
-      features: t('featuredExhibit.experiences.gorilla.features', { returnObjects: true }),
-      image: Mount
-    },
-    {
-      id: 3,
-      title: t('featuredExhibit.experiences.cultural.title'),
-      description: t('featuredExhibit.experiences.cultural.description'),
-      additionalInfo: t('featuredExhibit.experiences.cultural.additionalInfo'),
-      features: t('featuredExhibit.experiences.cultural.features', { returnObjects: true }),
-      image: Dance
-    },
-    {
-      id: 4,
-      title: t('featuredExhibit.experiences.victoria.title'),
-      description: t('featuredExhibit.experiences.victoria.description'),
-      additionalInfo: t('featuredExhibit.experiences.victoria.additionalInfo'),
-      features: t('featuredExhibit.experiences.victoria.features', { returnObjects: true }),
-      image: kitandra2
-    }
-  ];
+const FeaturedExhibit = () => {
   const sectionRef = useRef(null);
   const containerRef = useRef(null);
   const panelsRef = useRef([]);
@@ -117,8 +136,8 @@ const FeaturedExhibit = () => {
   return (
     <section className="featured-exhibit" ref={sectionRef}>
       <div className="section-header">
-        <h2>{t('featuredExhibit.header.title')}</h2>
-        <p>{t('featuredExhibit.header.subtitle')}</p>
+        <h2>FEATURED EXPERIENCES</h2>
+        <p>Discover our most extraordinary travel adventures</p>
       </div>
 
       <div className="exhibit-scroll-container">
@@ -137,7 +156,7 @@ const FeaturedExhibit = () => {
             >
               <div className="exhibit-content">
                 <div className="exhibit-text">
-                  <h2>{t('featuredExhibit.featuredExperience')}</h2>
+                  <h2>FEATURED EXPERIENCE</h2>
                   <h3>{experience.title}</h3>
                   <p>{experience.description}</p>
                   <p>{experience.additionalInfo}</p>
@@ -147,7 +166,7 @@ const FeaturedExhibit = () => {
                     ))}
                   </ul>
                   <button className="book-now-button">
-                    {t('featuredExhibit.bookButton')}
+                    Book This Adventure
                   </button>
                 </div>
                 <div className="exhibit-image">

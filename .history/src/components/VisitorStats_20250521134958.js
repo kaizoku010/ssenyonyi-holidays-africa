@@ -5,7 +5,7 @@ import '../styles/VisitorStats.css';
 
 const VisitorStats = () => {
   const { t } = useTranslation();
-  
+
   const stats = [
     {
       id: 1,
@@ -33,19 +33,20 @@ const VisitorStats = () => {
     },
   ];
 
+const VisitorStats = () => {
   return (
     <section className="visitor-stats">
       <div className="stats-card">
         <div className="stats-header">
           <div>
-            <h2 className="stats-title">{t('visitorStats.title')}</h2>
-            <p className="stats-subtitle">{t('visitorStats.subtitle')}</p>
+            <h2 className="stats-title">We Deliver Wild Results.</h2>
+            <p className="stats-subtitle">We don’t do excuses—only unforgettable safaris.</p>
           </div>
           <div className="stats-buttons">
             <button className="demo-btn">
-              <span className="btn-icon">◎</span> {t('visitorStats.buttons.explore')}
+              <span className="btn-icon">◎</span> Explore Our Adventures
             </button>
-            <button className="get-started-btn">{t('visitorStats.buttons.startHere')} <span className="btn-arrow">→</span></button>
+            <button className="get-started-btn">Start Here <span className="btn-arrow">→</span></button>
           </div>
         </div>
 

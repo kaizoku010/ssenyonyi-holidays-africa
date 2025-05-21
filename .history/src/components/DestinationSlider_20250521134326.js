@@ -103,7 +103,6 @@ const DestinationSlider = ({
   showControls = true,
   showPagination = true
 }) => {
-  const { t } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
@@ -185,20 +184,19 @@ const DestinationSlider = ({
             className="destination-location"
             variants={textVariant(0.4)}
           >
-              {t('destinationSlider.welcome')}
+              Welcome to
            </motion.div>
           <motion.h1
             className="destination-title"
             variants={textVariant(0.5)}
           >
-            {t('destinationSlider.companyName')}
+            Nyoni Holidays Africa
             </motion.h1>
           <motion.p
             className="destination-description"
             variants={fadeIn("up", 0.6)}
           >
-            {t('destinationSlider.description')}
-          </motion.p>
+We are a premier East African travel company dedicated to crafting unforgettable journeys across Uganda, Rwanda, and beyond. Rooted in the Swahili word for “bird,” Nyonyi represents freedom, elegance, and the boundless spirit of exploration that guides our brand.           </motion.p>
           <motion.button
             className="discover-button"
             variants={fadeIn("up", 0.7)}
@@ -212,7 +210,7 @@ const DestinationSlider = ({
             >
               <i className="fas fa-arrow-right"></i>
             </motion.span>
-            {t('destinationSlider.exploreButton')}
+            EXPLORE NOW
           </motion.button>
         </motion.div>
 

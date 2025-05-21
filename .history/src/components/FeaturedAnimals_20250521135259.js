@@ -113,7 +113,6 @@ const galleryItems = [
 ];
 
 const FeaturedAnimals = () => {
-  const { t } = useTranslation();
   const [loading, setLoading] = useState(true);
   const [loadedImages, setLoadedImages] = useState({});
   const [showMobile, setShowMobile] = useState(false);
@@ -155,26 +154,26 @@ const FeaturedAnimals = () => {
     <section className="featured-animals">
       <div className="animals-container">
         <div className="gallery-header">
-          <h1 className="heading">{t('featuredAnimals.title')}</h1>
-          <p className="subs">{t('featuredAnimals.subtitle')}</p>
+          <h1 className="heading">Africa through our lens</h1>
+          <p className="subs">look through our lens as we capture the beauty of Africa</p>
         </div>
 
         <div className="gallery-filters">
           <div className="filter-item active">
             <span className="dot"></span>
-            <span>{t('featuredAnimals.filters.people')}</span>
+            <span>People</span>
           </div>
           <div className="filter-item">
-            <span>{t('featuredAnimals.filters.art')}</span>
+            <span>Art</span>
           </div>
           <div className="filter-item">
-            <span>{t('featuredAnimals.filters.culture')}</span>
+            <span>Culture</span>
           </div>
           <div className="filter-item">
-            <span>{t('featuredAnimals.filters.landscapes')}</span>
+            <span>Landscapes</span>
           </div>
           <div className="filter-item">
-            <span>{t('featuredAnimals.filters.lifestyle')}</span>
+            <span>Life style</span>
           </div>
         </div>
 
