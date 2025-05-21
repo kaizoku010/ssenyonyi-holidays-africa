@@ -1,0 +1,47 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .scroll-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    height: 300vh; /* enough height to scroll */
+  }
+  
+  .left {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    padding: 3rem;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    z-index: 2;
+  }
+  
+  .right-wrapper {
+    position: relative;
+    height: 300vh;
+    overflow: hidden;
+  }
+  
+  .right-slider {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    transition: transform 0.1s linear;
+  }
+  
+  .panel {
+    width: 100vw;
+    height: 100%;
+    flex-shrink: 0;
+  }
+  
+  .brown1 { background-color: #7a4e1d; }
+  .brown2 { background-color: #9b652a; }
+  .brown3 { background-color: #b67c3d; }
+  

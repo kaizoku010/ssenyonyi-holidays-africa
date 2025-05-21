@@ -1,0 +1,340 @@
+/* shadcn.css - Global styles for shadcn UI components */
+
+/* Base styles */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 32 100% 50%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 32 100% 50%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 32 100% 50%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 32 100% 50%;
+}
+
+/* Card component styles */
+.card {
+  position: relative;
+  border-radius: var(--radius);
+  background-color: hsl(var(--card));
+  color: hsl(var(--card-foreground));
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  border: 1px solid hsl(var(--border));
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  padding-bottom: 0;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  color: hsl(var(--muted-foreground));
+  font-size: 0.875rem;
+}
+
+.card-content {
+  padding: 1.5rem;
+  padding-top: 1rem;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  padding-top: 0;
+}
+
+/* Button component styles */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  border: 1px solid transparent;
+}
+
+.button:hover {
+  background-color: hsl(var(--primary) / 0.9);
+}
+
+.button:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Tabs component styles */
+.tabs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tabs-list {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  background-color: hsl(var(--muted));
+  padding: 0.25rem;
+}
+
+.tabs-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-radius: calc(var(--radius) - 0.25rem);
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s;
+  cursor: pointer;
+  color: hsl(var(--muted-foreground));
+}
+
+.tabs-trigger[data-state="active"] {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.tabs-trigger:hover {
+  color: hsl(var(--foreground));
+}
+
+.tabs-content {
+  margin-top: 0.5rem;
+  outline: none;
+}
+
+/* Custom styles for package cards */
+.pkg-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.pkg-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.pkg-card-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.pkg-type {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #168D61;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.tabs-trigger {
+    border-radius: 30px !important;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
+  }
+
+.pkg-card .pkg-card-header {
+  padding: 1.25rem 1.25rem 0.5rem;
+}
+
+.pkg-card .pkg-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.25rem;
+  line-height: 1.3;
+  height: auto;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.pkg-card .pkg-card-description {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.pkg-card .pkg-card-content {
+  padding: 0.5rem 1.25rem 1rem;
+  flex-grow: 1;
+}
+
+.pkg-destinations {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pkg-destinations i {
+  color: #168D61;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+}
+
+.pkg-highlights h4,
+.pkg-accommodation h4,
+.pkg-inclusions h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0.75rem 0 0.5rem;
+}
+
+.pkg-highlights ul {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.pkg-highlights li {
+  margin-bottom: 0.25rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.pkg-accommodation p,
+.pkg-inclusions p {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+}
+
+.pkg-card .pkg-card-footer {
+  padding: 1rem 1.25rem;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+
+.pkg-price {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  max-width: 50%;
+}
+
+.price-label {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.price-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #168D61;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price-unit {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.book-now-button {
+  background-color: #168D61;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  min-width: fit-content;
+}
+
+.book-now-button:hover {
+  background-color: #d35400;
+}
+
+button:hover{
+    background-color: #d35400 !important;
+
+}

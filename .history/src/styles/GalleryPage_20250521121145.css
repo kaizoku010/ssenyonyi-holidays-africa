@@ -1,0 +1,456 @@
+/* GalleryPage.css */
+
+.gallery-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Hero Section */
+.gallery-hero {
+  height: 44rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('../media/grid5.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+
+.gallery-hero
+.hero-content {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  width: 100%;
+  padding: 0 60px;
+}
+
+.gallery-hero h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    width: 60rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+
+}
+
+.gallery-hero p {
+  opacity: 0.9;
+  font-size: 0.9rem;
+  color: #7c7b7b;
+  width: fit-content;
+}
+
+/* Gallery Content */
+.gallery-content {
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.filter-button:hover{
+  color: white !important;
+}
+
+
+/* Gallery Filters */
+.gallery-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.filter-button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-button.active {
+  background-color: #168D61;
+  color: white;
+}
+
+/* Mosaic Layout - Using CSS Grid for better performance */
+.gallery-mosaic {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 8px; /* Reduced gap to minimize space between items */
+  grid-auto-flow: dense; /* Allows items to fill gaps */
+  contain: layout style paint; /* Performance optimization */
+  margin: 0 auto; /* Center the grid */
+  width: 100%; /* Ensure full width */
+}
+
+/* We'll keep the column class for compatibility but style differently */
+.mosaic-column {
+  display: contents; /* This makes the column's children become direct children of the grid */
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  contain: layout style paint; /* Performance optimization */
+  will-change: transform; /* Hint for browser to optimize */
+  content-visibility: auto; /* Render only when near viewport */
+  min-height: 200px; /* Prevent layout shifts */
+}
+
+/* Different size classes for mosaic layout */
+.gallery-item.tall {
+  grid-row: span 2;
+  aspect-ratio: 2/3;
+}
+
+.gallery-item.wide {
+  grid-column: span 2;
+  aspect-ratio: 16/9;
+}
+
+.gallery-item.square {
+  aspect-ratio: 1/1;
+}
+
+.gallery-item.standard {
+  aspect-ratio: 4/3;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Image placeholder styling - Optimized for performance */
+.image-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  z-index: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  contain: strict; /* Strongest containment for performance */
+}
+
+.placeholder-shimmer {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shimmer 1.5s infinite;
+  background-size: 200% 100%;
+  will-change: background-position; /* Optimize animation */
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Lazy loaded image styling - Optimized for performance */
+.lazy-image-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  contain: content; /* Contain the image content */
+  transform: translateZ(0); /* Force GPU acceleration */
+}
+
+.gallery-item img,
+.gallery-item .lazy-load-image-background {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+  object-fit: cover;
+  border-radius: 10px;
+  will-change: transform; /* Optimize transform animations */
+  backface-visibility: hidden; /* Prevent flickering */
+}
+
+.gallery-item:hover img,
+.gallery-item:hover .lazy-load-image-background {
+  transform: scale(1.05);
+}
+
+/* Load more indicator */
+.load-more-indicator {
+  grid-column: 1 / -1;
+  height: 50px;
+  margin-top: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-item-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 20px;
+  color: white;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-item-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-item-overlay h3 {
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+}
+
+.gallery-item-overlay p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  text-transform: capitalize;
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90vh;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+}
+
+.lightbox-image-container {
+  position: relative;
+}
+
+.lightbox-image-container img,
+.lightbox-image-wrapper,
+.lightbox-image-wrapper .lazy-load-image-background {
+  max-width: 100%;
+  max-height: 80vh;
+  display: block;
+  border-radius: 10px;
+}
+
+.lightbox-image-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.lightbox-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: white;
+  padding: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.lightbox-caption h3 {
+  margin: 0 0 5px;
+  font-size: 1.5rem;
+}
+
+.lightbox-caption p {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+.lightbox-nav {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1002;
+  margin: 0 20px;
+}
+
+.lightbox-nav:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox-nav.prev {
+  left: 20px;
+}
+
+.lightbox-nav.next {
+  right: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .gallery-mosaic {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+  }
+
+  .gallery-hero .hero-content {
+    padding: 0 40px;
+  }
+
+  .gallery-content {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-hero {
+    height: 300px;
+  }
+
+  .gallery-hero h1 {
+    font-size: 2.2rem;
+    width: 100%;
+  }
+
+  .gallery-hero .hero-content {
+    padding: 0 20px;
+    bottom: 40px;
+  }
+
+  .gallery-content {
+    padding: 30px 20px;
+  }
+
+  /* Maintain mosaic on tablet but with smaller cells */
+  .gallery-mosaic {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+  }
+
+  /* Maintain different sizes but adjust for smaller screens */
+  .gallery-item.tall {
+    grid-row: span 2;
+  }
+
+  .gallery-item.wide {
+    grid-column: span 2;
+  }
+
+  .lightbox-content {
+    flex-direction: column;
+  }
+
+  .lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .lightbox-nav.prev {
+    left: 10px;
+  }
+
+  .lightbox-nav.next {
+    right: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .gallery-hero p {
+    font-size: 1rem;
+  }
+
+  .filter-button {
+    padding: 8px 15px;
+    font-size: 0.8rem;
+  }
+
+  /* Maintain mosaic on mobile with even smaller cells */
+  .gallery-mosaic {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+  }
+
+  /* Ensure items don't get too small on mobile */
+  .gallery-item {
+    min-height: 140px;
+  }
+
+  /* Adjust sizes for very small screens */
+  .gallery-item.wide {
+    grid-column: span 1; /* On very small screens, don't span multiple columns */
+  }
+
+  .lightbox-nav {
+    width: 40px;
+    height: 40px;
+  }
+}

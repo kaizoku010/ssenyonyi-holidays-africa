@@ -1,0 +1,183 @@
+.featured-exhibit {
+  padding: 80px 0;
+  background-color: #222;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh; /* Ensure the section is tall enough */
+}
+
+.exhibit-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  height: 100%;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 10; /* Ensure header stays above panels */
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  color: #ffc107;
+  margin: 0 0 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.section-header p {
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.exhibit-scroll-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 80vh; /* Taller to show all content */
+  overflow: visible; /* Allow content to be fully visible */
+}
+
+.exhibit-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  min-height: 80vh;
+  will-change: transform;
+  backface-visibility: hidden; /* Prevent blurriness during animations */
+  transform-style: preserve-3d; /* Help with rendering quality */
+  -webkit-font-smoothing: antialiased; /* Improve text rendering */
+}
+
+.exhibit-content {
+  display: flex;
+  align-items: flex-start; /* Align to top instead of center */
+  gap: 50px;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0 40px; /* Add padding to ensure content is visible */
+}
+
+.exhibit-text {
+  flex: 1;
+  max-width: 60%;
+  padding-right: 20px;
+}
+
+.exhibit-text h2 {
+  font-size: 1rem;
+  color: #ffc107;
+  margin: 0 0 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility; /* Improve text rendering */
+}
+
+.exhibit-text h3 {
+  font-size: 2.5rem;
+  margin: 0 0 20px;
+  font-weight: 700;
+  text-rendering: optimizeLegibility; /* Improve text rendering */
+}
+
+.exhibit-text p {
+  margin: 0 0 15px;
+  line-height: 1.6;
+  color: #ccc;
+  font-size: 1.05rem; /* Slightly larger for better readability */
+  text-rendering: optimizeLegibility; /* Improve text rendering */
+}
+
+.exhibit-features {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+}
+
+.exhibit-features li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.exhibit-features i {
+  color: #ffc107;
+  font-size: 1rem;
+}
+
+.book-now-button {
+  background-color: #ffc107;
+  color: #333;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-now-button:hover {
+  background-color: #e0a800;
+}
+
+.exhibit-image {
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.exhibit-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.exhibit-image:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 992px) {
+  .exhibit-content {
+    flex-direction: column-reverse;
+    padding: 20px 0;
+  }
+
+  .exhibit-scroll-section {
+    height: 90vh; /* Taller on mobile */
+  }
+
+  .exhibit-panel {
+    position: absolute;
+    height: 100%;
+  }
+
+  .featured-exhibit {
+    padding: 60px 0;
+  }
+
+  .exhibit-image {
+    width: 100%;
+    max-height: 40vh;
+    overflow: hidden;
+  }
+
+  .exhibit-text {
+    padding-top: 20px;
+  }
+
+  .exhibit-text h3 {
+    font-size: 1.8rem;
+  }
+}

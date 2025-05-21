@@ -1,0 +1,51 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .horizontal-scroll-section {
+    position: relative;
+    height: 300vh; /* enough height to scroll through all panels */
+  }
+  
+  .sticky-container {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+  }
+  
+  .left {
+    width: 50vw;
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 10;
+  }
+  
+  .right {
+    width: 50vw;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    will-change: transform;
+  }
+  
+  .panel {
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+  }
+  
+  .brown1 { background: #7a4e1d; }
+  .brown2 { background: #9b652a; }
+  .brown3 { background: #b67c3d; }
+  

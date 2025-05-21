@@ -1,0 +1,140 @@
+.cta-section {
+  padding: 0;
+  background-image: url('../media/s');
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+/* Add a dark overlay to make text more readable */
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.cta-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.cta-content h2 {
+  font-size: 2.8rem;
+  color: white;
+  margin: 0 0 15px;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  color: white;
+  margin: 0;
+  opacity: 0.9;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+}
+
+.cta-form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  min-width: 300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.input-label svg {
+  margin-right: 6px;
+}
+
+.input-container {
+  position: relative;
+}
+
+.country-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.country-input:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.dropdown-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .cta-container {
+    padding: 40px 20px;
+  }
+
+  .cta-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .cta-content p {
+    font-size: 1rem;
+  }
+
+  .cta-form {
+    width: 100%;
+  }
+}

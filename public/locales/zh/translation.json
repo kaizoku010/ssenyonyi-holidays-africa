@@ -1,0 +1,109 @@
+{
+  "navbar": {
+    "home": "首页",
+    "packages": "旅游套餐",
+    "destinations": "目的地",
+    "gallery": "图库",
+    "contact": "联系我们",
+    "tours": "旅游",
+    "offers": "优惠"
+  },
+  "footer": {
+    "about": {
+      "title": "DERIQ 旅行",
+      "description": "我们专注于创造难忘的全球旅行体验。我们的专家团队根据您的旅行风格定制个性化的行程。"
+    },
+    "quickLinks": {
+      "title": "快速链接",
+      "home": "首页",
+      "packages": "旅游套餐",
+      "destinations": "目的地",
+      "gallery": "图库",
+      "contact": "联系我们"
+    },
+    "contactUs": {
+      "title": "联系我们",
+      "address": "123 旅行街, 冒险城",
+      "phone": "+1 (555) 123-4567",
+      "email": "info@deriqtravels.com"
+    },
+    "newsletter": {
+      "title": "新闻通讯",
+      "description": "订阅我们的新闻通讯，获取旅行提示和独家优惠。",
+      "placeholder": "您的电子邮件地址",
+      "button": "订阅"
+    },
+    "copyright": "版权所有。",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款"
+  },
+  "homePage": {
+    "about": {
+      "title": "关于 NYONYI 假日",
+      "subtitle": "探索。连接。保护。",
+      "description1": "Nyonyi 非洲假日是一家顶级的东非旅游公司，致力于在乌干达、卢旺达及其他地区打造难忘的旅程。源自斯瓦希里语中"鸟"的含义，Nyonyi 代表自由、优雅和引导我们品牌的无限探索精神。",
+      "description2": "从布温迪密林中的大猩猩追踪到基巴莱的黑猩猩追踪，从默奇森瀑布的游猎到卢旺达阿卡盖拉国家公园的金色大草原，我们将有眼光的旅行者与留下持久印象的真实体验联系起来。"
+    },
+    "features": {
+      "guidedTours": {
+        "title": "导游服务",
+        "description": "专业导游带您穿越每个目的地最风景如画的路线和隐藏的宝藏。"
+      },
+      "photoOpportunities": {
+        "title": "摄影机会",
+        "description": "在整个旅程中，通过完美的拍照点捕捉令人惊叹的风景和难忘的时刻。"
+      },
+      "culinaryExperiences": {
+        "title": "美食体验",
+        "description": "品尝正宗的当地美食，了解传统的食物制作技术。"
+      },
+      "premiumAccommodations": {
+        "title": "高级住宿",
+        "description": "入住精心挑选的酒店和度假村，提供舒适和正宗的当地氛围。"
+      }
+    },
+    "callToAction": "开始您的冒险"
+  },
+  "packagesPage": {
+    "title": "Safari 套餐和目的地",
+    "subtitle": "探索我们在东非精心打造的体验",
+    "tabs": {
+      "all": "所有套餐",
+      "midRange": "中档",
+      "highEnd": "高端"
+    }
+  },
+  "destinationsPage": {
+    "title": "目的地",
+    "subtitle": "发现东非最美丽的地方",
+    "tabs": {
+      "all": "所有目的地",
+      "nationalParks": "国家公园",
+      "cities": "城市",
+      "lakes": "湖泊"
+    }
+  },
+  "contactPage": {
+    "title": "联系我们",
+    "subtitle": "与我们的团队联系，了解咨询、预订或定制旅行计划",
+    "form": {
+      "name": "姓名",
+      "email": "电子邮件",
+      "phone": "电话",
+      "subject": "主题",
+      "message": "留言",
+      "submit": "发送留言"
+    }
+  },
+  "comingSoon": {
+    "title": "即将推出",
+    "description": "准备好与 Nyonyi 非洲假日一起体验非凡的旅行。我们正在打造难忘的冒险，带您走出常规路线，发现乌干达的隐藏宝藏和真实的文化体验。",
+    "viewFullSite": "查看完整网站",
+    "viewComingSoon": "查看即将推出页面"
+  },
+  "languageSwitcher": {
+    "language": "语言",
+    "english": "English",
+    "chinese": "中文"
+  }
+}

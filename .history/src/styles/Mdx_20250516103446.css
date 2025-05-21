@@ -1,0 +1,45 @@
+.destination-card-mdx {
+    width: 10rem;
+    height: 16rem;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.destination-card-mdx:hover {
+  transform: translateX(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-content-mdx {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  color: white;
+}
+
+.card-location-mdx {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-bottom: 5px;
+}
+
+.card-title-mdx {
+font-size: .9rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.card-subtitle-mdx {
+  font-size: .6rem;
+  opacity: 0.9;
+}
