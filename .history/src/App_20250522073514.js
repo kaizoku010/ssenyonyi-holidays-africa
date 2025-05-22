@@ -41,9 +41,9 @@ function App() {
   launchDate.setMonth(launchDate.getMonth() + 3);
 
   // Function to toggle between pages - currently commented out in UI
-  const toggleView = () => {
-    setShowFullSite(!showFullSite);
-  };
+  // const toggleView = () => {
+  //   setShowFullSite(!showFullSite);
+  // };
 
   if (showFullSite) {
     return (
@@ -108,21 +108,20 @@ function App() {
           <div id='cube-five' className="image-sec"></div>
           <div id="cube-six" className="image-sec"></div>
         </div>
-        <button
+        {/* <button
           onClick={toggleView}
           style={{
             marginTop: '20px',
             padding: '10px 20px',
             backgroundColor: 'rgba(255, 255, 255, 0.2)',
             color: 'white',
-            width: '200px',
             border: '1px solid white',
             borderRadius: '5px',
             cursor: 'pointer'
           }}
         >
           Preview Full Site
-        </button>
+        </button> */}
       </div>
       <DevModeIndicator />
       <DevelopmentNotice />

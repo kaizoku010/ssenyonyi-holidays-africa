@@ -115,7 +115,6 @@ function App() {
             padding: '10px 20px',
             backgroundColor: 'rgba(255, 255, 255, 0.2)',
             color: 'white',
-            width: '200px',
             border: '1px solid white',
             borderRadius: '5px',
             cursor: 'pointer'
