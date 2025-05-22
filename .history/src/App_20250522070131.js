@@ -125,7 +125,6 @@ function App() {
       </div>
       <DevModeIndicator />
       <DevelopmentNotice />
-      <DebugInfo />
     </div>
   );
 }

@@ -43,19 +43,5 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script>
-      // Fallback script to detect if the app fails to load
-      window.addEventListener('load', function() {
-        // Set a timeout to check if the app has loaded
-        setTimeout(function() {
-          // If the root element is empty, redirect to the fallback page
-          var rootElement = document.getElementById('root');
-          if (rootElement && (!rootElement.children || rootElement.children.length === 0)) {
-            console.error('App failed to load, redirecting to fallback page');
-            window.location.href = '/fallback.html';
-          }
-        }, 5000); // Wait 5 seconds
-      });
-    </script>
   </body>
 </html>

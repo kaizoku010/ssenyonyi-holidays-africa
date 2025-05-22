@@ -60,7 +60,6 @@ function App() {
         <ScrollToTop />
         <DevModeIndicator />
         <DevelopmentNotice />
-        <DebugInfo />
         {/* <button
           onClick={toggleView}
           style={{
@@ -125,7 +124,6 @@ function App() {
       </div>
       <DevModeIndicator />
       <DevelopmentNotice />
-      <DebugInfo />
     </div>
   );
 }

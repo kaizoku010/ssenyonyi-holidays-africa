@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #333;
+    }
+    .image-container {
+      margin-top: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Test Page for Image Loading</h1>
+    <p>This page tests if images can be loaded from the media directory.</p>
+    
+    <div class="image-container">
+      <h2>Images from /media directory:</h2>
+      <img src="/media/kitandra.jpg" alt="Kitandra" />
+      <img src="/media/slide1.jpg" alt="Slide 1" />
+      <img src="/media/slide2.jpg" alt="Slide 2" />
+    </div>
+  </div>
+</body>
+</html>
