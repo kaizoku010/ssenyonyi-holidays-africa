@@ -39,10 +39,10 @@ function App() {
   const launchDate = new Date();
   launchDate.setMonth(launchDate.getMonth() + 3);
 
-  // Function to toggle between pages - currently commented out in UI
-  // const toggleView = () => {
-  //   setShowFullSite(!showFullSite);
-  // };
+  // Function to toggle between pages
+  const toggleView = () => {
+    setShowFullSite(!showFullSite);
+  };
 
   if (showFullSite) {
     return (
