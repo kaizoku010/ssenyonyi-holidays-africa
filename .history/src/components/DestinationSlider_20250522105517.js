@@ -13,7 +13,7 @@ import kitandra5 from '../media/slide5.jpg';
 import kitandra6 from '../media/people.jpg';
 import kitandra7 from '../media/vibes.JPG';
 import kitandra8 from '../media/ants.jpg';
-import kitandra9 from '../media/fireplace.jpg';
+import kitandra9 from '../media/fireplace.png';
 import kitandra0 from '../media/brige.jpg';
 import Deriq from "../media/deriq.jpg"
 

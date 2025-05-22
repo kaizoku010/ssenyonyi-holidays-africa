@@ -8,7 +8,7 @@
 /* Hero Section */
 .contact-hero {
   height: 44rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('../media/mach.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('../media/mach.j');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

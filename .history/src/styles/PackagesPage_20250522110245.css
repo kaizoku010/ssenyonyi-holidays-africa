@@ -8,7 +8,7 @@
 /* Hero Section */
 .packages-hero {
   height: 44rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../media/tt.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../media/tt.j');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

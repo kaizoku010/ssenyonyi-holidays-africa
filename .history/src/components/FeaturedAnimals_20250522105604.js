@@ -11,7 +11,7 @@ import Slide3 from '../media/slide3.jpg';
 import Slide4 from '../media/slide4.jpg';
 import Slide7 from '../media/buf.jpg';
 import Slide8 from "../media/tt.jpg";
-import Slide6 from "../media/osc.jpg";
+import Slide6 from "../media/osc.j";
 import Slide10 from "../media/road.jpg";
 import Cha from "../media/cha.jpg"
 

@@ -8,7 +8,7 @@
 /* Hero Section */
 .destinations-hero {
   height: 500px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../media/ants.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../media/ants.j`');
   background-size: cover;
   background-position: bottom;
   position: relative;

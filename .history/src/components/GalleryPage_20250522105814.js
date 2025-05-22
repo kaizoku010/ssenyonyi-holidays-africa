@@ -18,14 +18,14 @@ import Slide4 from '../media/slide4.jpg';
 import Slide5 from '../media/slide5.jpg';
 import Slide6 from '../media/slide6.jpg';
 import Slide7 from '../media/slide7.jpg';
-import Love from "../media/lov.jpg"
-import Fire from "../media/fireplace.jpg"
+import Love from "../media/lov.j"
+import Fire from "../media/fireplace.png"
 import Deriq from "../media/deriq.jpg"
 import Chimp from "../media/chimp.jpg"
 import Lake from "../media/lake.jpg"
 import Creast from "../media/creasts.jpg"
 import Road from "../media/road.jpg"
-import mach from "../media/mach.jpg"
+import mach from "../media/mach.png"
 import Lounge from "../media/louge.jpg"
 import Dance from "../media/danc.JPG"
 import Vibes from "../media/vibes.JPG"

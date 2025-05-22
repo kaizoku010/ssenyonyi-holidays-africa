@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar";
 import Partner from "../media/test.png";
 import Footer from "../components/Footer";
 import Swril from "../media/deriq.jpg";
-import Nyoni from "../media/bird_.jpg";
+import Nyoni from "../media/b ";
 import B1 from "../media/b1.jpg";
 import B2 from "../media/b2.jpg";
 import B3 from "../media/b3.jpg";

@@ -4,7 +4,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import '../styles/FeaturedExhibit.css';
 import kitandra2 from '../media/vic_.jpg';
-import Sere from "../media/gef.jpg"
+import Sere from "../media/gef.j"
 import Mount from "../media/mount.jpg"
 import Dance from "../media/danc.JPG"
 
