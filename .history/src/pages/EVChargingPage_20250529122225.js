@@ -4,6 +4,7 @@ import "../styles/EVChargingPage.css";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Navbar from "../components/Navbar";
+import Partner from "../media/test.png";
 import Footer from "../components/Footer";
 import Swril from "../media/deriq.jpg";
 import Nyoni from "../media/bird_.jpg";
@@ -13,7 +14,7 @@ import B3 from "../media/b3.jpg";
 
 const EVChargingPage = () => {
   const { t } = useTranslation();
-  const Partner = "https://res.cloudinary.com/dnko3bvt0/image/upload/fl_preserve_transparency/v1748506763/test_qaobiu.jpg?_s=public-apps"
+  const Partner = https://res.cloudinary.com/dnko3bvt0/image/upload/fl_preserve_transparency/v1748506763/test_qaobiu.jpg?_s=public-apps
   // Team members data
   const teamMembers = [
     {
