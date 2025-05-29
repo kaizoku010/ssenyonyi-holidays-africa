@@ -44,10 +44,6 @@
     margin: 0 0 !important;
 }
 
-.ev-author {
-    margin-bottom: 0.1rem;
-}
-
 .ev-header-container {
     background-size: cover;
     background-attachment: scroll;
@@ -56,6 +52,7 @@
     background-color: #f7f7f7;
     height: 44rem;
     display: flex;
+          background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
     flex-direction: column;
     justify-content: flex-end;
 }
