@@ -199,7 +199,7 @@
 .packages-hero {
     height: 44rem;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center;
     position: relative;
     color: white;

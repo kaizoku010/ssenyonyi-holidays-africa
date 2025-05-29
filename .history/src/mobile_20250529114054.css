@@ -5,33 +5,6 @@
       background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
     }
 
-    /* Fix for iOS Safari background image issues */
-    .ev-header-container,
-    .contact-hero,
-    .destinations-hero,
-    .gallery-hero,
-    .packages-hero {
-      background-attachment: scroll !important;
-      -webkit-background-size: cover !important;
-      background-size: cover !important;
-      background-position: center center !important;
-      background-repeat: no-repeat !important;
-      /* Additional iOS Safari optimizations */
-      -webkit-transform: translateZ(0);
-      transform: translateZ(0);
-      will-change: transform;
-    }
-
-    /* Ensure background images work on smaller screens */
-    .smaller-side,
-    .bigger-side {
-      background-attachment: scroll !important;
-      -webkit-background-size: cover !important;
-      background-size: cover !important;
-      background-position: center center !important;
-      background-repeat: no-repeat !important;
-    }
-
     .packages-page {
     min-height: 100vh;
     background-color: #f8f9fa;
@@ -45,9 +18,7 @@
 }
 
 .ev-header-container {
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: center;
+    background-size: conatin;
     padding: 2rem 1rem;
     background-color: #f7f7f7;
     height: 44rem;
@@ -74,25 +45,10 @@
     background-color: #ffffff;
 }
 
-
-.ev-partners-container {
-    /* padding: 1rem 16px 1rem; */
-    background-color: #f7f7f7;
-    padding: 2rem 2rem;
-}
-
-
-.ev-partners-title {
-    font-size: 1.8rem;
-    font-weight: 600;
-
-    margin-bottom: 2rem;
-}
 .ev-partners-logos {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    margin: 0 2rem;
     /* flex-direction: column; */
     justify-content: space-between;
     align-items: left !important;
@@ -110,8 +66,7 @@
 
 .why-us {
     margin: 3rem 1rem;
-    height: auto;
-    min-height: 40rem;
+    height: 40rem;
     display: flex;
     gap: 10px;
     flex-direction: column;
@@ -199,7 +154,7 @@
 .packages-hero {
     height: 44rem;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center;
     position: relative;
     color: white;
@@ -251,11 +206,11 @@ width: 100%;
     margin: 40px 12px;
     max-width: 1200px;
 }
-
+  
     .logo-text {
         font-size: 10px;
         }
-
+  
     .tagline {
       font-size: 1rem;
     }
@@ -265,7 +220,7 @@ width: 100%;
         font-size: 2em;
         margin-top: .2rem;
     }
-
+  
     #desc {
         width: 100%;
         font-size: small;
@@ -274,7 +229,7 @@ width: 100%;
         word-spacing: -2px; */
     }
 
-
+    
     .newsletter-container {
         margin: 10px 0;
 
@@ -282,8 +237,10 @@ width: 100%;
         max-width: 500px;
       }
 
+      .newsletter-form {
 
-
+      }
+  
       .input-group {
         width: 100%;
       }
@@ -294,7 +251,7 @@ width: 100%;
         background-position: right;
       }
 
-
+      
       .slide{
         background-size: cover ;
         background-position: center;
@@ -328,39 +285,39 @@ width: 100%;
         background-repeat: no-repeat;
         }
 
-
+        
         #cube-three{
             background-image: url("./media/grid/grid4.jpg") !important;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center !important;
             }
+        
 
-
-
+            
     #cube-four{
         background-image: url("./media/grid/grid5.jpg") !important;
         background-size: cover;
         background-position: center !important;
         background-repeat: no-repeat;
         }
-
+    
         #cube-five{
             background-image: url("./media/grid/grid3.jpg") !important;
             background-size: cover;
             background-position: center !important;
-
+    
             background-repeat: no-repeat;
             }
-
-
+    
+            
             #cube-six{
                 background-image: url("./media/grid/grid6.jpg") !important;
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center !important;
                 }
-
+        
     .image-sec {
         background-color: rgb(20, 20, 21);
         width: 100%;
@@ -375,47 +332,23 @@ width: 100%;
     color: #ada8a8;
     margin: 0;
     max-width: 600px;
-}
+}    
 
 .gallery-hero
+Specificity: (0,1,0)
  {
         height: 44rem;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: scroll;
+        background-re: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(http://localhost:3000/static/media/grid5.83c1c67….jpg);
+        background-size: contain;
+        background-attachment: fixed;
         background-position: center;
         position: relative;
         color: white;
     }
 
-    .mobile-nav-item a
- {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    display: block;
-    padding: 10px;
-}
-
   .hero-content h1 {
     font-size: 2.2rem;
   }
-
-
-  .mobile-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-  .mobile-nav-item {
-    margin: 0px 0;
-    position: relative;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 15px;
-}
 
   .details-content {
     padding: 40px 20px;
@@ -447,13 +380,14 @@ width: 100%;
 }
 
   .destinations-hero {
-    height: 44rem;
+    height: 500px;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), 
     rgba(0, 0, 0, 0.6)), url('./media/ants.jpg');
     background-position: center;
-    background-attachment: scroll;
     position: relative;
+    height: 44rem;
+    background-attachment: fixed;
     color: white;
 }
 

@@ -110,8 +110,7 @@
 
 .why-us {
     margin: 3rem 1rem;
-    height: auto;
-    min-height: 40rem;
+    height: 40rem;
     display: flex;
     gap: 10px;
     flex-direction: column;
@@ -199,7 +198,7 @@
 .packages-hero {
     height: 44rem;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center;
     position: relative;
     color: white;

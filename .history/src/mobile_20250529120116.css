@@ -9,22 +9,7 @@
     .ev-header-container,
     .contact-hero,
     .destinations-hero,
-    .gallery-hero,
-    .packages-hero {
-      background-attachment: scroll !important;
-      -webkit-background-size: cover !important;
-      background-size: cover !important;
-      background-position: center center !important;
-      background-repeat: no-repeat !important;
-      /* Additional iOS Safari optimizations */
-      -webkit-transform: translateZ(0);
-      transform: translateZ(0);
-      will-change: transform;
-    }
-
-    /* Ensure background images work on smaller screens */
-    .smaller-side,
-    .bigger-side {
+    .gallery-hero {
       background-attachment: scroll !important;
       -webkit-background-size: cover !important;
       background-size: cover !important;
@@ -110,8 +95,7 @@
 
 .why-us {
     margin: 3rem 1rem;
-    height: auto;
-    min-height: 40rem;
+    height: 40rem;
     display: flex;
     gap: 10px;
     flex-direction: column;
@@ -199,7 +183,7 @@
 .packages-hero {
     height: 44rem;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center;
     position: relative;
     color: white;
@@ -282,7 +266,9 @@ width: 100%;
         max-width: 500px;
       }
 
+      .newsletter-form {
 
+      }
 
       .input-group {
         width: 100%;
