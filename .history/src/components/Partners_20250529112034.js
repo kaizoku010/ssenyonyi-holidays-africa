@@ -1,10 +1,7 @@
 import React from "react";
 import "../styles/Partners.css";
 
-
 const Partners = () => {
-const Test = "https://res.cloudinary.com/dnko3bvt0/image/upload/fl_preserve_transparency/v1748506763/test_qaobiu.jpg?_s=public-apps"
-
   return (
     <section className="partners-section">
       <div className="partners-container">
