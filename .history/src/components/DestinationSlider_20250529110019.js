@@ -6,12 +6,12 @@ import '../styles/DestinationSlider.css';
 import { fadeIn, slideIn, textVariant } from '../utils/animations';
 
 // Import images
-import kitandra from '../media/vibes.JPG';
+import kitandra from '../media/vibes.jpg';
 import kitandra2 from '../media/slide1.jpg';
 import kitandra4 from '../media/swril.jpg';
 import kitandra5 from '../media/slide5.jpg';
 import kitandra6 from '../media/people.jpg';
-import kitandra7 from '../media/sere.jpg';
+import kitandra7 from '../media/vibes.JPG';
 import kitandra8 from '../media/ants.jpg';
 import kitandra9 from '../media/fireplace.jpg';
 import kitandra0 from '../media/brige.jpg';
@@ -231,9 +231,9 @@ const DestinationSlider = ({
               >
                 <DestinationCard
                   image={card.image}
-                  // location={card.location}
-                  // title={card.title}
-                  // subtitle={card.subtitle}
+                  location={card.location}
+                  title={card.title}
+                  subtitle={card.subtitle}
                 />
               </motion.div>
             ))}

@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
-import Logo from "../media/logo_white.png";
+// import Logo from "../media/logo_white.png";
 import '../styles/Navbar.css';
 
 const Navbar = () => {
   const location = useLocation();
   const { t } = useTranslation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
+  const Logo = "https://asset.cloudinary.com/dnko3bvt0/b83bbbaf7ec66f3c1997fe15cbe0618b"
   // Close mobile menu when changing routes
   useEffect(() => {
     setMobileMenuOpen(false);
@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className="navbar-left">
         <div className="logo">
           <Link to="/">
-          <img className='logo-img' src="https://res.cloudinary.com/dnko3bvt0/image/upload/fl_preserve_transparency/v1748506432/logo_white_o7zlvs.jpg?_s=public-apps"/>
+          <img className='logo-img' src={Logo}/>
           </Link>
         </div>
       </div>

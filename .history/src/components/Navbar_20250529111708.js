@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className="navbar-left">
         <div className="logo">
           <Link to="/">
-          <img className='logo-img' src="https://res.cloudinary.com/dnko3bvt0/image/upload/fl_preserve_transparency/v1748506432/logo_white_o7zlvs.jpg?_s=public-apps"/>
+          <img className='logo-img' src=""/>
           </Link>
         </div>
       </div>
