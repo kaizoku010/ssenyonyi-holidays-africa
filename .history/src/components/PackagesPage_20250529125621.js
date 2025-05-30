@@ -224,12 +224,9 @@ const PackagesPage = () => {
                     <span className="price-mdx">${pkg.price.split('–')[0].trim()}</span>
                     <span className="price-unit">{t('packagesPage.perPerson', 'per person')}</span>
                   </div>
-                  <button
-                    className="book-button-new"
-                    onClick={() => handlePackageInquiry(pkg)}
-                  >
-                    {t('packagesPage.inquireNow', 'Inquire Now')}
-                  </button>
+                  <Link to={`/packages/${pkg.id}`} className="view-details-link">
+                    <button className="book-button-new">{t('packagesPage.viewDetails', 'View Details')}</button>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -247,19 +244,19 @@ const PackagesPage = () => {
 
             <TabsContent value="all" className="tabs-content packages-grid">
               {filteredPackages.map(pkg => (
-                <PackageCard key={pkg.id} packageData={pkg} onInquire={handlePackageInquiry} />
+                <PackageCard key={pkg.id} packageData={pkg} />
               ))}
             </TabsContent>
 
             <TabsContent value="mid-range" className="tabs-content packages-grid">
               {filteredPackages.map(pkg => (
-                <PackageCard key={pkg.id} packageData={pkg} onInquire={handlePackageInquiry} />
+                <PackageCard key={pkg.id} packageData={pkg} />
               ))}
             </TabsContent>
 
             <TabsContent value="high-end" className="tabs-content packages-grid">
               {filteredPackages.map(pkg => (
-                <PackageCard key={pkg.id} packageData={pkg} onInquire={handlePackageInquiry} />
+                <PackageCard key={pkg.id} packageData={pkg} />
               ))}
             </TabsContent>
           </Tabs>
@@ -268,21 +265,12 @@ const PackagesPage = () => {
 
       <CallToAction />
       <Footer />
-
-      {/* Contact Modal */}
-      {selectedPackage && (
-        <PackageContactModal
-          isOpen={isModalOpen}
-          onClose={closeModal}
-          packageData={selectedPackage}
-        />
-      )}
     </div>
   );
 };
 
 // Package Card Component
-const PackageCard = ({ packageData, onInquire }) => {
+const PackageCard = ({ packageData }) => {
   const { t } = useTranslation();
 
   return (
@@ -321,12 +309,9 @@ const PackageCard = ({ packageData, onInquire }) => {
           <span className="price-value">${packageData.price.split('–')[0].trim()}</span>
           <span className="price-unit">{t('packagesPage.perPerson', 'per person')}</span>
         </div>
-        <Button
-          className="button book-now-button"
-          onClick={() => onInquire(packageData)}
-        >
-          {t('packagesPage.inquireNow', 'Inquire Now')}
-        </Button>
+        <Link to={`/packages/${packageData.id}`}>
+          <Button className="button book-now-button">{t('packagesPage.viewDetails', 'View Details')}</Button>
+        </Link>
       </CardFooter>
     </Card>
   );

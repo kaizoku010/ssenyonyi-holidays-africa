@@ -446,7 +446,6 @@ const zhTranslations = {
     from: "起价",
     perPerson: "每人",
     viewDetails: "查看详情",
-    inquireNow: "立即咨询",
     highlights: "亮点",
     accommodation: "住宿",
     inclusions: "包含内容",

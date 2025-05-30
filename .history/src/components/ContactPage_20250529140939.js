@@ -15,106 +15,21 @@ import kitandra from '../media/kitandra.jpg';
 const ContactPage = () => {
   const { t } = useTranslation();
 
-  // Form state
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
+  // Using Formspree hook with the form ID from your example
+  const [state, handleSubmit] = useForm("xnnddyzv");
+
+  // State for form fields that aren't directly handled by Formspree
+  const [formValues, setFormValues] = useState({
     phone: '',
     subject: '',
-    message: ''
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus(null);
-
-    try {
-      // Debug: Log the form data
-      console.log('🔍 Contact Form Data:', formData);
-
-      // Prepare the data to be inserted
-      const submissionData = {
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone || '',
-        subject: formData.subject,
-        message: formData.message,
-        created_at: new Date().toISOString()
-      };
-
-      console.log('📤 Contact Submission Data:', submissionData);
-
-      // Insert data into Supabase
-      const { data, error } = await supabase
-        .from('contact_messages')
-        .insert([submissionData])
-        .select();
-
-      if (error) {
-        console.error('❌ Supabase Error Details:', error);
-        throw error;
-      }
-
-      console.log('✅ Contact data inserted successfully:', data);
-
-      // Get the contact data with ID
-      const contactData = data[0];
-
-      // Log the contact inquiry for debugging
-      logContactInquiry(contactData);
-
-      // Send emails via Supabase Edge Function
-      try {
-        console.log('📧 Attempting to send contact emails for:', contactData.id);
-        console.log('🔥 CONTACT DATA:', contactData);
-
-        const emailResult = await sendContactEmails(contactData);
-        console.log('🔥 CONTACT EMAIL RESULT:', emailResult);
-
-        if (emailResult.success) {
-          console.log('✅ Contact emails sent successfully via edge function');
-          alert('✅ CONTACT EMAILS SENT! Check your inbox!');
-        } else {
-          console.error('❌ Contact email sending failed:', emailResult.error);
-          alert('❌ CONTACT EMAIL FAILED: ' + emailResult.error);
-        }
-      } catch (emailError) {
-        console.error('❌ Error sending contact emails:', emailError);
-        alert('❌ CONTACT EMAIL ERROR: ' + emailError.message);
-        // Don't fail the whole process if email fails
-      }
-
-      setSubmitStatus('success');
-
-      // Reset form after successful submission
-      setTimeout(() => {
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          subject: '',
-          message: ''
-        });
-        setSubmitStatus(null);
-      }, 3000);
-
-    } catch (error) {
-      console.error('Error submitting contact form:', error);
-      setSubmitStatus('error');
-    } finally {
-      setIsSubmitting(false);
-    }
+    setFormValues({
+      ...formValues,
+      [name]: value,
+    });
   };
 
   return (
@@ -143,11 +58,10 @@ const ContactPage = () => {
                       type="text"
                       id="name"
                       name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
                       placeholder={t('contactPage.form.fullNamePlaceholder')}
                       required
                     />
+                    <ValidationError prefix="Name" field="name" errors={state.errors} />
                   </div>
 
                   <div className="form-row">
@@ -157,11 +71,10 @@ const ContactPage = () => {
                         type="email"
                         id="email"
                         name="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
                         placeholder={t('contactPage.form.emailPlaceholder')}
                         required
                       />
+                      <ValidationError prefix="Email" field="email" errors={state.errors} />
                     </div>
 
                     <div className="form-group">
@@ -170,7 +83,7 @@ const ContactPage = () => {
                         type="tel"
                         id="phone"
                         name="phone"
-                        value={formData.phone}
+                        value={formValues.phone}
                         onChange={handleInputChange}
                         placeholder={t('contactPage.form.phonePlaceholder')}
                       />
@@ -183,7 +96,7 @@ const ContactPage = () => {
                       type="text"
                       id="subject"
                       name="subject"
-                      value={formData.subject}
+                      value={formValues.subject}
                       onChange={handleInputChange}
                       placeholder={t('contactPage.form.subjectPlaceholder')}
                       required
@@ -195,30 +108,29 @@ const ContactPage = () => {
                     <textarea
                       id="message"
                       name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
                       placeholder={t('contactPage.form.messagePlaceholder')}
                       rows="5"
                       required
                     ></textarea>
+                    <ValidationError prefix="Message" field="message" errors={state.errors} />
                   </div>
 
                   <Button
                     type="submit"
                     className="submit-button"
-                    disabled={isSubmitting}
+                    disabled={state.submitting}
                   >
-                    {isSubmitting ? t('contactPage.form.sendingButton') : t('contactPage.form.sendButton')}
+                    {state.submitting ? t('contactPage.form.sendingButton') : t('contactPage.form.sendButton')}
                   </Button>
 
-                  {submitStatus === 'success' && (
+                  {state.succeeded && (
                     <div className="form-success">
                       <i className="fas fa-check-circle"></i>
                       <p>{t('contactPage.form.successMessage')}</p>
                     </div>
                   )}
 
-                  {submitStatus === 'error' && (
+                  {state.errors && state.errors.length > 0 && (
                     <div className="form-error">
                       <i className="fas fa-exclamation-circle"></i>
                       <p>{t('contactPage.form.errorMessage')}</p>

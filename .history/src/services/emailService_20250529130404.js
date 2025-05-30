@@ -1,0 +1,149 @@
+// Email service for package inquiries
+// This is a simple service that logs inquiries and provides email templates
+
+// EMAIL CONFIGURATION - Change these email addresses as needed
+const EMAIL_CONFIG = {
+  teamEmails: [
+    'info@nyonyiholidays.com',
+    'bookings@nyonyiholidays.com',
+    'sales@nyonyiholidays.com'
+  ],
+  supportEmail: 'info@nyonyiholidays.com',
+  supportPhone: '+256 XXX XXX XXX',
+  companyName: 'Nyonyi Holidays'
+};
+
+export const generateEmailTemplate = (packageData, customerData, inquiryId) => {
+  const emailTemplate = {
+    subject: `New Package Inquiry: ${packageData.title}`,
+    body: `
+Dear ${EMAIL_CONFIG.companyName} Team,
+
+You have received a new package inquiry with the following details:
+
+INQUIRY DETAILS:
+- Inquiry ID: ${inquiryId}
+- Package: ${packageData.title}
+- Package Type: ${packageData.type}
+- Duration: ${packageData.duration}
+- Price Range: $${packageData.price} per person
+
+CUSTOMER INFORMATION:
+- Name: ${customerData.name}
+- Email: ${customerData.email}
+- Phone: ${customerData.phone || 'Not provided'}
+- Number of People: ${customerData.numberOfPeople}
+- Preferred Travel Date: ${customerData.preferredDate || 'Not specified'}
+
+MESSAGE:
+${customerData.message || 'No additional message provided'}
+
+PACKAGE HIGHLIGHTS:
+${packageData.highlights.map(highlight => `- ${highlight}`).join('\n')}
+
+ACCOMMODATION:
+${packageData.accommodation}
+
+INCLUSIONS:
+${packageData.inclusions}
+
+Please respond to the customer within 24 hours at: ${customerData.email}
+
+Best regards,
+${EMAIL_CONFIG.companyName} Website System
+    `,
+    customerConfirmation: {
+      subject: `Thank you for your inquiry - ${packageData.title}`,
+      body: `
+Dear ${customerData.name},
+
+Thank you for your interest in our ${packageData.title} package!
+
+We have received your inquiry and our team will contact you within 24 hours to discuss your safari adventure and provide you with a detailed itinerary and pricing.
+
+INQUIRY SUMMARY:
+- Package: ${packageData.title}
+- Duration: ${packageData.duration}
+- Number of People: ${customerData.numberOfPeople}
+- Preferred Date: ${customerData.preferredDate || 'To be discussed'}
+
+In the meantime, feel free to explore our other packages or contact us directly:
+- Email: ${EMAIL_CONFIG.supportEmail}
+- Phone: ${EMAIL_CONFIG.supportPhone}
+
+We look forward to creating an unforgettable African adventure for you!
+
+Best regards,
+The ${EMAIL_CONFIG.companyName} Team
+      `
+    }
+  };
+
+  return emailTemplate;
+};
+
+// Function to update email configuration
+export const updateEmailConfig = (newConfig) => {
+  Object.assign(EMAIL_CONFIG, newConfig);
+  console.log('Email configuration updated:', EMAIL_CONFIG);
+};
+
+// Function to get current email configuration
+export const getEmailConfig = () => {
+  return { ...EMAIL_CONFIG };
+};
+
+export const logInquiry = (packageData, customerData, inquiryId) => {
+  const emailTemplate = generateEmailTemplate(packageData, customerData, inquiryId);
+
+  console.log('=== NEW PACKAGE INQUIRY ===');
+  console.log('Inquiry ID:', inquiryId);
+  console.log('Package:', packageData.title);
+  console.log('Customer:', customerData.name, '(' + customerData.email + ')');
+  console.log('');
+  console.log('EMAIL TO SEND TO TEAM:');
+  console.log('To:', EMAIL_CONFIG.teamEmails.join(', '));
+  console.log('Subject:', emailTemplate.subject);
+  console.log('Body:', emailTemplate.body);
+  console.log('');
+  console.log('CUSTOMER CONFIRMATION EMAIL:');
+  console.log('To:', customerData.email);
+  console.log('Subject:', emailTemplate.customerConfirmation.subject);
+  console.log('Body:', emailTemplate.customerConfirmation.body);
+  console.log('=== END INQUIRY ===');
+
+  return emailTemplate;
+};
+
+// Instructions for setting up email notifications
+export const getEmailSetupInstructions = () => {
+  return `
+To set up automatic email notifications for package inquiries:
+
+1. SUPABASE EDGE FUNCTIONS (Recommended):
+   - Create a Supabase Edge Function to handle email sending
+   - Use a service like SendGrid, Mailgun, or Resend for email delivery
+   - Update the PackageContactModal.js to call the edge function
+
+2. THIRD-PARTY EMAIL SERVICE:
+   - Integrate with EmailJS, Formspree, or similar service
+   - Add API keys to environment variables
+   - Update the form submission logic
+
+3. BACKEND API:
+   - Create a backend API endpoint to handle form submissions
+   - Use nodemailer or similar library to send emails
+   - Update the frontend to call your API
+
+For now, all inquiries are stored in Supabase and logged to the console.
+Check the browser console and Supabase dashboard for new inquiries.
+  `;
+};
+
+const emailService = {
+  generateEmailTemplate,
+  logInquiry,
+  getEmailSetupInstructions
+};
+
+export default emailService;

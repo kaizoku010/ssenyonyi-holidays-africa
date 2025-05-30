@@ -74,24 +74,19 @@ const ContactPage = () => {
       // Log the contact inquiry for debugging
       logContactInquiry(contactData);
 
-      // Send emails via Supabase Edge Function
+      // Send emails via Supabase Edge Function (temporarily disabled for testing)
       try {
         console.log('📧 Attempting to send contact emails for:', contactData.id);
-        console.log('🔥 CONTACT DATA:', contactData);
-
-        const emailResult = await sendContactEmails(contactData);
-        console.log('🔥 CONTACT EMAIL RESULT:', emailResult);
-
-        if (emailResult.success) {
-          console.log('✅ Contact emails sent successfully via edge function');
-          alert('✅ CONTACT EMAILS SENT! Check your inbox!');
-        } else {
-          console.error('❌ Contact email sending failed:', emailResult.error);
-          alert('❌ CONTACT EMAIL FAILED: ' + emailResult.error);
-        }
+        // Temporarily comment out edge function call to test form submission
+        // const emailResult = await sendContactEmails(contactData);
+        // if (emailResult.success) {
+        //   console.log('✅ Contact emails sent successfully via edge function');
+        // } else {
+        //   console.warn('⚠️ Contact email sending failed, but message was saved:', emailResult.error);
+        // }
+        console.log('📧 Contact email function temporarily disabled - form should work now');
       } catch (emailError) {
         console.error('❌ Error sending contact emails:', emailError);
-        alert('❌ CONTACT EMAIL ERROR: ' + emailError.message);
         // Don't fail the whole process if email fails
       }
 
@@ -143,11 +138,10 @@ const ContactPage = () => {
                       type="text"
                       id="name"
                       name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
                       placeholder={t('contactPage.form.fullNamePlaceholder')}
                       required
                     />
+                    <ValidationError prefix="Name" field="name" errors={state.errors} />
                   </div>
 
                   <div className="form-row">
@@ -157,11 +151,10 @@ const ContactPage = () => {
                         type="email"
                         id="email"
                         name="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
                         placeholder={t('contactPage.form.emailPlaceholder')}
                         required
                       />
+                      <ValidationError prefix="Email" field="email" errors={state.errors} />
                     </div>
 
                     <div className="form-group">
@@ -170,7 +163,7 @@ const ContactPage = () => {
                         type="tel"
                         id="phone"
                         name="phone"
-                        value={formData.phone}
+                        value={formValues.phone}
                         onChange={handleInputChange}
                         placeholder={t('contactPage.form.phonePlaceholder')}
                       />
@@ -183,7 +176,7 @@ const ContactPage = () => {
                       type="text"
                       id="subject"
                       name="subject"
-                      value={formData.subject}
+                      value={formValues.subject}
                       onChange={handleInputChange}
                       placeholder={t('contactPage.form.subjectPlaceholder')}
                       required
@@ -195,30 +188,29 @@ const ContactPage = () => {
                     <textarea
                       id="message"
                       name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
                       placeholder={t('contactPage.form.messagePlaceholder')}
                       rows="5"
                       required
                     ></textarea>
+                    <ValidationError prefix="Message" field="message" errors={state.errors} />
                   </div>
 
                   <Button
                     type="submit"
                     className="submit-button"
-                    disabled={isSubmitting}
+                    disabled={state.submitting}
                   >
-                    {isSubmitting ? t('contactPage.form.sendingButton') : t('contactPage.form.sendButton')}
+                    {state.submitting ? t('contactPage.form.sendingButton') : t('contactPage.form.sendButton')}
                   </Button>
 
-                  {submitStatus === 'success' && (
+                  {state.succeeded && (
                     <div className="form-success">
                       <i className="fas fa-check-circle"></i>
                       <p>{t('contactPage.form.successMessage')}</p>
                     </div>
                   )}
 
-                  {submitStatus === 'error' && (
+                  {state.errors && state.errors.length > 0 && (
                     <div className="form-error">
                       <i className="fas fa-exclamation-circle"></i>
                       <p>{t('contactPage.form.errorMessage')}</p>

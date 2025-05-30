@@ -282,7 +282,7 @@ const PackagesPage = () => {
 };
 
 // Package Card Component
-const PackageCard = ({ packageData, onInquire }) => {
+const PackageCard = ({ packageData }) => {
   const { t } = useTranslation();
 
   return (
@@ -321,12 +321,9 @@ const PackageCard = ({ packageData, onInquire }) => {
           <span className="price-value">${packageData.price.split('–')[0].trim()}</span>
           <span className="price-unit">{t('packagesPage.perPerson', 'per person')}</span>
         </div>
-        <Button
-          className="button book-now-button"
-          onClick={() => onInquire(packageData)}
-        >
-          {t('packagesPage.inquireNow', 'Inquire Now')}
-        </Button>
+        <Link to={`/packages/${packageData.id}`}>
+          <Button className="button book-now-button">{t('packagesPage.viewDetails', 'View Details')}</Button>
+        </Link>
       </CardFooter>
     </Card>
   );

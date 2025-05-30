@@ -20,13 +20,15 @@
 
 .hero-content-new {
   margin: 0 auto !important;
-          position: absolute;
+}
+
+    .hero-content {
+        position: absolute;
         bottom: 60px;
         left: 0;
         width: 100%;
         padding: 0 30px;
-}
-
+    }
 
 .header-packages{
 margin-left: 6rem;
