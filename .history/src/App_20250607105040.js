@@ -1,16 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './App.css';
 import HomePage from './components/HomePage';
+import PackagesPage from './components/PackagesPage';
+import PackageDetailsPage from './components/PackageDetailsPage';
+import DestinationsPage from './components/DestinationsPage';
+import GalleryPage from './components/GalleryPage';
+import ContactPage from './components/ContactPage';
+import EVChargingPage from './pages/EVChargingPage';
+import ScrollToTop from './components/ScrollToTop';
 import ImageSlider from './components/ImageSlider';
 import CountdownTimer from './components/CountdownTimer';
 import NewsletterSignup from './components/NewsletterSignup';
 import SocialLinks from './components/SocialLinks';
+import LanguageSwitcher from './components/LanguageSwitcher';
+import DevModeIndicator from './components/DevModeIndicator';
+import DevelopmentNotice from './components/DevelopmentNotice';
+import { applyImageProtection } from './utils/imageProtection';
 import './mobile.css';
 import './styles.css';
+import './styles/shadcn.css';
 
 function App() {
   // State to toggle between coming soon page and full homepage
   const [showFullSite, setShowFullSite] = useState(true);
+  const { t } = useTranslation();
+
+  // Apply image protection when component mounts
+  useEffect(() => {
+    // Apply protection to prevent right-click and image downloads
+    applyImageProtection();
+  }, []);
 
   // Set launch date to 3 months from now
   const launchDate = new Date();
@@ -20,31 +41,24 @@ function App() {
   const toggleView = () => {
     setShowFullSite(!showFullSite);
   };
-
-  // if (showFullSite) {
-  //   return (
-  //     <>
-  //       <HomePage />
-  //       <button
-  //         onClick={toggleView}
-  //         style={{
-  //           position: 'fixed',
-  //           bottom: '20px',
-  //           left: '20px',
-  //           zIndex: 1000,
-  //           padding: '10px 15px',
-  //           backgroundColor: '#333',
-  //           color: 'white',
-  //           border: 'none',
-  //           borderRadius: '5px',
-  //           cursor: 'pointer'
-  //         }}
-  //       >
-  //         View Coming Soon Page
-  //       </button>
-  //     </>
-  //   );
-  // }
+  if (showFullSite) {
+    return (
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/packages" element={<PackagesPage />} />
+          <Route path="/packages/:id" element={<PackageDetailsPage />} />
+          <Route path="/destinations" element={<DestinationsPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/about" element={<EVChargingPage />} />
+        </Routes>
+        <ScrollToTop />
+        <DevModeIndicator />
+        <DevelopmentNotice />
+      </Router>
+    );
+  }
 
   return (
     <div className="App">
@@ -52,12 +66,13 @@ function App() {
       <div className="content-container">
         <div className="logo"><h4 className='logo-text'>NYONYI HOLIDAYS AFRICA</h4></div>
         {/* <div className="tagline">Experience the Uganda differently</div> */}
-        <h1 id="coming-soon">COMING SOON</h1>
+        <h1 id="coming-soon">{t('comingSoon.title')}</h1>
         <p id="desc">
-          Get ready for an extraordinary travel experience with nyonyi holidays Africa.
-          We're crafting unforgettable adventures that will take you off the beaten path
-          to discover hidden gems and authentic cultural experiences around Uganda.
+          {t('comingSoon.description')}
         </p>
+        <div className="language-switcher-container" style={{ marginTop: '20px' }}>
+          <LanguageSwitcher />
+        </div>
         {/* <CountdownTimer targetDate={launchDate.toISOString()} /> */}
         <NewsletterSignup />
         {/* <SocialLinks /> */}
@@ -86,6 +101,8 @@ function App() {
           Preview Full Site
         </button> */}
       </div>
+      <DevModeIndicator />
+      <DevelopmentNotice />
     </div>
   );
 }

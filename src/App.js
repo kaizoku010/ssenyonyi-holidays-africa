@@ -41,7 +41,6 @@ function App() {
   const toggleView = () => {
     setShowFullSite(!showFullSite);
   };
-
   if (showFullSite) {
     return (
       <Router>
