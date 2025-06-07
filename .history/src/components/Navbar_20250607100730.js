@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
-import Logo from "../media/new_logo.png";
+import Logo from "../media/new";
 import '../styles/Navbar.css';
 
 const Navbar = () => {
@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className="navbar-left">
         <div className="logo">
           <Link to="/">
-          <img className='logo-img' src={Logo}/>
+          <img className='logo-img' src="https://res.cloudinary.com/dnko3bvt0/image/upload/fl_preserve_transparency/v1748506432/logo_white_o7zlvs.jpg?_s=public-apps"/>
           </Link>
         </div>
       </div>

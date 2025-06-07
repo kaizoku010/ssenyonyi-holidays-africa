@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className="navbar-left">
         <div className="logo">
           <Link to="/">
-          <img className='logo-img' src={Logo}/>
+          <img className='logo-img' src={}/>
           </Link>
         </div>
       </div>
