@@ -6,27 +6,44 @@
 
 .language-options {
   display: flex;
-  gap: 5px;
+  gap: 8px;
 }
 
 .language-option {
-    background: none;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    color: white;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: .8rem;
-    transition: all 0.3s ease;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: white;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 32px;
+}
+
+.flag-icon {
+  width: 20px;
+  height: 15px;
+  object-fit: cover;
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
 .language-option:hover {
   background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+}
+
+.language-option:hover .flag-icon {
+  transform: scale(1.1);
 }
 
 .language-option.active {
   background-color: #168D61;
-  color: #ecebeb;
+  color: white;
   border-color: #168D61;
 }
 

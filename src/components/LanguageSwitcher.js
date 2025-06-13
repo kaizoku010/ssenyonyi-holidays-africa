@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFlag } from '@fortawesome/free-solid-svg-icons';
+import { faFlag as faFlagRegular } from '@fortawesome/free-regular-svg-icons';
 import '../styles/LanguageSwitcher.css';
 
 const LanguageSwitcher = () => {
   const { t, i18n } = useTranslation();
   const [currentLanguage, setCurrentLanguage] = useState(i18n.language || 'en');
+  const [hasDetectedLocation, setHasDetectedLocation] = useState(false);
 
   useEffect(() => {
     // Set the initial language from localStorage or default to 'en'
@@ -13,56 +17,55 @@ const LanguageSwitcher = () => {
       i18n.changeLanguage(savedLanguage);
     }
     setCurrentLanguage(savedLanguage);
-  }, [i18n]);
+
+    // Only detect location if it hasn't been done before
+    if (!hasDetectedLocation && !localStorage.getItem('locationDetected')) {
+      detectUserLocation();
+    }
+  }, [i18n, hasDetectedLocation]);
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     setCurrentLanguage(lng);
     localStorage.setItem('i18nextLng', lng);
-    // Force reload to ensure all components get the new language
-    window.location.reload();
+    // Remove the reload - it's not necessary and causes issues
   };
 
-  useEffect(() => {
-    const detectUserLocation = () => {
-      if ("geolocation" in navigator) {
-        navigator.geolocation.getCurrentPosition(
-          async (position) => {
-            try {
-              // Use reverse geocoding to get country information
-              const response = await fetch(
-                `https://nominatim.openstreetmap.org/reverse?format=json&lat=${position.coords.latitude}&lon=${position.coords.longitude}`
-              );
-              const data = await response.json();
-              const countryCode = data.address.country_code.toUpperCase();
-              
-              // If user is in China (CN), set language to Chinese
-              if (countryCode === 'CN') {
-                changeLanguage('zh');
-              } else {
-                // For all other countries, set to English
-                changeLanguage('en');
-              }
-            } catch (error) {
-              console.error('Error detecting location:', error);
-              // Default to English if there's an error
-              changeLanguage('en');
+  const detectUserLocation = () => {
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(
+        async (position) => {
+          try {
+            const response = await fetch(
+              `https://nominatim.openstreetmap.org/reverse?format=json&lat=${position.coords.latitude}&lon=${position.coords.longitude}`
+            );
+            const data = await response.json();
+            const countryCode = data.address.country_code.toUpperCase();
+            
+            // If user is in China (CN), set language to Chinese
+            if (countryCode === 'CN') {
+              changeLanguage('zh');
             }
-          },
-          (error) => {
-            console.error('Geolocation error:', error);
-            // Default to English if geolocation is denied or fails
-            changeLanguage('en');
+            // Mark location as detected to prevent future checks
+            localStorage.setItem('locationDetected', 'true');
+            setHasDetectedLocation(true);
+          } catch (error) {
+            console.error('Error detecting location:', error);
+            localStorage.setItem('locationDetected', 'true');
+            setHasDetectedLocation(true);
           }
-        );
-      } else {
-        // Default to English if geolocation is not supported
-        changeLanguage('en');
-      }
-    };
-
-    detectUserLocation();
-  }, [changeLanguage]);
+        },
+        (error) => {
+          console.error('Geolocation error:', error);
+          localStorage.setItem('locationDetected', 'true');
+          setHasDetectedLocation(true);
+        }
+      );
+    } else {
+      localStorage.setItem('locationDetected', 'true');
+      setHasDetectedLocation(true);
+    }
+  };
 
   return (
     <div className="language-switcher">
@@ -70,14 +73,30 @@ const LanguageSwitcher = () => {
         <button
           className={`language-option ${currentLanguage === 'en' ? 'active' : ''}`}
           onClick={() => changeLanguage('en')}
+          title="English"
         >
-          🇬🇧 English
+          <img 
+            src="https://flagcdn.com/w40/gb.png"
+            srcSet="https://flagcdn.com/w80/gb.png 2x"
+            width="20"
+            height="15"
+            alt="UK Flag"
+            className="flag-icon"
+          />
         </button>
         <button
           className={`language-option ${currentLanguage === 'zh' ? 'active' : ''}`}
           onClick={() => changeLanguage('zh')}
+          title="中文"
         >
-          🇨🇳 中文
+          <img 
+            src="https://flagcdn.com/w40/cn.png"
+            srcSet="https://flagcdn.com/w80/cn.png 2x"
+            width="20"
+            height="15"
+            alt="China Flag"
+            className="flag-icon"
+          />
         </button>
       </div>
     </div>
