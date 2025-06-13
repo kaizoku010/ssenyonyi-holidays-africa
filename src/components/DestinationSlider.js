@@ -16,6 +16,7 @@ import kitandra8 from '../media/ants.jpg';
 import kitandra9 from '../media/fireplace.jpg';
 import kitandra0 from '../media/brige.jpg';
 import Deriq from "../media/man.jpg"
+import { Link } from 'react-router-dom';
 
 // We'll use these as placeholders for the destination cards
 // In a real application, you would have actual images for each destination
@@ -199,6 +200,7 @@ const DestinationSlider = ({
           >
             {t('destinationSlider.description')}
           </motion.p>
+          <Link to="/destinations">
           <motion.button
             className="discover-button"
             variants={fadeIn("up", 0.7)}
@@ -214,6 +216,7 @@ const DestinationSlider = ({
             </motion.span>
             {t('destinationSlider.exploreButton')}
           </motion.button>
+          </Link>
         </motion.div>
 
         <motion.div

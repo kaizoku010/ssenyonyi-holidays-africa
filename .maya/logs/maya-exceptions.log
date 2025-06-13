@@ -1,0 +1,331 @@
+{
+  error: NodeError: write after end
+      at writeAfterEnd (d:\ruth\maya\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:264:12)
+      at PassThrough.Writable.write (d:\ruth\maya\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:300:21)
+      at File.log (d:\ruth\maya\node_modules\winston\lib\winston\transports\file.js:222:34)
+      at RejectionStream._write (d:\ruth\maya\node_modules\winston\lib\winston\rejection-stream.js:46:29)
+      at doWrite (d:\ruth\maya\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+      at writeOrBuffer (d:\ruth\maya\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:381:5)
+      at RejectionStream.Writable.write (d:\ruth\maya\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:302:11)
+      at DerivedLogger.ondata (d:\ruth\maya\node_modules\winston\node_modules\readable-stream\lib\_stream_readable.js:629:20)
+      at DerivedLogger.emit (node:events:536:35)
+      at addChunk (d:\ruth\maya\node_modules\winston\node_modules\readable-stream\lib\_stream_readable.js:279:12)
+      at readableAddChunk (d:\ruth\maya\node_modules\winston\node_modules\readable-stream\lib\_stream_readable.js:262:11)
+      at DerivedLogger.Readable.push (d:\ruth\maya\node_modules\winston\node_modules\readable-stream\lib\_stream_readable.js:228:10)
+      at DerivedLogger.Transform.push (d:\ruth\maya\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:132:32)
+      at DerivedLogger._transform (d:\ruth\maya\node_modules\winston\lib\winston\logger.js:314:12)
+      at DerivedLogger.Transform._read (d:\ruth\maya\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:166:10)
+      at DerivedLogger.Transform._write (d:\ruth\maya\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:155:83)
+      at doWrite (d:\ruth\maya\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:390:139)
+      at writeOrBuffer (d:\ruth\maya\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:381:5)
+      at DerivedLogger.Writable.write (d:\ruth\maya\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:302:11)
+      at DerivedLogger.log (d:\ruth\maya\node_modules\winston\lib\winston\logger.js:216:12)
+      at RejectionHandler._unhandledRejection (d:\ruth\maya\node_modules\winston\lib\winston\rejection-handler.js:226:17)
+      at process.emit (node:events:536:35)
+      at process.ROe.process.emit (c:\Users\USER\.vscode\extensions\github.copilot-1.330.1611\node_modules\source-map-support\source-map-support.js:516:21)
+      at emitUnhandledRejection (node:internal/process/promises:250:13)
+      at throwUnhandledRejectionsMode (node:internal/process/promises:385:19)
+      at processPromiseRejections (node:internal/process/promises:470:17)
+      at processTicksAndRejections (node:internal/process/task_queues:96:32),
+  level: 'error',
+  message: 'uncaughtException: write after end\n' +
+    'Error: write after end\n' +
+    '    at writeAfterEnd (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js:264:12)\n' +
+    '    at PassThrough.Writable.write (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js:300:21)\n' +
+    '    at File.log (d:\\ruth\\maya\\node_modules\\winston\\lib\\winston\\transports\\file.js:222:34)\n' +
+    '    at RejectionStream._write (d:\\ruth\\maya\\node_modules\\winston\\lib\\winston\\rejection-stream.js:46:29)\n' +
+    '    at doWrite (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n' +
+    '    at writeOrBuffer (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n' +
+    '    at RejectionStream.Writable.write (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n' +
+    '    at DerivedLogger.ondata (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_readable.js:629:20)\n' +
+    '    at DerivedLogger.emit (node:events:536:35)\n' +
+    '    at addChunk (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_readable.js:279:12)\n' +
+    '    at readableAddChunk (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_readable.js:262:11)\n' +
+    '    at DerivedLogger.Readable.push (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_readable.js:228:10)\n' +
+    '    at DerivedLogger.Transform.push (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_transform.js:132:32)\n' +
+    '    at DerivedLogger._transform (d:\\ruth\\maya\\node_modules\\winston\\lib\\winston\\logger.js:314:12)\n' +
+    '    at DerivedLogger.Transform._read (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_transform.js:166:10)\n' +
+    '    at DerivedLogger.Transform._write (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_transform.js:155:83)\n' +
+    '    at doWrite (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n' +
+    '    at writeOrBuffer (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n' +
+    '    at DerivedLogger.Writable.write (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n' +
+    '    at DerivedLogger.log (d:\\ruth\\maya\\node_modules\\winston\\lib\\winston\\logger.js:216:12)\n' +
+    '    at RejectionHandler._unhandledRejection (d:\\ruth\\maya\\node_modules\\winston\\lib\\winston\\rejection-handler.js:226:17)\n' +
+    '    at process.emit (node:events:536:35)\n' +
+    '    at process.ROe.process.emit (c:\\Users\\USER\\.vscode\\extensions\\github.copilot-1.330.1611\\node_modules\\source-map-support\\source-map-support.js:516:21)\n' +
+    '    at emitUnhandledRejection (node:internal/process/promises:250:13)\n' +
+    '    at throwUnhandledRejectionsMode (node:internal/process/promises:385:19)\n' +
+    '    at processPromiseRejections (node:internal/process/promises:470:17)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:32)',
+  stack: 'Error: write after end\n' +
+    '    at writeAfterEnd (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js:264:12)\n' +
+    '    at PassThrough.Writable.write (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js:300:21)\n' +
+    '    at File.log (d:\\ruth\\maya\\node_modules\\winston\\lib\\winston\\transports\\file.js:222:34)\n' +
+    '    at RejectionStream._write (d:\\ruth\\maya\\node_modules\\winston\\lib\\winston\\rejection-stream.js:46:29)\n' +
+    '    at doWrite (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n' +
+    '    at writeOrBuffer (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n' +
+    '    at RejectionStream.Writable.write (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n' +
+    '    at DerivedLogger.ondata (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_readable.js:629:20)\n' +
+    '    at DerivedLogger.emit (node:events:536:35)\n' +
+    '    at addChunk (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_readable.js:279:12)\n' +
+    '    at readableAddChunk (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_readable.js:262:11)\n' +
+    '    at DerivedLogger.Readable.push (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_readable.js:228:10)\n' +
+    '    at DerivedLogger.Transform.push (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_transform.js:132:32)\n' +
+    '    at DerivedLogger._transform (d:\\ruth\\maya\\node_modules\\winston\\lib\\winston\\logger.js:314:12)\n' +
+    '    at DerivedLogger.Transform._read (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_transform.js:166:10)\n' +
+    '    at DerivedLogger.Transform._write (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_transform.js:155:83)\n' +
+    '    at doWrite (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js:390:139)\n' +
+    '    at writeOrBuffer (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js:381:5)\n' +
+    '    at DerivedLogger.Writable.write (d:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js:302:11)\n' +
+    '    at DerivedLogger.log (d:\\ruth\\maya\\node_modules\\winston\\lib\\winston\\logger.js:216:12)\n' +
+    '    at RejectionHandler._unhandledRejection (d:\\ruth\\maya\\node_modules\\winston\\lib\\winston\\rejection-handler.js:226:17)\n' +
+    '    at process.emit (node:events:536:35)\n' +
+    '    at process.ROe.process.emit (c:\\Users\\USER\\.vscode\\extensions\\github.copilot-1.330.1611\\node_modules\\source-map-support\\source-map-support.js:516:21)\n' +
+    '    at emitUnhandledRejection (node:internal/process/promises:250:13)\n' +
+    '    at throwUnhandledRejectionsMode (node:internal/process/promises:385:19)\n' +
+    '    at processPromiseRejections (node:internal/process/promises:470:17)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:32)',
+  exception: true,
+  date: 'Mon Jun 09 2025 15:56:04 GMT+0300 (East Africa Time)',
+  process: {
+    pid: 25516,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code',
+    execPath: 'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe',
+    version: 'v20.19.0',
+    argv: [
+      'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe',
+      'c:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\bootstrap-fork.js',
+      '--skipWorkspaceStorageLock'
+    ],
+    memoryUsage: {
+      rss: 520744960,
+      heapTotal: 331821056,
+      heapUsed: 320734052,
+      external: 28893332,
+      arrayBuffers: 0
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 134778.593 },
+  trace: [
+    {
+      column: 12,
+      file: 'd:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js',
+      function: 'writeAfterEnd',
+      line: 264,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'd:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js',
+      function: 'PassThrough.Writable.write',
+      line: 300,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 34,
+      file: 'd:\\ruth\\maya\\node_modules\\winston\\lib\\winston\\transports\\file.js',
+      function: 'File.log',
+      line: 222,
+      method: 'log',
+      native: false
+    },
+    {
+      column: 29,
+      file: 'd:\\ruth\\maya\\node_modules\\winston\\lib\\winston\\rejection-stream.js',
+      function: 'RejectionStream._write',
+      line: 46,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 139,
+      file: 'd:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js',
+      function: 'doWrite',
+      line: 390,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'd:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js',
+      function: 'writeOrBuffer',
+      line: 381,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'd:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js',
+      function: 'RejectionStream.Writable.write',
+      line: 302,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 20,
+      file: 'd:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_readable.js',
+      function: 'DerivedLogger.ondata',
+      line: 629,
+      method: 'ondata',
+      native: false
+    },
+    {
+      column: 35,
+      file: 'node:events',
+      function: 'DerivedLogger.emit',
+      line: 536,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'd:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_readable.js',
+      function: 'addChunk',
+      line: 279,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'd:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_readable.js',
+      function: 'readableAddChunk',
+      line: 262,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'd:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_readable.js',
+      function: 'DerivedLogger.Readable.push',
+      line: 228,
+      method: 'push',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'd:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_transform.js',
+      function: 'DerivedLogger.Transform.push',
+      line: 132,
+      method: 'push',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'd:\\ruth\\maya\\node_modules\\winston\\lib\\winston\\logger.js',
+      function: 'DerivedLogger._transform',
+      line: 314,
+      method: '_transform',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'd:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_transform.js',
+      function: 'DerivedLogger.Transform._read',
+      line: 166,
+      method: '_read',
+      native: false
+    },
+    {
+      column: 83,
+      file: 'd:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_transform.js',
+      function: 'DerivedLogger.Transform._write',
+      line: 155,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 139,
+      file: 'd:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js',
+      function: 'doWrite',
+      line: 390,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'd:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js',
+      function: 'writeOrBuffer',
+      line: 381,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'd:\\ruth\\maya\\node_modules\\winston\\node_modules\\readable-stream\\lib\\_stream_writable.js',
+      function: 'DerivedLogger.Writable.write',
+      line: 302,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'd:\\ruth\\maya\\node_modules\\winston\\lib\\winston\\logger.js',
+      function: 'DerivedLogger.log',
+      line: 216,
+      method: 'log',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'd:\\ruth\\maya\\node_modules\\winston\\lib\\winston\\rejection-handler.js',
+      function: 'RejectionHandler._unhandledRejection',
+      line: 226,
+      method: '_unhandledRejection',
+      native: false
+    },
+    {
+      column: 35,
+      file: 'node:events',
+      function: 'process.emit',
+      line: 536,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 21,
+      file: 'c:\\Users\\USER\\.vscode\\extensions\\github.copilot-1.330.1611\\node_modules\\source-map-support\\source-map-support.js',
+      function: 'process.ROe.process.emit',
+      line: 516,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'node:internal/process/promises',
+      function: 'emitUnhandledRejection',
+      line: 250,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/process/promises',
+      function: 'throwUnhandledRejectionsMode',
+      line: 385,
+      method: null,
+      native: false
+    },
+    {
+      column: 17,
+      file: 'node:internal/process/promises',
+      function: 'processPromiseRejections',
+      line: 470,
+      method: null,
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 96,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'maya-ai',
+  timestamp: '2025-06-09 15:56:04'
+}

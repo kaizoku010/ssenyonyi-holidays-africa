@@ -23,6 +23,47 @@ const LanguageSwitcher = () => {
     window.location.reload();
   };
 
+  useEffect(() => {
+    const detectUserLocation = () => {
+      if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition(
+          async (position) => {
+            try {
+              // Use reverse geocoding to get country information
+              const response = await fetch(
+                `https://nominatim.openstreetmap.org/reverse?format=json&lat=${position.coords.latitude}&lon=${position.coords.longitude}`
+              );
+              const data = await response.json();
+              const countryCode = data.address.country_code.toUpperCase();
+              
+              // If user is in China (CN), set language to Chinese
+              if (countryCode === 'CN') {
+                changeLanguage('zh');
+              } else {
+                // For all other countries, set to English
+                changeLanguage('en');
+              }
+            } catch (error) {
+              console.error('Error detecting location:', error);
+              // Default to English if there's an error
+              changeLanguage('en');
+            }
+          },
+          (error) => {
+            console.error('Geolocation error:', error);
+            // Default to English if geolocation is denied or fails
+            changeLanguage('en');
+          }
+        );
+      } else {
+        // Default to English if geolocation is not supported
+        changeLanguage('en');
+      }
+    };
+
+    detectUserLocation();
+  }, [changeLanguage]);
+
   return (
     <div className="language-switcher">
       <div className="language-options">
@@ -30,13 +71,13 @@ const LanguageSwitcher = () => {
           className={`language-option ${currentLanguage === 'en' ? 'active' : ''}`}
           onClick={() => changeLanguage('en')}
         >
-          English
+          🇬🇧 English
         </button>
         <button
           className={`language-option ${currentLanguage === 'zh' ? 'active' : ''}`}
           onClick={() => changeLanguage('zh')}
         >
-          中文
+          🇨🇳 中文
         </button>
       </div>
     </div>

@@ -1,0 +1,2081 @@
+{
+  service: 'maya-ai',
+  error: {
+    message: 'this.getFileLastModified is not a function',
+    stack: 'TypeError: this.getFileLastModified is not a function\n' +
+      '    at CodingContextManager.getCurrentFileContext (d:\\ruth\\maya\\src\\core\\codingContextManager.js:141:32)\n' +
+      '    at CodingContextManager.gatherCodingContext (d:\\ruth\\maya\\src\\core\\codingContextManager.js:66:33)\n' +
+      '    at EnhancedMessageHandler.gatherContext (d:\\ruth\\maya\\src\\core\\enhancedMessageHandler.js:160:29)\n' +
+      '    at EnhancedMessageHandler.handleMessage (d:\\ruth\\maya\\src\\core\\enhancedMessageHandler.js:32:23)\n' +
+      '    at MayaChatViewProvider._handleUserMessage (d:\\ruth\\maya\\src\\extension.js:206:7)\n' +
+      '    at ed.value (d:\\ruth\\maya\\src\\extension.js:38:11)',
+    name: 'TypeError'
+  },
+  context: {
+    workspace: 'deriq-tours',
+    activeFile: 'index.html',
+    timestamp: '2025-06-09T12:22:15.871Z'
+  },
+  level: 'error',
+  message: 'Failed to gather coding context',
+  timestamp: '2025-06-09 15:22:15'
+}
+{
+  service: 'maya-ai',
+  error: {
+    message: 'this.getFileLastModified is not a function',
+    stack: 'TypeError: this.getFileLastModified is not a function\n' +
+      '    at CodingContextManager.getCurrentFileContext (d:\\ruth\\maya\\src\\core\\codingContextManager.js:141:32)\n' +
+      '    at CodingContextManager.gatherCodingContext (d:\\ruth\\maya\\src\\core\\codingContextManager.js:66:33)\n' +
+      '    at sendChat (d:\\ruth\\maya\\src\\openai\\codexClient.js:90:29)\n' +
+      '    at MayaChatViewProvider._handleProjectAnalysis (d:\\ruth\\maya\\src\\extension.js:125:7)\n' +
+      '    at MayaChatViewProvider._handleUserMessage (d:\\ruth\\maya\\src\\extension.js:201:9)\n' +
+      '    at ed.value (d:\\ruth\\maya\\src\\extension.js:38:11)',
+    name: 'TypeError'
+  },
+  context: {
+    workspace: 'deriq-tours',
+    activeFile: 'index.html',
+    timestamp: '2025-06-09T12:23:08.255Z'
+  },
+  level: 'error',
+  message: 'Failed to gather coding context',
+  timestamp: '2025-06-09 15:23:08'
+}
+{
+  service: 'maya-ai',
+  error: {
+    message: 'this.getFileLastModified is not a function',
+    stack: 'TypeError: this.getFileLastModified is not a function\n' +
+      '    at CodingContextManager.getCurrentFileContext (d:\\ruth\\maya\\src\\core\\codingContextManager.js:141:32)\n' +
+      '    at CodingContextManager.gatherCodingContext (d:\\ruth\\maya\\src\\core\\codingContextManager.js:66:33)\n' +
+      '    at EnhancedMessageHandler.gatherContext (d:\\ruth\\maya\\src\\core\\enhancedMessageHandler.js:160:29)\n' +
+      '    at EnhancedMessageHandler.handleMessage (d:\\ruth\\maya\\src\\core\\enhancedMessageHandler.js:32:23)\n' +
+      '    at MayaChatViewProvider._handleUserMessage (d:\\ruth\\maya\\src\\extension.js:206:7)\n' +
+      '    at ed.value (d:\\ruth\\maya\\src\\extension.js:38:11)',
+    name: 'TypeError'
+  },
+  context: {
+    workspace: 'deriq-tours',
+    activeFile: 'index.html',
+    timestamp: '2025-06-09T12:27:03.638Z'
+  },
+  level: 'error',
+  message: 'Failed to gather coding context',
+  timestamp: '2025-06-09 15:27:03'
+}
+{
+  error: Canceled: Canceled
+      at new XN (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111538)
+      at f5.U (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116148)
+      at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113642)
+      at b4.showMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:7286)
+      at Object.showInformationMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:170:40600)
+      at AppModel.showPopUpMsg (c:\Users\USER\.vscode\extensions\ritwickdey.liveserver-5.7.9\out\src\appModel.js:151:29)
+      at AppModel.GoOffline (c:\Users\USER\.vscode\extensions\ritwickdey.liveserver-5.7.9\out\src\appModel.js:96:18)
+      at AppModel.dispose (c:\Users\USER\.vscode\extensions\ritwickdey.liveserver-5.7.9\out\src\appModel.js:249:14)
+      at Er (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:746)
+      at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:15046
+      at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1056
+      at Object.dispose (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)
+      at PJ.eb (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:11919)
+      at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9874
+      at Array.map (<anonymous>)
+      at PJ.$ (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9862)
+      at PJ.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:10105)
+      at v2.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:124:1434)
+      at us (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:5702)
+      at MessagePortMain.<anonymous> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:2249)
+      at MessagePortMain.emit (node:events:524:28)
+      at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+      at Object.callbackTrampoline (node:internal/async_hooks:130:17),
+  level: 'error',
+  message: 'unhandledRejection: Canceled\n' +
+    'Canceled: Canceled\n' +
+    '    at new XN (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111538)\n' +
+    '    at f5.U (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116148)\n' +
+    '    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113642)\n' +
+    '    at b4.showMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:7286)\n' +
+    '    at Object.showInformationMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:170:40600)\n' +
+    '    at AppModel.showPopUpMsg (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:151:29)\n' +
+    '    at AppModel.GoOffline (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:96:18)\n' +
+    '    at AppModel.dispose (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:249:14)\n' +
+    '    at Er (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:746)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:15046\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1056\n' +
+    '    at Object.dispose (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)\n' +
+    '    at PJ.eb (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:11919)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9874\n' +
+    '    at Array.map (<anonymous>)\n' +
+    '    at PJ.$ (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9862)\n' +
+    '    at PJ.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:10105)\n' +
+    '    at v2.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:124:1434)\n' +
+    '    at us (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:5702)\n' +
+    '    at MessagePortMain.<anonymous> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:2249)\n' +
+    '    at MessagePortMain.emit (node:events:524:28)\n' +
+    '    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)\n' +
+    '    at Object.callbackTrampoline (node:internal/async_hooks:130:17)',
+  stack: 'Canceled: Canceled\n' +
+    '    at new XN (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111538)\n' +
+    '    at f5.U (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116148)\n' +
+    '    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113642)\n' +
+    '    at b4.showMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:7286)\n' +
+    '    at Object.showInformationMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:170:40600)\n' +
+    '    at AppModel.showPopUpMsg (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:151:29)\n' +
+    '    at AppModel.GoOffline (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:96:18)\n' +
+    '    at AppModel.dispose (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:249:14)\n' +
+    '    at Er (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:746)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:15046\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1056\n' +
+    '    at Object.dispose (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)\n' +
+    '    at PJ.eb (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:11919)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9874\n' +
+    '    at Array.map (<anonymous>)\n' +
+    '    at PJ.$ (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9862)\n' +
+    '    at PJ.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:10105)\n' +
+    '    at v2.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:124:1434)\n' +
+    '    at us (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:5702)\n' +
+    '    at MessagePortMain.<anonymous> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:2249)\n' +
+    '    at MessagePortMain.emit (node:events:524:28)\n' +
+    '    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)\n' +
+    '    at Object.callbackTrampoline (node:internal/async_hooks:130:17)',
+  rejection: true,
+  date: 'Mon Jun 09 2025 15:42:36 GMT+0300 (East Africa Time)',
+  process: {
+    pid: 22828,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code',
+    execPath: 'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe',
+    version: 'v20.19.0',
+    argv: [
+      'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe',
+      'c:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\bootstrap-fork.js',
+      '--skipWorkspaceStorageLock'
+    ],
+    memoryUsage: {
+      rss: 555094016,
+      heapTotal: 341209088,
+      heapUsed: 318766480,
+      external: 26721954,
+      arrayBuffers: 0
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 133970.515 },
+  trace: [
+    {
+      column: 111538,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'new XN',
+      line: 29,
+      method: null,
+      native: false
+    },
+    {
+      column: 116148,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'f5.U',
+      line: 29,
+      method: 'U',
+      native: false
+    },
+    {
+      column: 113642,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'Proxy.s.<computed>.n.charCodeAt.s.<computed>',
+      line: 29,
+      method: '<computed>',
+      native: false
+    },
+    {
+      column: 7286,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'b4.showMessage',
+      line: 151,
+      method: 'showMessage',
+      native: false
+    },
+    {
+      column: 40600,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'Object.showInformationMessage',
+      line: 170,
+      method: 'showInformationMessage',
+      native: false
+    },
+    {
+      column: 29,
+      file: 'c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js',
+      function: 'AppModel.showPopUpMsg',
+      line: 151,
+      method: 'showPopUpMsg',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js',
+      function: 'AppModel.GoOffline',
+      line: 96,
+      method: 'GoOffline',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js',
+      function: 'AppModel.dispose',
+      line: 249,
+      method: 'dispose',
+      native: false
+    },
+    {
+      column: 746,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'Er',
+      line: 25,
+      method: null,
+      native: false
+    },
+    {
+      column: 15046,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 123,
+      method: null,
+      native: false
+    },
+    {
+      column: 1056,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 25,
+      method: null,
+      native: false
+    },
+    {
+      column: 705,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'Object.dispose',
+      line: 8,
+      method: 'dispose',
+      native: false
+    },
+    {
+      column: 11919,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'PJ.eb',
+      line: 123,
+      method: 'eb',
+      native: false
+    },
+    {
+      column: 9874,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 123,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.map',
+      line: null,
+      method: 'map',
+      native: false
+    },
+    {
+      column: 9862,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'PJ.$',
+      line: 123,
+      method: '$',
+      native: false
+    },
+    {
+      column: 10105,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'PJ.terminate',
+      line: 123,
+      method: 'terminate',
+      native: false
+    },
+    {
+      column: 1434,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'v2.terminate',
+      line: 124,
+      method: 'terminate',
+      native: false
+    },
+    {
+      column: 5702,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'us',
+      line: 225,
+      method: null,
+      native: false
+    },
+    {
+      column: 2249,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 225,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'MessagePortMain.emit',
+      line: 524,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 2949,
+      file: 'node:electron/js2c/utility_init',
+      function: 'Object.MessagePortMain._internalPort.emit',
+      line: 2,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'node:internal/async_hooks',
+      function: 'Object.callbackTrampoline',
+      line: 130,
+      method: 'callbackTrampoline',
+      native: false
+    }
+  ],
+  service: 'maya-ai',
+  timestamp: '2025-06-09 15:42:36'
+}
+{
+  service: 'maya-ai',
+  error: {
+    message: 'this.getFileLastModified is not a function',
+    stack: 'TypeError: this.getFileLastModified is not a function\n' +
+      '    at CodingContextManager.getCurrentFileContext (d:\\ruth\\maya\\src\\core\\codingContextManager.js:141:32)\n' +
+      '    at CodingContextManager.gatherCodingContext (d:\\ruth\\maya\\src\\core\\codingContextManager.js:66:33)\n' +
+      '    at sendChat (d:\\ruth\\maya\\src\\openai\\codexClient.js:90:29)\n' +
+      '    at MayaChatViewProvider._handleProjectAnalysis (d:\\ruth\\maya\\src\\extension.js:125:7)\n' +
+      '    at ed.value (d:\\ruth\\maya\\src\\extension.js:49:11)',
+    name: 'TypeError'
+  },
+  context: {
+    workspace: 'deriq-tours',
+    activeFile: 'index.html',
+    timestamp: '2025-06-09T12:42:52.315Z'
+  },
+  level: 'error',
+  message: 'Failed to gather coding context',
+  timestamp: '2025-06-09 15:42:52'
+}
+{
+  service: 'maya-ai',
+  context: {
+    workspace: 'deriq-tours',
+    activeFile: 'index.html',
+    timestamp: '2025-06-09T12:43:22.357Z'
+  },
+  errorCount: 1,
+  errorType: 'UnknownError',
+  error: {
+    message: 'timeout of 30000ms exceeded',
+    stack: 'AxiosError: timeout of 30000ms exceeded\n' +
+      '    at RedirectableRequest.handleRequestTimeout (d:\\ruth\\maya\\node_modules\\axios\\lib\\adapters\\http.js:657:16)\n' +
+      '    at RedirectableRequest.emit (node:events:524:28)\n' +
+      '    at Timeout.<anonymous> (d:\\ruth\\maya\\node_modules\\follow-redirects\\index.js:221:12)\n' +
+      '    at listOnTimeout (node:internal/timers:581:17)\n' +
+      '    at processTimers (node:internal/timers:519:7)\n' +
+      '    at Axios.request (d:\\ruth\\maya\\node_modules\\axios\\lib\\core\\Axios.js:45:41)\n' +
+      '    at OllamaManager.handleStreamingRequest (d:\\ruth\\maya\\src\\core\\ollamaManager.js:277:22)\n' +
+      '    at OllamaManager.sendRequest (d:\\ruth\\maya\\src\\core\\ollamaManager.js:263:16)\n' +
+      '    at sendChat (d:\\ruth\\maya\\src\\openai\\codexClient.js:124:22)\n' +
+      '    at MayaChatViewProvider._handleProjectAnalysis (d:\\ruth\\maya\\src\\extension.js:125:7)\n' +
+      '    at ed.value (d:\\ruth\\maya\\src\\extension.js:49:11)',
+    name: 'AxiosError'
+  },
+  level: 'error',
+  message: 'Handling UnknownError',
+  timestamp: '2025-06-09 15:43:22'
+}
+{
+  error: Canceled: Canceled
+      at new XN (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111538)
+      at f5.U (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116148)
+      at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113642)
+      at b4.showMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:7286)
+      at Object.showInformationMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:170:40600)
+      at AppModel.showPopUpMsg (c:\Users\USER\.vscode\extensions\ritwickdey.liveserver-5.7.9\out\src\appModel.js:151:29)
+      at AppModel.GoOffline (c:\Users\USER\.vscode\extensions\ritwickdey.liveserver-5.7.9\out\src\appModel.js:96:18)
+      at AppModel.dispose (c:\Users\USER\.vscode\extensions\ritwickdey.liveserver-5.7.9\out\src\appModel.js:249:14)
+      at Er (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:746)
+      at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:15046
+      at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1056
+      at Object.dispose (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)
+      at PJ.eb (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:11919)
+      at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9874
+      at Array.map (<anonymous>)
+      at PJ.$ (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9862)
+      at PJ.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:10105)
+      at v2.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:124:1434)
+      at us (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:5702)
+      at MessagePortMain.<anonymous> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:2249)
+      at MessagePortMain.emit (node:events:524:28)
+      at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+      at Object.callbackTrampoline (node:internal/async_hooks:130:17),
+  level: 'error',
+  message: 'unhandledRejection: Canceled\n' +
+    'Canceled: Canceled\n' +
+    '    at new XN (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111538)\n' +
+    '    at f5.U (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116148)\n' +
+    '    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113642)\n' +
+    '    at b4.showMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:7286)\n' +
+    '    at Object.showInformationMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:170:40600)\n' +
+    '    at AppModel.showPopUpMsg (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:151:29)\n' +
+    '    at AppModel.GoOffline (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:96:18)\n' +
+    '    at AppModel.dispose (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:249:14)\n' +
+    '    at Er (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:746)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:15046\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1056\n' +
+    '    at Object.dispose (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)\n' +
+    '    at PJ.eb (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:11919)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9874\n' +
+    '    at Array.map (<anonymous>)\n' +
+    '    at PJ.$ (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9862)\n' +
+    '    at PJ.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:10105)\n' +
+    '    at v2.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:124:1434)\n' +
+    '    at us (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:5702)\n' +
+    '    at MessagePortMain.<anonymous> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:2249)\n' +
+    '    at MessagePortMain.emit (node:events:524:28)\n' +
+    '    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)\n' +
+    '    at Object.callbackTrampoline (node:internal/async_hooks:130:17)',
+  stack: 'Canceled: Canceled\n' +
+    '    at new XN (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111538)\n' +
+    '    at f5.U (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116148)\n' +
+    '    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113642)\n' +
+    '    at b4.showMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:7286)\n' +
+    '    at Object.showInformationMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:170:40600)\n' +
+    '    at AppModel.showPopUpMsg (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:151:29)\n' +
+    '    at AppModel.GoOffline (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:96:18)\n' +
+    '    at AppModel.dispose (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:249:14)\n' +
+    '    at Er (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:746)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:15046\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1056\n' +
+    '    at Object.dispose (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)\n' +
+    '    at PJ.eb (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:11919)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9874\n' +
+    '    at Array.map (<anonymous>)\n' +
+    '    at PJ.$ (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9862)\n' +
+    '    at PJ.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:10105)\n' +
+    '    at v2.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:124:1434)\n' +
+    '    at us (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:5702)\n' +
+    '    at MessagePortMain.<anonymous> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:2249)\n' +
+    '    at MessagePortMain.emit (node:events:524:28)\n' +
+    '    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)\n' +
+    '    at Object.callbackTrampoline (node:internal/async_hooks:130:17)',
+  rejection: true,
+  date: 'Mon Jun 09 2025 15:43:36 GMT+0300 (East Africa Time)',
+  process: {
+    pid: 24632,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code',
+    execPath: 'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe',
+    version: 'v20.19.0',
+    argv: [
+      'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe',
+      'c:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\bootstrap-fork.js',
+      '--skipWorkspaceStorageLock'
+    ],
+    memoryUsage: {
+      rss: 549085184,
+      heapTotal: 359297024,
+      heapUsed: 325099376,
+      external: 26746477,
+      arrayBuffers: 0
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 134030.578 },
+  trace: [
+    {
+      column: 111538,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'new XN',
+      line: 29,
+      method: null,
+      native: false
+    },
+    {
+      column: 116148,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'f5.U',
+      line: 29,
+      method: 'U',
+      native: false
+    },
+    {
+      column: 113642,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'Proxy.s.<computed>.n.charCodeAt.s.<computed>',
+      line: 29,
+      method: '<computed>',
+      native: false
+    },
+    {
+      column: 7286,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'b4.showMessage',
+      line: 151,
+      method: 'showMessage',
+      native: false
+    },
+    {
+      column: 40600,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'Object.showInformationMessage',
+      line: 170,
+      method: 'showInformationMessage',
+      native: false
+    },
+    {
+      column: 29,
+      file: 'c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js',
+      function: 'AppModel.showPopUpMsg',
+      line: 151,
+      method: 'showPopUpMsg',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js',
+      function: 'AppModel.GoOffline',
+      line: 96,
+      method: 'GoOffline',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js',
+      function: 'AppModel.dispose',
+      line: 249,
+      method: 'dispose',
+      native: false
+    },
+    {
+      column: 746,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'Er',
+      line: 25,
+      method: null,
+      native: false
+    },
+    {
+      column: 15046,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 123,
+      method: null,
+      native: false
+    },
+    {
+      column: 1056,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 25,
+      method: null,
+      native: false
+    },
+    {
+      column: 705,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'Object.dispose',
+      line: 8,
+      method: 'dispose',
+      native: false
+    },
+    {
+      column: 11919,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'PJ.eb',
+      line: 123,
+      method: 'eb',
+      native: false
+    },
+    {
+      column: 9874,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 123,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.map',
+      line: null,
+      method: 'map',
+      native: false
+    },
+    {
+      column: 9862,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'PJ.$',
+      line: 123,
+      method: '$',
+      native: false
+    },
+    {
+      column: 10105,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'PJ.terminate',
+      line: 123,
+      method: 'terminate',
+      native: false
+    },
+    {
+      column: 1434,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'v2.terminate',
+      line: 124,
+      method: 'terminate',
+      native: false
+    },
+    {
+      column: 5702,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'us',
+      line: 225,
+      method: null,
+      native: false
+    },
+    {
+      column: 2249,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 225,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'MessagePortMain.emit',
+      line: 524,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 2949,
+      file: 'node:electron/js2c/utility_init',
+      function: 'Object.MessagePortMain._internalPort.emit',
+      line: 2,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'node:internal/async_hooks',
+      function: 'Object.callbackTrampoline',
+      line: 130,
+      method: 'callbackTrampoline',
+      native: false
+    }
+  ],
+  service: 'maya-ai',
+  timestamp: '2025-06-09 15:43:36'
+}
+{
+  error: Error: net::ERR_CONNECTION_CLOSED
+      at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/utility_init:2:10511)
+      at SimpleURLLoaderWrapper.emit (node:events:524:28)
+      at SimpleURLLoaderWrapper.callbackTrampoline (node:internal/async_hooks:130:17),
+  level: 'error',
+  message: 'unhandledRejection: net::ERR_CONNECTION_CLOSED\n' +
+    'Error: net::ERR_CONNECTION_CLOSED\n' +
+    '    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/utility_init:2:10511)\n' +
+    '    at SimpleURLLoaderWrapper.emit (node:events:524:28)\n' +
+    '    at SimpleURLLoaderWrapper.callbackTrampoline (node:internal/async_hooks:130:17)',
+  stack: 'Error: net::ERR_CONNECTION_CLOSED\n' +
+    '    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/utility_init:2:10511)\n' +
+    '    at SimpleURLLoaderWrapper.emit (node:events:524:28)\n' +
+    '    at SimpleURLLoaderWrapper.callbackTrampoline (node:internal/async_hooks:130:17)',
+  rejection: true,
+  date: 'Mon Jun 09 2025 15:44:02 GMT+0300 (East Africa Time)',
+  process: {
+    pid: 25516,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code',
+    execPath: 'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe',
+    version: 'v20.19.0',
+    argv: [
+      'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe',
+      'c:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\bootstrap-fork.js',
+      '--skipWorkspaceStorageLock'
+    ],
+    memoryUsage: {
+      rss: 620810240,
+      heapTotal: 360173568,
+      heapUsed: 337849852,
+      external: 27590535,
+      arrayBuffers: 0
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 134056.218 },
+  trace: [
+    {
+      column: 10511,
+      file: 'node:electron/js2c/utility_init',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'SimpleURLLoaderWrapper.emit',
+      line: 524,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'node:internal/async_hooks',
+      function: 'SimpleURLLoaderWrapper.callbackTrampoline',
+      line: 130,
+      method: 'callbackTrampoline',
+      native: false
+    }
+  ],
+  service: 'maya-ai',
+  timestamp: '2025-06-09 15:44:02'
+}
+{
+  service: 'maya-ai',
+  critical: true,
+  promise: '[object Promise]',
+  error: {
+    message: 'net::ERR_CONNECTION_CLOSED',
+    stack: 'Error: net::ERR_CONNECTION_CLOSED\n' +
+      '    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/utility_init:2:10511)\n' +
+      '    at SimpleURLLoaderWrapper.emit (node:events:524:28)\n' +
+      '    at SimpleURLLoaderWrapper.callbackTrampoline (node:internal/async_hooks:130:17)',
+    name: 'Error'
+  },
+  context: {
+    workspace: 'deriq-tours',
+    activeFile: 'index.html',
+    timestamp: '2025-06-09T12:44:02.071Z'
+  },
+  level: 'error',
+  message: 'Unhandled Promise Rejection',
+  timestamp: '2025-06-09 15:44:02'
+}
+{
+  service: 'maya-ai',
+  critical: true,
+  error: {
+    message: 'net::ERR_CONNECTION_CLOSED',
+    stack: 'Error: net::ERR_CONNECTION_CLOSED\n' +
+      '    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/utility_init:2:10511)\n' +
+      '    at SimpleURLLoaderWrapper.emit (node:events:524:28)\n' +
+      '    at SimpleURLLoaderWrapper.callbackTrampoline (node:internal/async_hooks:130:17)',
+    name: 'Error'
+  },
+  context: {
+    workspace: 'deriq-tours',
+    activeFile: 'index.html',
+    timestamp: '2025-06-09T12:44:02.073Z'
+  },
+  level: 'error',
+  message: 'Critical error occurred',
+  timestamp: '2025-06-09 15:44:02'
+}
+{
+  error: Canceled: Canceled
+      at al (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:7:1218)
+      at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:112989
+      at Array.forEach (<anonymous>)
+      at f5.dispose (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:112929)
+      at PJ.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:10082)
+      at v2.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:124:1434)
+      at us (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:5702)
+      at MessagePortMain.<anonymous> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:2249)
+      at MessagePortMain.emit (node:events:524:28)
+      at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+      at Object.callbackTrampoline (node:internal/async_hooks:130:17),
+  level: 'error',
+  message: 'unhandledRejection: Canceled\n' +
+    'Canceled: Canceled\n' +
+    '    at al (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:7:1218)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:112989\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at f5.dispose (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:112929)\n' +
+    '    at PJ.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:10082)\n' +
+    '    at v2.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:124:1434)\n' +
+    '    at us (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:5702)\n' +
+    '    at MessagePortMain.<anonymous> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:2249)\n' +
+    '    at MessagePortMain.emit (node:events:524:28)\n' +
+    '    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)\n' +
+    '    at Object.callbackTrampoline (node:internal/async_hooks:130:17)',
+  stack: 'Canceled: Canceled\n' +
+    '    at al (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:7:1218)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:112989\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at f5.dispose (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:112929)\n' +
+    '    at PJ.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:10082)\n' +
+    '    at v2.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:124:1434)\n' +
+    '    at us (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:5702)\n' +
+    '    at MessagePortMain.<anonymous> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:2249)\n' +
+    '    at MessagePortMain.emit (node:events:524:28)\n' +
+    '    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)\n' +
+    '    at Object.callbackTrampoline (node:internal/async_hooks:130:17)',
+  rejection: true,
+  date: 'Mon Jun 09 2025 15:56:04 GMT+0300 (East Africa Time)',
+  process: {
+    pid: 25516,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code',
+    execPath: 'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe',
+    version: 'v20.19.0',
+    argv: [
+      'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe',
+      'c:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\bootstrap-fork.js',
+      '--skipWorkspaceStorageLock'
+    ],
+    memoryUsage: {
+      rss: 520691712,
+      heapTotal: 331821056,
+      heapUsed: 320243972,
+      external: 28864728,
+      arrayBuffers: 0
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 134778.578 },
+  trace: [
+    {
+      column: 1218,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'al',
+      line: 7,
+      method: null,
+      native: false
+    },
+    {
+      column: 112989,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 29,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.forEach',
+      line: null,
+      method: 'forEach',
+      native: false
+    },
+    {
+      column: 112929,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'f5.dispose',
+      line: 29,
+      method: 'dispose',
+      native: false
+    },
+    {
+      column: 10082,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'PJ.terminate',
+      line: 123,
+      method: 'terminate',
+      native: false
+    },
+    {
+      column: 1434,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'v2.terminate',
+      line: 124,
+      method: 'terminate',
+      native: false
+    },
+    {
+      column: 5702,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'us',
+      line: 225,
+      method: null,
+      native: false
+    },
+    {
+      column: 2249,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 225,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'MessagePortMain.emit',
+      line: 524,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 2949,
+      file: 'node:electron/js2c/utility_init',
+      function: 'Object.MessagePortMain._internalPort.emit',
+      line: 2,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'node:internal/async_hooks',
+      function: 'Object.callbackTrampoline',
+      line: 130,
+      method: 'callbackTrampoline',
+      native: false
+    }
+  ],
+  service: 'maya-ai',
+  timestamp: '2025-06-09 15:56:04'
+}
+{
+  service: 'maya-ai',
+  error: {
+    message: 'this.getFileLastModified is not a function',
+    stack: 'TypeError: this.getFileLastModified is not a function\n' +
+      '    at CodingContextManager.getCurrentFileContext (d:\\ruth\\maya\\src\\core\\codingContextManager.js:141:32)\n' +
+      '    at CodingContextManager.gatherCodingContext (d:\\ruth\\maya\\src\\core\\codingContextManager.js:66:33)\n' +
+      '    at sendChat (d:\\ruth\\maya\\src\\openai\\codexClient.js:90:29)\n' +
+      '    at MayaChatViewProvider._handleProjectAnalysis (d:\\ruth\\maya\\src\\extension.js:150:7)\n' +
+      '    at ed.value (d:\\ruth\\maya\\src\\extension.js:49:11)',
+    name: 'TypeError'
+  },
+  context: {
+    workspace: 'deriq-tours',
+    activeFile: 'index.html',
+    timestamp: '2025-06-09T12:56:41.669Z'
+  },
+  level: 'error',
+  message: 'Failed to gather coding context',
+  timestamp: '2025-06-09 15:56:41'
+}
+{
+  service: 'maya-ai',
+  context: {
+    workspace: 'deriq-tours',
+    activeFile: 'index.html',
+    timestamp: '2025-06-09T12:57:11.727Z'
+  },
+  errorCount: 1,
+  errorType: 'UnknownError',
+  error: {
+    message: 'timeout of 30000ms exceeded',
+    stack: 'AxiosError: timeout of 30000ms exceeded\n' +
+      '    at RedirectableRequest.handleRequestTimeout (d:\\ruth\\maya\\node_modules\\axios\\lib\\adapters\\http.js:657:16)\n' +
+      '    at RedirectableRequest.emit (node:events:524:28)\n' +
+      '    at Timeout.<anonymous> (d:\\ruth\\maya\\node_modules\\follow-redirects\\index.js:221:12)\n' +
+      '    at listOnTimeout (node:internal/timers:581:17)\n' +
+      '    at processTimers (node:internal/timers:519:7)\n' +
+      '    at Axios.request (d:\\ruth\\maya\\node_modules\\axios\\lib\\core\\Axios.js:45:41)\n' +
+      '    at runNextTicks (node:internal/process/task_queues:60:5)\n' +
+      '    at listOnTimeout (node:internal/timers:545:9)\n' +
+      '    at processTimers (node:internal/timers:519:7)\n' +
+      '    at OllamaManager.handleStreamingRequest (d:\\ruth\\maya\\src\\core\\ollamaManager.js:277:22)\n' +
+      '    at OllamaManager.sendRequest (d:\\ruth\\maya\\src\\core\\ollamaManager.js:263:16)\n' +
+      '    at sendChat (d:\\ruth\\maya\\src\\openai\\codexClient.js:124:22)\n' +
+      '    at MayaChatViewProvider._handleProjectAnalysis (d:\\ruth\\maya\\src\\extension.js:150:7)\n' +
+      '    at ed.value (d:\\ruth\\maya\\src\\extension.js:49:11)',
+    name: 'AxiosError'
+  },
+  level: 'error',
+  message: 'Handling UnknownError',
+  timestamp: '2025-06-09 15:57:11'
+}
+{
+  error: Canceled: Canceled
+      at new XN (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111538)
+      at f5.U (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116148)
+      at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113642)
+      at b4.showMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:7286)
+      at Object.showInformationMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:170:40600)
+      at AppModel.showPopUpMsg (c:\Users\USER\.vscode\extensions\ritwickdey.liveserver-5.7.9\out\src\appModel.js:151:29)
+      at AppModel.GoOffline (c:\Users\USER\.vscode\extensions\ritwickdey.liveserver-5.7.9\out\src\appModel.js:96:18)
+      at AppModel.dispose (c:\Users\USER\.vscode\extensions\ritwickdey.liveserver-5.7.9\out\src\appModel.js:249:14)
+      at Er (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:746)
+      at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:15046
+      at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1056
+      at Object.dispose (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)
+      at PJ.eb (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:11919)
+      at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9874
+      at Array.map (<anonymous>)
+      at PJ.$ (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9862)
+      at PJ.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:10105)
+      at v2.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:124:1434)
+      at us (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:5702)
+      at MessagePortMain.<anonymous> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:2249)
+      at MessagePortMain.emit (node:events:524:28)
+      at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+      at Object.callbackTrampoline (node:internal/async_hooks:130:17),
+  level: 'error',
+  message: 'unhandledRejection: Canceled\n' +
+    'Canceled: Canceled\n' +
+    '    at new XN (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111538)\n' +
+    '    at f5.U (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116148)\n' +
+    '    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113642)\n' +
+    '    at b4.showMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:7286)\n' +
+    '    at Object.showInformationMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:170:40600)\n' +
+    '    at AppModel.showPopUpMsg (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:151:29)\n' +
+    '    at AppModel.GoOffline (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:96:18)\n' +
+    '    at AppModel.dispose (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:249:14)\n' +
+    '    at Er (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:746)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:15046\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1056\n' +
+    '    at Object.dispose (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)\n' +
+    '    at PJ.eb (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:11919)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9874\n' +
+    '    at Array.map (<anonymous>)\n' +
+    '    at PJ.$ (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9862)\n' +
+    '    at PJ.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:10105)\n' +
+    '    at v2.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:124:1434)\n' +
+    '    at us (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:5702)\n' +
+    '    at MessagePortMain.<anonymous> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:2249)\n' +
+    '    at MessagePortMain.emit (node:events:524:28)\n' +
+    '    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)\n' +
+    '    at Object.callbackTrampoline (node:internal/async_hooks:130:17)',
+  stack: 'Canceled: Canceled\n' +
+    '    at new XN (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111538)\n' +
+    '    at f5.U (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116148)\n' +
+    '    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113642)\n' +
+    '    at b4.showMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:7286)\n' +
+    '    at Object.showInformationMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:170:40600)\n' +
+    '    at AppModel.showPopUpMsg (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:151:29)\n' +
+    '    at AppModel.GoOffline (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:96:18)\n' +
+    '    at AppModel.dispose (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:249:14)\n' +
+    '    at Er (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:746)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:15046\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1056\n' +
+    '    at Object.dispose (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)\n' +
+    '    at PJ.eb (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:11919)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9874\n' +
+    '    at Array.map (<anonymous>)\n' +
+    '    at PJ.$ (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9862)\n' +
+    '    at PJ.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:10105)\n' +
+    '    at v2.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:124:1434)\n' +
+    '    at us (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:5702)\n' +
+    '    at MessagePortMain.<anonymous> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:2249)\n' +
+    '    at MessagePortMain.emit (node:events:524:28)\n' +
+    '    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)\n' +
+    '    at Object.callbackTrampoline (node:internal/async_hooks:130:17)',
+  rejection: true,
+  date: 'Mon Jun 09 2025 16:18:10 GMT+0300 (East Africa Time)',
+  process: {
+    pid: 6676,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code',
+    execPath: 'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe',
+    version: 'v20.19.0',
+    argv: [
+      'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe',
+      'c:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\bootstrap-fork.js',
+      '--skipWorkspaceStorageLock'
+    ],
+    memoryUsage: {
+      rss: 539475968,
+      heapTotal: 341409792,
+      heapUsed: 334873976,
+      external: 33119835,
+      arrayBuffers: 0
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 136104.5 },
+  trace: [
+    {
+      column: 111538,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'new XN',
+      line: 29,
+      method: null,
+      native: false
+    },
+    {
+      column: 116148,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'f5.U',
+      line: 29,
+      method: 'U',
+      native: false
+    },
+    {
+      column: 113642,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'Proxy.s.<computed>.n.charCodeAt.s.<computed>',
+      line: 29,
+      method: '<computed>',
+      native: false
+    },
+    {
+      column: 7286,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'b4.showMessage',
+      line: 151,
+      method: 'showMessage',
+      native: false
+    },
+    {
+      column: 40600,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'Object.showInformationMessage',
+      line: 170,
+      method: 'showInformationMessage',
+      native: false
+    },
+    {
+      column: 29,
+      file: 'c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js',
+      function: 'AppModel.showPopUpMsg',
+      line: 151,
+      method: 'showPopUpMsg',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js',
+      function: 'AppModel.GoOffline',
+      line: 96,
+      method: 'GoOffline',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js',
+      function: 'AppModel.dispose',
+      line: 249,
+      method: 'dispose',
+      native: false
+    },
+    {
+      column: 746,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'Er',
+      line: 25,
+      method: null,
+      native: false
+    },
+    {
+      column: 15046,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 123,
+      method: null,
+      native: false
+    },
+    {
+      column: 1056,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 25,
+      method: null,
+      native: false
+    },
+    {
+      column: 705,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'Object.dispose',
+      line: 8,
+      method: 'dispose',
+      native: false
+    },
+    {
+      column: 11919,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'PJ.eb',
+      line: 123,
+      method: 'eb',
+      native: false
+    },
+    {
+      column: 9874,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 123,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.map',
+      line: null,
+      method: 'map',
+      native: false
+    },
+    {
+      column: 9862,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'PJ.$',
+      line: 123,
+      method: '$',
+      native: false
+    },
+    {
+      column: 10105,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'PJ.terminate',
+      line: 123,
+      method: 'terminate',
+      native: false
+    },
+    {
+      column: 1434,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'v2.terminate',
+      line: 124,
+      method: 'terminate',
+      native: false
+    },
+    {
+      column: 5702,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'us',
+      line: 225,
+      method: null,
+      native: false
+    },
+    {
+      column: 2249,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 225,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'MessagePortMain.emit',
+      line: 524,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 2949,
+      file: 'node:electron/js2c/utility_init',
+      function: 'Object.MessagePortMain._internalPort.emit',
+      line: 2,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'node:internal/async_hooks',
+      function: 'Object.callbackTrampoline',
+      line: 130,
+      method: 'callbackTrampoline',
+      native: false
+    }
+  ],
+  service: 'maya-ai',
+  timestamp: '2025-06-09 16:18:10'
+}
+{
+  service: 'maya-ai',
+  error: {
+    message: 'this.getFileLastModified is not a function',
+    stack: 'TypeError: this.getFileLastModified is not a function\n' +
+      '    at CodingContextManager.getCurrentFileContext (d:\\ruth\\maya\\src\\core\\codingContextManager.js:141:32)\n' +
+      '    at CodingContextManager.gatherCodingContext (d:\\ruth\\maya\\src\\core\\codingContextManager.js:66:33)\n' +
+      '    at sendChat (d:\\ruth\\maya\\src\\openai\\codexClient.js:90:29)\n' +
+      '    at MayaChatViewProvider._handleProjectAnalysis (d:\\ruth\\maya\\src\\extension.js:150:7)\n' +
+      '    at ed.value (d:\\ruth\\maya\\src\\extension.js:49:11)',
+    name: 'TypeError'
+  },
+  context: {
+    workspace: 'deriq-tours',
+    activeFile: 'index.html',
+    timestamp: '2025-06-09T13:18:22.105Z'
+  },
+  level: 'error',
+  message: 'Failed to gather coding context',
+  timestamp: '2025-06-09 16:18:22'
+}
+{
+  service: 'maya-ai',
+  context: {
+    workspace: 'deriq-tours',
+    activeFile: 'index.html',
+    timestamp: '2025-06-09T13:18:52.186Z'
+  },
+  errorCount: 1,
+  errorType: 'UnknownError',
+  error: {
+    message: 'timeout of 30000ms exceeded',
+    stack: 'AxiosError: timeout of 30000ms exceeded\n' +
+      '    at RedirectableRequest.handleRequestTimeout (d:\\ruth\\maya\\node_modules\\axios\\lib\\adapters\\http.js:657:16)\n' +
+      '    at RedirectableRequest.emit (node:events:524:28)\n' +
+      '    at Timeout.<anonymous> (d:\\ruth\\maya\\node_modules\\follow-redirects\\index.js:221:12)\n' +
+      '    at listOnTimeout (node:internal/timers:581:17)\n' +
+      '    at processTimers (node:internal/timers:519:7)\n' +
+      '    at Axios.request (d:\\ruth\\maya\\node_modules\\axios\\lib\\core\\Axios.js:45:41)\n' +
+      '    at OllamaManager.handleStreamingRequest (d:\\ruth\\maya\\src\\core\\ollamaManager.js:277:22)\n' +
+      '    at OllamaManager.sendRequest (d:\\ruth\\maya\\src\\core\\ollamaManager.js:263:16)\n' +
+      '    at sendChat (d:\\ruth\\maya\\src\\openai\\codexClient.js:124:22)\n' +
+      '    at MayaChatViewProvider._handleProjectAnalysis (d:\\ruth\\maya\\src\\extension.js:150:7)\n' +
+      '    at ed.value (d:\\ruth\\maya\\src\\extension.js:49:11)',
+    name: 'AxiosError'
+  },
+  level: 'error',
+  message: 'Handling UnknownError',
+  timestamp: '2025-06-09 16:18:52'
+}
+{
+  service: 'maya-ai',
+  error: {
+    message: 'this.getFileLastModified is not a function',
+    stack: 'TypeError: this.getFileLastModified is not a function\n' +
+      '    at CodingContextManager.getCurrentFileContext (d:\\ruth\\maya\\src\\core\\codingContextManager.js:141:32)\n' +
+      '    at CodingContextManager.gatherCodingContext (d:\\ruth\\maya\\src\\core\\codingContextManager.js:66:33)\n' +
+      '    at sendChat (d:\\ruth\\maya\\src\\openai\\codexClient.js:90:29)\n' +
+      '    at MayaChatViewProvider._handleProjectAnalysis (d:\\ruth\\maya\\src\\extension.js:150:7)\n' +
+      '    at ed.value (d:\\ruth\\maya\\src\\extension.js:49:11)',
+    name: 'TypeError'
+  },
+  context: {
+    workspace: 'deriq-tours',
+    activeFile: 'index.html',
+    timestamp: '2025-06-09T13:20:21.747Z'
+  },
+  level: 'error',
+  message: 'Failed to gather coding context',
+  timestamp: '2025-06-09 16:20:21'
+}
+{
+  service: 'maya-ai',
+  error: {
+    message: 'this.getFileLastModified is not a function',
+    stack: 'TypeError: this.getFileLastModified is not a function\n' +
+      '    at CodingContextManager.getCurrentFileContext (d:\\ruth\\maya\\src\\core\\codingContextManager.js:141:32)\n' +
+      '    at CodingContextManager.gatherCodingContext (d:\\ruth\\maya\\src\\core\\codingContextManager.js:66:33)\n' +
+      '    at EnhancedMessageHandler.gatherContext (d:\\ruth\\maya\\src\\core\\enhancedMessageHandler.js:160:29)\n' +
+      '    at EnhancedMessageHandler.handleMessage (d:\\ruth\\maya\\src\\core\\enhancedMessageHandler.js:32:23)\n' +
+      '    at MayaChatViewProvider._handleUserMessage (d:\\ruth\\maya\\src\\extension.js:231:7)\n' +
+      '    at ed.value (d:\\ruth\\maya\\src\\extension.js:38:11)',
+    name: 'TypeError'
+  },
+  context: {
+    workspace: 'deriq-tours',
+    activeFile: 'detailed_app_generator.json',
+    timestamp: '2025-06-09T13:25:55.906Z'
+  },
+  level: 'error',
+  message: 'Failed to gather coding context',
+  timestamp: '2025-06-09 16:25:55'
+}
+{
+  service: 'maya-ai',
+  error: {
+    message: 'this.findDirectory is not a function',
+    stack: 'TypeError: this.findDirectory is not a function\n' +
+      '    at CodingContextManager.getProjectStructure (d:\\ruth\\maya\\src\\core\\codingContextManager.js:202:23)\n' +
+      '    at CodingContextManager.gatherCodingContext (d:\\ruth\\maya\\src\\core\\codingContextManager.js:68:38)\n' +
+      '    at EnhancedMessageHandler.gatherContext (d:\\ruth\\maya\\src\\core\\enhancedMessageHandler.js:160:29)\n' +
+      '    at EnhancedMessageHandler.handleMessage (d:\\ruth\\maya\\src\\core\\enhancedMessageHandler.js:32:23)\n' +
+      '    at MayaChatViewProvider._handleUserMessage (d:\\ruth\\maya\\src\\extension.js:231:7)\n' +
+      '    at ed.value (d:\\ruth\\maya\\src\\extension.js:38:11)',
+    name: 'TypeError'
+  },
+  context: {
+    workspace: 'deriq-tours',
+    activeFile: 'none',
+    timestamp: '2025-06-09T13:30:37.508Z'
+  },
+  level: 'error',
+  message: 'Failed to gather coding context',
+  timestamp: '2025-06-09 16:30:37'
+}
+{
+  service: 'maya-ai',
+  error: {
+    message: 'this.findDirectory is not a function',
+    stack: 'TypeError: this.findDirectory is not a function\n' +
+      '    at CodingContextManager.getProjectStructure (d:\\ruth\\maya\\src\\core\\codingContextManager.js:202:23)\n' +
+      '    at CodingContextManager.gatherCodingContext (d:\\ruth\\maya\\src\\core\\codingContextManager.js:68:38)\n' +
+      '    at EnhancedMessageHandler.gatherContext (d:\\ruth\\maya\\src\\core\\enhancedMessageHandler.js:160:29)\n' +
+      '    at EnhancedMessageHandler.handleMessage (d:\\ruth\\maya\\src\\core\\enhancedMessageHandler.js:32:23)\n' +
+      '    at MayaChatViewProvider._handleUserMessage (d:\\ruth\\maya\\src\\extension.js:231:7)\n' +
+      '    at ed.value (d:\\ruth\\maya\\src\\extension.js:38:11)',
+    name: 'TypeError'
+  },
+  context: {
+    workspace: 'deriq-tours',
+    activeFile: 'none',
+    timestamp: '2025-06-09T13:31:36.252Z'
+  },
+  level: 'error',
+  message: 'Failed to gather coding context',
+  timestamp: '2025-06-09 16:31:36'
+}
+{
+  service: 'maya-ai',
+  context: {
+    workspace: 'deriq-tours',
+    activeFile: 'none',
+    timestamp: '2025-06-09T13:32:06.265Z'
+  },
+  errorCount: 2,
+  errorType: 'UnknownError',
+  error: {
+    message: 'timeout of 30000ms exceeded',
+    stack: 'AxiosError: timeout of 30000ms exceeded\n' +
+      '    at RedirectableRequest.handleRequestTimeout (d:\\ruth\\maya\\node_modules\\axios\\lib\\adapters\\http.js:657:16)\n' +
+      '    at RedirectableRequest.emit (node:events:524:28)\n' +
+      '    at Timeout.<anonymous> (d:\\ruth\\maya\\node_modules\\follow-redirects\\index.js:221:12)\n' +
+      '    at listOnTimeout (node:internal/timers:581:17)\n' +
+      '    at processTimers (node:internal/timers:519:7)\n' +
+      '    at Axios.request (d:\\ruth\\maya\\node_modules\\axios\\lib\\core\\Axios.js:45:41)\n' +
+      '    at runNextTicks (node:internal/process/task_queues:60:5)\n' +
+      '    at listOnTimeout (node:internal/timers:545:9)\n' +
+      '    at processTimers (node:internal/timers:519:7)\n' +
+      '    at OllamaManager.handleStreamingRequest (d:\\ruth\\maya\\src\\core\\ollamaManager.js:277:22)\n' +
+      '    at OllamaManager.sendRequest (d:\\ruth\\maya\\src\\core\\ollamaManager.js:263:16)\n' +
+      '    at EnhancedMessageHandler.sendStreamingResponse (d:\\ruth\\maya\\src\\core\\enhancedMessageHandler.js:226:22)\n' +
+      '    at EnhancedMessageHandler.handleDirectRequest (d:\\ruth\\maya\\src\\core\\enhancedMessageHandler.js:146:12)\n' +
+      '    at EnhancedMessageHandler.handleMessage (d:\\ruth\\maya\\src\\core\\enhancedMessageHandler.js:41:16)\n' +
+      '    at MayaChatViewProvider._handleUserMessage (d:\\ruth\\maya\\src\\extension.js:231:7)\n' +
+      '    at ed.value (d:\\ruth\\maya\\src\\extension.js:38:11)',
+    name: 'AxiosError'
+  },
+  level: 'error',
+  message: 'Handling UnknownError',
+  timestamp: '2025-06-09 16:32:06'
+}
+{
+  error: Canceled: Canceled
+      at new XN (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111538)
+      at f5.U (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116148)
+      at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113642)
+      at b4.showMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:7286)
+      at Object.showInformationMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:170:40600)
+      at AppModel.showPopUpMsg (c:\Users\USER\.vscode\extensions\ritwickdey.liveserver-5.7.9\out\src\appModel.js:151:29)
+      at AppModel.GoOffline (c:\Users\USER\.vscode\extensions\ritwickdey.liveserver-5.7.9\out\src\appModel.js:96:18)
+      at AppModel.dispose (c:\Users\USER\.vscode\extensions\ritwickdey.liveserver-5.7.9\out\src\appModel.js:249:14)
+      at Er (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:746)
+      at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:15046
+      at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1056
+      at Object.dispose (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)
+      at PJ.eb (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:11919)
+      at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9874
+      at Array.map (<anonymous>)
+      at PJ.$ (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9862)
+      at PJ.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:10105)
+      at v2.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:124:1434)
+      at us (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:5702)
+      at MessagePortMain.<anonymous> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:2249)
+      at MessagePortMain.emit (node:events:524:28)
+      at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+      at Object.callbackTrampoline (node:internal/async_hooks:130:17),
+  level: 'error',
+  message: 'unhandledRejection: Canceled\n' +
+    'Canceled: Canceled\n' +
+    '    at new XN (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111538)\n' +
+    '    at f5.U (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116148)\n' +
+    '    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113642)\n' +
+    '    at b4.showMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:7286)\n' +
+    '    at Object.showInformationMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:170:40600)\n' +
+    '    at AppModel.showPopUpMsg (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:151:29)\n' +
+    '    at AppModel.GoOffline (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:96:18)\n' +
+    '    at AppModel.dispose (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:249:14)\n' +
+    '    at Er (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:746)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:15046\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1056\n' +
+    '    at Object.dispose (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)\n' +
+    '    at PJ.eb (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:11919)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9874\n' +
+    '    at Array.map (<anonymous>)\n' +
+    '    at PJ.$ (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9862)\n' +
+    '    at PJ.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:10105)\n' +
+    '    at v2.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:124:1434)\n' +
+    '    at us (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:5702)\n' +
+    '    at MessagePortMain.<anonymous> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:2249)\n' +
+    '    at MessagePortMain.emit (node:events:524:28)\n' +
+    '    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)\n' +
+    '    at Object.callbackTrampoline (node:internal/async_hooks:130:17)',
+  stack: 'Canceled: Canceled\n' +
+    '    at new XN (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111538)\n' +
+    '    at f5.U (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116148)\n' +
+    '    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113642)\n' +
+    '    at b4.showMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:7286)\n' +
+    '    at Object.showInformationMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:170:40600)\n' +
+    '    at AppModel.showPopUpMsg (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:151:29)\n' +
+    '    at AppModel.GoOffline (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:96:18)\n' +
+    '    at AppModel.dispose (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:249:14)\n' +
+    '    at Er (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:746)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:15046\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1056\n' +
+    '    at Object.dispose (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)\n' +
+    '    at PJ.eb (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:11919)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9874\n' +
+    '    at Array.map (<anonymous>)\n' +
+    '    at PJ.$ (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9862)\n' +
+    '    at PJ.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:10105)\n' +
+    '    at v2.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:124:1434)\n' +
+    '    at us (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:5702)\n' +
+    '    at MessagePortMain.<anonymous> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:2249)\n' +
+    '    at MessagePortMain.emit (node:events:524:28)\n' +
+    '    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)\n' +
+    '    at Object.callbackTrampoline (node:internal/async_hooks:130:17)',
+  rejection: true,
+  date: 'Mon Jun 09 2025 16:32:13 GMT+0300 (East Africa Time)',
+  process: {
+    pid: 15660,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code',
+    execPath: 'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe',
+    version: 'v20.19.0',
+    argv: [
+      'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe',
+      'c:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\bootstrap-fork.js',
+      '--skipWorkspaceStorageLock'
+    ],
+    memoryUsage: {
+      rss: 510730240,
+      heapTotal: 344207360,
+      heapUsed: 336074920,
+      external: 34431106,
+      arrayBuffers: 0
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 136947.468 },
+  trace: [
+    {
+      column: 111538,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'new XN',
+      line: 29,
+      method: null,
+      native: false
+    },
+    {
+      column: 116148,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'f5.U',
+      line: 29,
+      method: 'U',
+      native: false
+    },
+    {
+      column: 113642,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'Proxy.s.<computed>.n.charCodeAt.s.<computed>',
+      line: 29,
+      method: '<computed>',
+      native: false
+    },
+    {
+      column: 7286,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'b4.showMessage',
+      line: 151,
+      method: 'showMessage',
+      native: false
+    },
+    {
+      column: 40600,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'Object.showInformationMessage',
+      line: 170,
+      method: 'showInformationMessage',
+      native: false
+    },
+    {
+      column: 29,
+      file: 'c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js',
+      function: 'AppModel.showPopUpMsg',
+      line: 151,
+      method: 'showPopUpMsg',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js',
+      function: 'AppModel.GoOffline',
+      line: 96,
+      method: 'GoOffline',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js',
+      function: 'AppModel.dispose',
+      line: 249,
+      method: 'dispose',
+      native: false
+    },
+    {
+      column: 746,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'Er',
+      line: 25,
+      method: null,
+      native: false
+    },
+    {
+      column: 15046,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 123,
+      method: null,
+      native: false
+    },
+    {
+      column: 1056,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 25,
+      method: null,
+      native: false
+    },
+    {
+      column: 705,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'Object.dispose',
+      line: 8,
+      method: 'dispose',
+      native: false
+    },
+    {
+      column: 11919,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'PJ.eb',
+      line: 123,
+      method: 'eb',
+      native: false
+    },
+    {
+      column: 9874,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 123,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.map',
+      line: null,
+      method: 'map',
+      native: false
+    },
+    {
+      column: 9862,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'PJ.$',
+      line: 123,
+      method: '$',
+      native: false
+    },
+    {
+      column: 10105,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'PJ.terminate',
+      line: 123,
+      method: 'terminate',
+      native: false
+    },
+    {
+      column: 1434,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'v2.terminate',
+      line: 124,
+      method: 'terminate',
+      native: false
+    },
+    {
+      column: 5702,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'us',
+      line: 225,
+      method: null,
+      native: false
+    },
+    {
+      column: 2249,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 225,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'MessagePortMain.emit',
+      line: 524,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 2949,
+      file: 'node:electron/js2c/utility_init',
+      function: 'Object.MessagePortMain._internalPort.emit',
+      line: 2,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'node:internal/async_hooks',
+      function: 'Object.callbackTrampoline',
+      line: 130,
+      method: 'callbackTrampoline',
+      native: false
+    }
+  ],
+  service: 'maya-ai',
+  timestamp: '2025-06-09 16:32:13'
+}
+{
+  service: 'maya-ai',
+  error: {
+    message: 'this.findDirectory is not a function',
+    stack: 'TypeError: this.findDirectory is not a function\n' +
+      '    at CodingContextManager.getProjectStructure (d:\\ruth\\maya\\src\\core\\codingContextManager.js:202:23)\n' +
+      '    at CodingContextManager.gatherCodingContext (d:\\ruth\\maya\\src\\core\\codingContextManager.js:68:38)\n' +
+      '    at sendChat (d:\\ruth\\maya\\src\\openai\\codexClient.js:90:29)\n' +
+      '    at MayaChatViewProvider._handleProjectAnalysis (d:\\ruth\\maya\\src\\extension.js:150:7)\n' +
+      '    at ed.value (d:\\ruth\\maya\\src\\extension.js:49:11)',
+    name: 'TypeError'
+  },
+  context: {
+    workspace: 'deriq-tours',
+    activeFile: 'none',
+    timestamp: '2025-06-09T13:32:29.745Z'
+  },
+  level: 'error',
+  message: 'Failed to gather coding context',
+  timestamp: '2025-06-09 16:32:29'
+}
+{
+  service: 'maya-ai',
+  error: {
+    message: 'this.findDirectory is not a function',
+    stack: 'TypeError: this.findDirectory is not a function\n' +
+      '    at CodingContextManager.getProjectStructure (d:\\ruth\\maya\\src\\core\\codingContextManager.js:202:23)\n' +
+      '    at CodingContextManager.gatherCodingContext (d:\\ruth\\maya\\src\\core\\codingContextManager.js:68:38)\n' +
+      '    at EnhancedMessageHandler.gatherContext (d:\\ruth\\maya\\src\\core\\enhancedMessageHandler.js:160:29)\n' +
+      '    at EnhancedMessageHandler.handleMessage (d:\\ruth\\maya\\src\\core\\enhancedMessageHandler.js:32:23)\n' +
+      '    at MayaChatViewProvider._handleUserMessage (d:\\ruth\\maya\\src\\extension.js:231:7)\n' +
+      '    at ed.value (d:\\ruth\\maya\\src\\extension.js:38:11)',
+    name: 'TypeError'
+  },
+  context: {
+    workspace: 'deriq-tours',
+    activeFile: 'none',
+    timestamp: '2025-06-09T13:35:22.996Z'
+  },
+  level: 'error',
+  message: 'Failed to gather coding context',
+  timestamp: '2025-06-09 16:35:22'
+}
+{
+  error: Canceled: Canceled
+      at new XN (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111538)
+      at f5.U (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116148)
+      at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113642)
+      at b4.showMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:7286)
+      at Object.showInformationMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:170:40600)
+      at AppModel.showPopUpMsg (c:\Users\USER\.vscode\extensions\ritwickdey.liveserver-5.7.9\out\src\appModel.js:151:29)
+      at AppModel.GoOffline (c:\Users\USER\.vscode\extensions\ritwickdey.liveserver-5.7.9\out\src\appModel.js:96:18)
+      at AppModel.dispose (c:\Users\USER\.vscode\extensions\ritwickdey.liveserver-5.7.9\out\src\appModel.js:249:14)
+      at Er (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:746)
+      at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:15046
+      at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1056
+      at Object.dispose (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)
+      at PJ.eb (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:11919)
+      at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9874
+      at Array.map (<anonymous>)
+      at PJ.$ (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9862)
+      at PJ.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:10105)
+      at v2.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:124:1434)
+      at us (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:5702)
+      at MessagePortMain.<anonymous> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:2249)
+      at MessagePortMain.emit (node:events:524:28)
+      at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+      at Object.callbackTrampoline (node:internal/async_hooks:130:17),
+  level: 'error',
+  message: 'unhandledRejection: Canceled\n' +
+    'Canceled: Canceled\n' +
+    '    at new XN (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111538)\n' +
+    '    at f5.U (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116148)\n' +
+    '    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113642)\n' +
+    '    at b4.showMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:7286)\n' +
+    '    at Object.showInformationMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:170:40600)\n' +
+    '    at AppModel.showPopUpMsg (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:151:29)\n' +
+    '    at AppModel.GoOffline (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:96:18)\n' +
+    '    at AppModel.dispose (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:249:14)\n' +
+    '    at Er (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:746)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:15046\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1056\n' +
+    '    at Object.dispose (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)\n' +
+    '    at PJ.eb (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:11919)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9874\n' +
+    '    at Array.map (<anonymous>)\n' +
+    '    at PJ.$ (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9862)\n' +
+    '    at PJ.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:10105)\n' +
+    '    at v2.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:124:1434)\n' +
+    '    at us (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:5702)\n' +
+    '    at MessagePortMain.<anonymous> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:2249)\n' +
+    '    at MessagePortMain.emit (node:events:524:28)\n' +
+    '    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)\n' +
+    '    at Object.callbackTrampoline (node:internal/async_hooks:130:17)',
+  stack: 'Canceled: Canceled\n' +
+    '    at new XN (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111538)\n' +
+    '    at f5.U (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116148)\n' +
+    '    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113642)\n' +
+    '    at b4.showMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:7286)\n' +
+    '    at Object.showInformationMessage (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:170:40600)\n' +
+    '    at AppModel.showPopUpMsg (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:151:29)\n' +
+    '    at AppModel.GoOffline (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:96:18)\n' +
+    '    at AppModel.dispose (c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js:249:14)\n' +
+    '    at Er (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:746)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:15046\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1056\n' +
+    '    at Object.dispose (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)\n' +
+    '    at PJ.eb (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:11919)\n' +
+    '    at file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9874\n' +
+    '    at Array.map (<anonymous>)\n' +
+    '    at PJ.$ (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:9862)\n' +
+    '    at PJ.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:123:10105)\n' +
+    '    at v2.terminate (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:124:1434)\n' +
+    '    at us (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:5702)\n' +
+    '    at MessagePortMain.<anonymous> (file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:225:2249)\n' +
+    '    at MessagePortMain.emit (node:events:524:28)\n' +
+    '    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)\n' +
+    '    at Object.callbackTrampoline (node:internal/async_hooks:130:17)',
+  rejection: true,
+  date: 'Mon Jun 09 2025 16:37:34 GMT+0300 (East Africa Time)',
+  process: {
+    pid: 18036,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code',
+    execPath: 'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe',
+    version: 'v20.19.0',
+    argv: [
+      'C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe',
+      'c:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\bootstrap-fork.js',
+      '--skipWorkspaceStorageLock'
+    ],
+    memoryUsage: {
+      rss: 537726976,
+      heapTotal: 323387392,
+      heapUsed: 313116036,
+      external: 26659255,
+      arrayBuffers: 0
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 137268.578 },
+  trace: [
+    {
+      column: 111538,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'new XN',
+      line: 29,
+      method: null,
+      native: false
+    },
+    {
+      column: 116148,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'f5.U',
+      line: 29,
+      method: 'U',
+      native: false
+    },
+    {
+      column: 113642,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'Proxy.s.<computed>.n.charCodeAt.s.<computed>',
+      line: 29,
+      method: '<computed>',
+      native: false
+    },
+    {
+      column: 7286,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'b4.showMessage',
+      line: 151,
+      method: 'showMessage',
+      native: false
+    },
+    {
+      column: 40600,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'Object.showInformationMessage',
+      line: 170,
+      method: 'showInformationMessage',
+      native: false
+    },
+    {
+      column: 29,
+      file: 'c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js',
+      function: 'AppModel.showPopUpMsg',
+      line: 151,
+      method: 'showPopUpMsg',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js',
+      function: 'AppModel.GoOffline',
+      line: 96,
+      method: 'GoOffline',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'c:\\Users\\USER\\.vscode\\extensions\\ritwickdey.liveserver-5.7.9\\out\\src\\appModel.js',
+      function: 'AppModel.dispose',
+      line: 249,
+      method: 'dispose',
+      native: false
+    },
+    {
+      column: 746,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'Er',
+      line: 25,
+      method: null,
+      native: false
+    },
+    {
+      column: 15046,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 123,
+      method: null,
+      native: false
+    },
+    {
+      column: 1056,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 25,
+      method: null,
+      native: false
+    },
+    {
+      column: 705,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'Object.dispose',
+      line: 8,
+      method: 'dispose',
+      native: false
+    },
+    {
+      column: 11919,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'PJ.eb',
+      line: 123,
+      method: 'eb',
+      native: false
+    },
+    {
+      column: 9874,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 123,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.map',
+      line: null,
+      method: 'map',
+      native: false
+    },
+    {
+      column: 9862,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'PJ.$',
+      line: 123,
+      method: '$',
+      native: false
+    },
+    {
+      column: 10105,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'PJ.terminate',
+      line: 123,
+      method: 'terminate',
+      native: false
+    },
+    {
+      column: 1434,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'v2.terminate',
+      line: 124,
+      method: 'terminate',
+      native: false
+    },
+    {
+      column: 5702,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: 'us',
+      line: 225,
+      method: null,
+      native: false
+    },
+    {
+      column: 2249,
+      file: 'file:///c:/Users/USER/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js',
+      function: null,
+      line: 225,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'MessagePortMain.emit',
+      line: 524,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 2949,
+      file: 'node:electron/js2c/utility_init',
+      function: 'Object.MessagePortMain._internalPort.emit',
+      line: 2,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'node:internal/async_hooks',
+      function: 'Object.callbackTrampoline',
+      line: 130,
+      method: 'callbackTrampoline',
+      native: false
+    }
+  ],
+  service: 'maya-ai',
+  timestamp: '2025-06-09 16:37:34'
+}
