@@ -14,20 +14,20 @@ const Test = "https://res.cloudinary.com/dnko3bvt0/image/upload/fl_preserve_tran
         <h2>TRUSTED PARTNERS</h2>
         <div className="partners-logos">
           <div className="partner-logo">
-            <img className="patner-logo" src={P1} />
+            <img className="patner-logo" src={Test} />
           </div>
           <div className="partner-logo">
-            <img className="patner-logo" src={P2} />{" "}
-          </div>
-          <div className="partner-logo">
-            <img className="patner-logo" src={P3} />{" "}
-          </div>
-          <div className="partner-logo">
-            <img className="patner-logo" src={P4} />{" "}
-          </div>
-          {/* <div className="partner-logo">
             <img className="patner-logo" src={Test} />{" "}
-          </div> */}
+          </div>
+          <div className="partner-logo">
+            <img className="patner-logo" src={Test} />{" "}
+          </div>
+          <div className="partner-logo">
+            <img className="patner-logo" src={Test} />{" "}
+          </div>
+          <div className="partner-logo">
+            <img className="patner-logo" src={Test} />{" "}
+          </div>
         </div>
       </div>
     </section>

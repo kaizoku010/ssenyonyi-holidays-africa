@@ -25,9 +25,9 @@ const Test = "https://res.cloudinary.com/dnko3bvt0/image/upload/fl_preserve_tran
           <div className="partner-logo">
             <img className="patner-logo" src={P4} />{" "}
           </div>
-          {/* <div className="partner-logo">
+          <div className="partner-logo">
             <img className="patner-logo" src={Test} />{" "}
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

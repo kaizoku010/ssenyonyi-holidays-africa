@@ -23,11 +23,11 @@ const Test = "https://res.cloudinary.com/dnko3bvt0/image/upload/fl_preserve_tran
             <img className="patner-logo" src={P3} />{" "}
           </div>
           <div className="partner-logo">
-            <img className="patner-logo" src={P4} />{" "}
+            <img className="patner-logo" src={P} />{" "}
           </div>
-          {/* <div className="partner-logo">
+          <div className="partner-logo">
             <img className="patner-logo" src={Test} />{" "}
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

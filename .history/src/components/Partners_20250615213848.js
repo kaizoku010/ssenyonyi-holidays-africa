@@ -1,27 +1,29 @@
-import React from 'react';
-import Test from 
-import '../styles/Partners.css';
+import React from "react";
+import "../styles/Partners.css";
+import P1 from "../media/p1.png"
 
 const Partners = () => {
+const Test = "https://res.cloudinary.com/dnko3bvt0/image/upload/fl_preserve_transparency/v1748506763/test_qaobiu.jpg?_s=public-apps"
+
   return (
     <section className="partners-section">
       <div className="partners-container">
         <h2>TRUSTED PARTNERS</h2>
         <div className="partners-logos">
           <div className="partner-logo">
-            <div className="logo-placeholder">Partner 1</div>
+            <img className="patner-logo" src={Test} />
           </div>
           <div className="partner-logo">
-            <div className="logo-placeholder">Partner 2</div>
+            <img className="patner-logo" src={Test} />{" "}
           </div>
           <div className="partner-logo">
-            <div className="logo-placeholder">Partner 3</div>
+            <img className="patner-logo" src={Test} />{" "}
           </div>
           <div className="partner-logo">
-            <div className="logo-placeholder">Partner 4</div>
+            <img className="patner-logo" src={Test} />{" "}
           </div>
           <div className="partner-logo">
-            <div className="logo-placeholder">Partner 5</div>
+            <img className="patner-logo" src={Test} />{" "}
           </div>
         </div>
       </div>
