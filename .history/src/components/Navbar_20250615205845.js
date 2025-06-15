@@ -54,8 +54,8 @@ const Navbar = () => {
           <li className={`nav-item ${location.pathname === '/gallery' ? 'active' : ''}`}>
             <Link to="/gallery">{t('navbar.gallery')}</Link>
           </li>
-          <li className={`nav-item ${location.pathname === '/inquire-now' ? 'active' : ''}`}>
-            <Link to="/inquire-now">{t('navbar.contact')}</Link>
+          <li className={`nav-item ${location.pathname === '/contact' ? 'active' : ''}`}>
+            <Link to="/contact">{t('navbar.contact')}</Link>
           </li>
 
           {/* <li className="nav-item"><a href="#tours">{t('navbar.tours')}</a></li> */}

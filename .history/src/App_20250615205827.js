@@ -51,7 +51,7 @@ function App() {
           <Route path="/packages/:id" element={<PackageDetailsPage />} />
           <Route path="/destinations" element={<DestinationsPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
-          <Route path="/inquire-now" element={<ContactPage />} />
+          <Route path="/inqu" element={<ContactPage />} />
           <Route path="/about" element={<EVChargingPage />} />
           <Route path="/trip-planner" element={<TripPlannerPage />} />
         </Routes>
