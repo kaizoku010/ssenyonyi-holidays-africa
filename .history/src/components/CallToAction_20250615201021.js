@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
 import '../styles/CallToAction.css';
 import TripPlannerModal from './TripPlannerModal';
-import TripPlannerPage from './TripPlannerPage';
 
 const CallToAction = () => {
   const { t } = useTranslation();
-  const navigate = useNavigate();
   const [showPlanner, setShowPlanner] = useState(false);
 
   return (
@@ -30,7 +27,7 @@ const CallToAction = () => {
                 <p>{t('callToAction.locationDescription')}</p>
               </div>
             </div>
-            <button className="cta-action-button" onClick={() => navigate('/trip-planner')}>
+            <button className="cta-action-button" onClick={() => setShowPlanner(true)}>
               {t('callToAction.actionButton')}
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" className="arrow-icon">
                 <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />

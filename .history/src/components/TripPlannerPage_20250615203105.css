@@ -1,0 +1,45 @@
+.trip-planner-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.trip-planner-header {
+  width: 100%;
+  max-width: 600px;
+  margin: 3rem auto 2rem auto;
+  text-align: center;
+}
+
+.trip-planner-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+}
+
+.trip-planner-header p {
+  color: #64748b;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.trip-planner-main {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 2rem 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.trip-planner-form-placeholder {
+  color: #64748b;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 2rem 0;
+}
