@@ -9,7 +9,6 @@ const TripPlannerPage = () => {
     email: '',
     days: '',
     people: '',
-    date: '',
     message: '',
     package: ''
   });
@@ -33,8 +32,7 @@ const TripPlannerPage = () => {
         days: form.days,
         people: form.people,
         message: form.message,
-        package: form.package,
-        date: form.date
+        package: form.package
       })
     });
     if (response.ok) {
@@ -44,13 +42,13 @@ const TripPlannerPage = () => {
     }
   };
 
-  const isValid = form.name && form.email && form.days && form.people && form.date && form.message;
+  const isValid = form.name && form.email && form.days && form.people && form.message;
 
   return (
     <div className="trip-planner-page">
       <header className="trip-planner-header">
         <button className="trip-back-btn" onClick={() => navigate('/')}>{'< Back to Home'}</button>
-        <h1>Trip Inquiry</h1>
+        <h1>Custom Trip Planner</h1>
         <p>Plan your adventure. Fill in your details and preferences below.</p>
       </header>
       <main className="trip-planner-main">
@@ -83,7 +81,7 @@ const TripPlannerPage = () => {
                 onChange={handleChange}
                 required
                 className="trip-input"
-                placeholder="username@email.com"
+                placeholder="you@email.com"
                 aria-required="true"
               />
             </label>
@@ -112,18 +110,6 @@ const TripPlannerPage = () => {
                 min="1"
                 className="trip-input"
                 placeholder="e.g. 2"
-                aria-required="true"
-              />
-            </label>
-            <label className="trip-label">
-              Trip Date/Travel Date <span className="required">*</span>
-              <input
-                type="date"
-                name="date"
-                value={form.date}
-                onChange={handleChange}
-                required
-                className="trip-input"
                 aria-required="true"
               />
             </label>

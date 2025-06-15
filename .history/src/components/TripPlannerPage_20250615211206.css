@@ -127,20 +127,3 @@
   margin-left: 0.25em;
   font-size: 1.1em;
 }
-
-.trip-back-btn {
-  background: none;
-  border: none;
-  color: #38bdf8;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  margin-bottom: 1.5rem;
-  padding: 0;
-  transition: color 0.2s;
-}
-.trip-back-btn:hover {
-    background-color: none !important;
-  color: black !important;
-  text-decoration: underline;
-}

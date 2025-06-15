@@ -1,87 +1,97 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import DestinationCard from './DestinationCard';
+import DestinationCard from './Mdx';
 import '../styles/DestinationSlider.css';
 import { fadeIn, slideIn, textVariant } from '../utils/animations';
 
 // Import images
-import kitandra from '../media/kitandra.jpg';
-import kitandra2 from '../media/kitandra2.jpg';
+import kitandra from '../media/vibes.JPG';
+import kitandra2 from '../media/slide1.jpg';
+import kitandra4 from '../media/swril.jpg';
+import kitandra5 from '../media/slide5.jpg';
+import kitandra6 from '../media/people.jpg';
+import kitandra7 from '../media/sere.jpg';
+import kitandra8 from '../media/ants.jpg';
+import kitandra9 from '../media/fireplace.jpg';
+import kitandra0 from '../media/brige.jpg';
+import Deriq from "../media/man.jpg"
+import { Link } from 'react-router-dom';
 
 // We'll use these as placeholders for the destination cards
 // In a real application, you would have actual images for each destination
 const naganoImage = kitandra;
-const marrakechImage = kitandra2;
-const yosemiteImage = kitandra;
+const marrakechImage = kitandra5;
+const yosemiteImage = kitandra6;
 const losLancesImage = kitandra2;
-const phiPhiImage = kitandra;
-const dolomitesImage = kitandra2;
-const milfordImage = kitandra;
-const banffImage = kitandra2;
+const phiPhiImage = kitandra7;
+const dolomitesImage = kitandra8;
+const milfordImage = kitandra9;
+const banffImage = kitandra0;
 
 const destinations = [
   {
     id: 1,
-    mainImage: kitandra,
-    location: 'Switzerland Alps',
-    title: 'SAINT ANTÖNIEN',
+    mainImage: kitandra4,
+    location: 'Uganda',
+    title: 'CLASSIC GORILLAS',
     description: 'Majestic mountainscapes await your adventurous spirit. Experience the breathtaking views as you journey through pristine alpine terrain.',
     cards: [
       {
         image: naganoImage,
-        location: 'Japan',
-        title: 'NAGANO PREFECTURE',
+        location: 'Kenya',
+        title: 'LANCES BEACH',
         subtitle: 'Snow Monkeys'
       },
       {
         image: marrakechImage,
-        location: 'Morocco',
-        title: 'MARRAKECH MERZOUGA',
+        location: 'Rwanda',
+        title: 'LANCES BEACH',
         subtitle: 'Desert Adventure'
       },
       {
         image: yosemiteImage,
-        location: 'USA',
-        title: 'YOSEMITE NATIONAL PARK',
+        location: 'Uganda',
+        title: 'NATIONAL PARK',
         subtitle: 'Climbing Paradise'
       },
       {
         image: losLancesImage,
-        location: 'Spain',
-        title: 'LOS LANCES BEACH',
+        location: 'Uganda',
+        title: 'LANCES BEACH',
         subtitle: 'Kitesurfing'
       }
     ]
   },
   {
     id: 2,
-    mainImage: kitandra2,
+    mainImage: Deriq,
     location: 'East Africa',
     title: 'MOUNT KILIMANJARO',
     description: 'Africa\'s highest peak offers a challenging trek through five distinct climate zones, from lush rainforest to arctic summit.',
     cards: [
       {
         image: phiPhiImage,
-        location: 'Thailand',
-        title: 'PHI PHI ISLANDS',
+        location: 'Tanzania',
+        title: 'PHI ISLANDS',
         subtitle: 'Crystal Waters'
       },
       {
         image: dolomitesImage,
-        location: 'Italy',
+        location: 'Kenya',
         title: 'DOLOMITES',
         subtitle: 'Alpine Beauty'
       },
       {
         image: milfordImage,
-        location: 'New Zealand',
-        title: 'MILFORD SOUND',
+        location: 'Burundi',
+        title: 'LANCES BEACH',
         subtitle: 'Fjord Exploration'
       },
       {
         image: banffImage,
-        location: 'Canada',
-        title: 'BANFF NATIONAL PARK',
+        location: 'Uganda',
+        title: 'NATIONAL PARK',
         subtitle: 'Mountain Lakes'
       }
     ]
@@ -94,6 +104,7 @@ const DestinationSlider = ({
   showControls = true,
   showPagination = true
 }) => {
+  const { t } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
@@ -134,8 +145,11 @@ const DestinationSlider = ({
   const destination = sliderDestinations[currentSlide];
 
   return (
-    <div className="destination-slider">
-
+    <motion.div
+      className="destination-slider"
+      initial="hidden"
+      animate="show"
+    >
       {sliderDestinations.map((dest, index) => (
         <motion.div
           key={dest.id}
@@ -155,33 +169,43 @@ const DestinationSlider = ({
           }}
         />
       ))}
-      <div className="slider-overlay"></div>
+      <motion.div
+        className="slider-overlay"
+        variants={fadeIn("left", 0.2)}
+      ></motion.div>
 
-      <div className="slider-content">
-
+      <motion.div
+        className="slider-content"
+        variants={fadeIn(0.3)}
+      >
         <motion.div
           className="destination-info"
-          initial={{ x: -50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ type: "spring", duration: 0.8 }}
+          variants={slideIn("left", "tween", 0.2, 0.8)}
         >
-          <div className="destination-location">
-            The Greatest
-          </div>
-          <h1 className="destination-title">
-            in the World
-          </h1>
-          <p className="destination-description">
-            Experience the most breathtaking destinations and adventures with our expert guides and carefully crafted itineraries.
-          </p>
+          <motion.div
+            className="destination-location"
+            variants={textVariant(0.4)}
+          >
+              {t('destinationSlider.welcome')}
+           </motion.div>
+          <motion.h1
+            className="destination-title"
+            variants={textVariant(0.5)}
+          >
+            {t('destinationSlider.companyName')}
+            </motion.h1>
+          <motion.p
+            className="destination-description"
+            variants={fadeIn("up", 0.6)}
+          >
+            {t('destinationSlider.description')}
+          </motion.p>
+          <Link to="/inquire-now">
           <motion.button
             className="discover-button"
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.5 }}
+            variants={fadeIn("up", 0.7)}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => document.getElementById('booking-modal').showModal()}
           >
             <motion.span
               className="discover-icon"
@@ -190,15 +214,14 @@ const DestinationSlider = ({
             >
               <i className="fas fa-arrow-right"></i>
             </motion.span>
-            EXPLORE NOW
+            {t('destinationSlider.exploreButton')}
           </motion.button>
+          </Link>
         </motion.div>
 
         <motion.div
           className="destination-cards"
-          initial={{ x: 50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ type: "spring", duration: 0.8 }}
+          variants={slideIn("right", "tween", 0.3, 0.8)}
         >
           <AnimatePresence mode="wait">
             {destination.cards.map((card, index) => (
@@ -211,9 +234,9 @@ const DestinationSlider = ({
               >
                 <DestinationCard
                   image={card.image}
-                  location={card.location}
-                  title={card.title}
-                  subtitle={card.subtitle}
+                  // location={card.location}
+                  // title={card.title}
+                  // subtitle={card.subtitle}
                 />
               </motion.div>
             ))}

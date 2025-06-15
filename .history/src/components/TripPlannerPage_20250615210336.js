@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import './TripPlannerPage.css';
 import packagesData from './_tripPlannerPackages';
 
@@ -9,48 +8,27 @@ const TripPlannerPage = () => {
     email: '',
     days: '',
     people: '',
-    date: '',
     message: '',
     package: ''
   });
   const [submitted, setSubmitted] = useState(false);
-  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    // Send form data to email via Formspree (or similar service)
-    const response = await fetch('https://formspree.io/f/xwkgyyqg', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: form.name,
-        email: form.email,
-        days: form.days,
-        people: form.people,
-        message: form.message,
-        package: form.package,
-        date: form.date
-      })
-    });
-    if (response.ok) {
-      setSubmitted(true);
-    } else {
-      alert('There was an error sending your inquiry. Please try again later.');
-    }
+    setSubmitted(true);
   };
 
-  const isValid = form.name && form.email && form.days && form.people && form.date && form.message;
+  const isValid = form.name && form.email && form.days && form.people && form.message;
 
   return (
     <div className="trip-planner-page">
       <header className="trip-planner-header">
-        <button className="trip-back-btn" onClick={() => navigate('/')}>{'< Back to Home'}</button>
-        <h1>Trip Inquiry</h1>
+        <h1>Custom Trip Planner</h1>
         <p>Plan your adventure. Fill in your details and preferences below.</p>
       </header>
       <main className="trip-planner-main">
@@ -62,7 +40,7 @@ const TripPlannerPage = () => {
         ) : (
           <form className="trip-planner-form" onSubmit={handleSubmit}>
             <label className="trip-label">
-              Name <span className="required">*</span>
+              Name
               <input
                 type="text"
                 name="name"
@@ -71,11 +49,10 @@ const TripPlannerPage = () => {
                 required
                 className="trip-input"
                 placeholder="Your Name"
-                aria-required="true"
               />
             </label>
             <label className="trip-label">
-              Email <span className="required">*</span>
+              Email
               <input
                 type="email"
                 name="email"
@@ -83,12 +60,11 @@ const TripPlannerPage = () => {
                 onChange={handleChange}
                 required
                 className="trip-input"
-                placeholder="username@email.com"
-                aria-required="true"
+                placeholder="you@email.com"
               />
             </label>
             <label className="trip-label">
-              Number of Days <span className="required">*</span>
+              Number of Days
               <input
                 type="number"
                 name="days"
@@ -98,11 +74,10 @@ const TripPlannerPage = () => {
                 min="1"
                 className="trip-input"
                 placeholder="e.g. 7"
-                aria-required="true"
               />
             </label>
             <label className="trip-label">
-              Number of People Travelling <span className="required">*</span>
+              Number of People Travelling
               <input
                 type="number"
                 name="people"
@@ -112,36 +87,22 @@ const TripPlannerPage = () => {
                 min="1"
                 className="trip-input"
                 placeholder="e.g. 2"
-                aria-required="true"
               />
             </label>
             <label className="trip-label">
-              Trip Date/Travel Date <span className="required">*</span>
-              <input
-                type="date"
-                name="date"
-                value={form.date}
-                onChange={handleChange}
-                required
-                className="trip-input"
-                aria-required="true"
-              />
-            </label>
-            <label className="trip-label">
-              Message <span className="required">*</span>
+              Message
               <textarea
                 name="message"
                 value={form.message}
                 onChange={handleChange}
                 required
                 className="trip-input"
-                placeholder="Tell us about your trip, preferences, or questions..."
+                placeholder="Tell us about your dream trip, preferences, or questions..."
                 rows={4}
-                aria-required="true"
               />
             </label>
             <div className="trip-section">
-              <h3>Choose a Package <span style={{fontWeight:400, color:'#64748b'}}>(optional)</span></h3>
+              <h3>Choose a Package (optional)</h3>
               <div className="trip-options">
                 {packagesData.map((pkg) => (
                   <label key={pkg.id} className="trip-radio-label">

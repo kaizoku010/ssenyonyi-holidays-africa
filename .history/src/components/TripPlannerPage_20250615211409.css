@@ -140,7 +140,6 @@
   transition: color 0.2s;
 }
 .trip-back-btn:hover {
-    background-color: none !important;
   color: black !important;
   text-decoration: underline;
 }

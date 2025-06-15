@@ -200,7 +200,7 @@ const DestinationSlider = ({
           >
             {t('destinationSlider.description')}
           </motion.p>
-          <Link to="/destinations">
+          <Link to="/trip-planner">
           <motion.button
             className="discover-button"
             variants={fadeIn("up", 0.7)}

@@ -116,7 +116,7 @@ const TripPlannerPage = () => {
               />
             </label>
             <label className="trip-label">
-              Trip Date/Travel Date <span className="required">*</span>
+              Start Date <span className="required">*</span>
               <input
                 type="date"
                 name="date"

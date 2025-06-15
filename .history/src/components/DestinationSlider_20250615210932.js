@@ -1,87 +1,97 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import DestinationCard from './DestinationCard';
+import DestinationCard from './Mdx';
 import '../styles/DestinationSlider.css';
 import { fadeIn, slideIn, textVariant } from '../utils/animations';
 
 // Import images
-import kitandra from '../media/kitandra.jpg';
-import kitandra2 from '../media/kitandra2.jpg';
+import kitandra from '../media/vibes.JPG';
+import kitandra2 from '../media/slide1.jpg';
+import kitandra4 from '../media/swril.jpg';
+import kitandra5 from '../media/slide5.jpg';
+import kitandra6 from '../media/people.jpg';
+import kitandra7 from '../media/sere.jpg';
+import kitandra8 from '../media/ants.jpg';
+import kitandra9 from '../media/fireplace.jpg';
+import kitandra0 from '../media/brige.jpg';
+import Deriq from "../media/man.jpg"
+import { Link } from 'react-router-dom';
 
 // We'll use these as placeholders for the destination cards
 // In a real application, you would have actual images for each destination
 const naganoImage = kitandra;
-const marrakechImage = kitandra2;
-const yosemiteImage = kitandra;
+const marrakechImage = kitandra5;
+const yosemiteImage = kitandra6;
 const losLancesImage = kitandra2;
-const phiPhiImage = kitandra;
-const dolomitesImage = kitandra2;
-const milfordImage = kitandra;
-const banffImage = kitandra2;
+const phiPhiImage = kitandra7;
+const dolomitesImage = kitandra8;
+const milfordImage = kitandra9;
+const banffImage = kitandra0;
 
 const destinations = [
   {
     id: 1,
-    mainImage: kitandra,
-    location: 'Switzerland Alps',
-    title: 'SAINT ANTÖNIEN',
+    mainImage: kitandra4,
+    location: 'Uganda',
+    title: 'CLASSIC GORILLAS',
     description: 'Majestic mountainscapes await your adventurous spirit. Experience the breathtaking views as you journey through pristine alpine terrain.',
     cards: [
       {
         image: naganoImage,
-        location: 'Japan',
-        title: 'NAGANO PREFECTURE',
+        location: 'Kenya',
+        title: 'LANCES BEACH',
         subtitle: 'Snow Monkeys'
       },
       {
         image: marrakechImage,
-        location: 'Morocco',
-        title: 'MARRAKECH MERZOUGA',
+        location: 'Rwanda',
+        title: 'LANCES BEACH',
         subtitle: 'Desert Adventure'
       },
       {
         image: yosemiteImage,
-        location: 'USA',
-        title: 'YOSEMITE NATIONAL PARK',
+        location: 'Uganda',
+        title: 'NATIONAL PARK',
         subtitle: 'Climbing Paradise'
       },
       {
         image: losLancesImage,
-        location: 'Spain',
-        title: 'LOS LANCES BEACH',
+        location: 'Uganda',
+        title: 'LANCES BEACH',
         subtitle: 'Kitesurfing'
       }
     ]
   },
   {
     id: 2,
-    mainImage: kitandra2,
+    mainImage: Deriq,
     location: 'East Africa',
     title: 'MOUNT KILIMANJARO',
     description: 'Africa\'s highest peak offers a challenging trek through five distinct climate zones, from lush rainforest to arctic summit.',
     cards: [
       {
         image: phiPhiImage,
-        location: 'Thailand',
-        title: 'PHI PHI ISLANDS',
+        location: 'Tanzania',
+        title: 'PHI ISLANDS',
         subtitle: 'Crystal Waters'
       },
       {
         image: dolomitesImage,
-        location: 'Italy',
+        location: 'Kenya',
         title: 'DOLOMITES',
         subtitle: 'Alpine Beauty'
       },
       {
         image: milfordImage,
-        location: 'New Zealand',
-        title: 'MILFORD SOUND',
+        location: 'Burundi',
+        title: 'LANCES BEACH',
         subtitle: 'Fjord Exploration'
       },
       {
         image: banffImage,
-        location: 'Canada',
-        title: 'BANFF NATIONAL PARK',
+        location: 'Uganda',
+        title: 'NATIONAL PARK',
         subtitle: 'Mountain Lakes'
       }
     ]
@@ -94,6 +104,7 @@ const DestinationSlider = ({
   showControls = true,
   showPagination = true
 }) => {
+  const { t } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
@@ -165,7 +176,7 @@ const DestinationSlider = ({
 
       <motion.div
         className="slider-content"
-        variants={fadeIn("up", 0.3)}
+        variants={fadeIn(0.3)}
       >
         <motion.div
           className="destination-info"
@@ -175,20 +186,21 @@ const DestinationSlider = ({
             className="destination-location"
             variants={textVariant(0.4)}
           >
-              
+              {t('destinationSlider.welcome')}
            </motion.div>
           <motion.h1
             className="destination-title"
             variants={textVariant(0.5)}
           >
-            Nyoni Holidays Africa
+            {t('destinationSlider.companyName')}
             </motion.h1>
           <motion.p
             className="destination-description"
             variants={fadeIn("up", 0.6)}
           >
-            Experience the most breathtaking destinations and adventures with our expert guides and carefully crafted itineraries.
+            {t('destinationSlider.description')}
           </motion.p>
+          <Link to="/trip-planner">
           <motion.button
             className="discover-button"
             variants={fadeIn("up", 0.7)}
@@ -202,8 +214,9 @@ const DestinationSlider = ({
             >
               <i className="fas fa-arrow-right"></i>
             </motion.span>
-            EXPLORE NOW
+            {t('destinationSlider.exploreButton')}
           </motion.button>
+          </Link>
         </motion.div>
 
         <motion.div
@@ -221,9 +234,9 @@ const DestinationSlider = ({
               >
                 <DestinationCard
                   image={card.image}
-                  location={card.location}
-                  title={card.title}
-                  subtitle={card.subtitle}
+                  // location={card.location}
+                  // title={card.title}
+                  // subtitle={card.subtitle}
                 />
               </motion.div>
             ))}
