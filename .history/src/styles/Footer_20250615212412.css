@@ -46,7 +46,7 @@
 
 .social-links {
   display: flex;
-  gap: 4px !important;
+  gap: 10px;
 }
 
 .social-links a {

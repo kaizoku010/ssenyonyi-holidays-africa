@@ -51,7 +51,7 @@ const TripPlannerPage = () => {
       <header className="trip-planner-header">
         <button className="trip-back-btn" onClick={() => navigate('/')}>{'< Back to Home'}</button>
         <h1>Trip Inquiry</h1>
-        <p>Write to us about your adventure. Fill in your details and preferences below.</p>
+        <p>Write to us about  your adventure. Fill in your details and preferences below.</p>
       </header>
       <main className="trip-planner-main">
         {submitted ? (

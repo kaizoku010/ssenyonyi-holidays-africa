@@ -40,7 +40,7 @@ const Footer = () => {
           <ul className="contact-info">
             <li><i className="fas fa-map-marker-alt"></i> {t('footer.contactUs.address')}</li>
             <li><i className="fas fa-phone"></i> {t('footer.contactUs.phone')}</li>
-            <li><i className="fas fa-phone"></i> Urgent Contact: {t('footer.contactUs.phone2')}</li>
+            <li><i className="fas fa-phone"></i> {t('footer.contactUs.phone')}</li>
             <li><i className="fas fa-envelope"></i> {t('footer.contactUs.email')}</li>
           </ul>
         </div>

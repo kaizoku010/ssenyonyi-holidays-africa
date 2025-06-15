@@ -57,8 +57,6 @@ const enTranslations = {
       title: "Contact Us",
       address: "187163 Kampala, Uganda",
       phone: "+256 701 261 427",
-            phone2: "+ 256 751 174 311",
-
       email: "info@Nyonyiholidayafrica.com"
     },
     newsletter: {
@@ -482,6 +480,7 @@ const zhTranslations = {
       title: "联系我们",
       address: "187163 Kampala, Uganda",
       phone: "+ 256 751 174 311",
+      phone: "+ 256 751 174 311"
       email: "info@Nyonyiholidayafrica.com"
     },
     newsletter: {

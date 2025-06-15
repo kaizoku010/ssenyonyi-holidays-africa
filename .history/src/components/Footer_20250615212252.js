@@ -15,8 +15,7 @@ const Footer = () => {
           </p>
           <div className="social-links">
             <a href="https://www.facebook.com/profile.php?id=61577299168002&mibextid=wwXIfr&mibextid=wwXIfr"><i className="fab fa-facebook-f"></i></a>
-            <a href="https://x.com/NyonyiHolidays" target="_blank"><i className="fab fa-twitter"></i></a>
-            <a href="https://youtube.com/@nyonyiholidaysafrica?si=N4q2LfEXUCwrC4tf" target="_blank"><i className="fab fa-youtube"></i></a>
+            <a href="#"><i className="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/nyonyiholidays?igsh=MXJrdmw5czFyYTgxbQ==" target="_blank"><i className="fab fa-instagram"></i></a>
             <a href="http://www.linkedin.com/in/nyonyi-holidays-africa-holidays-africa-3974b936a" target="_blank"><i className="fab fa-linkedin-in"></i></a>
             <a href="http://www.tiktok.com/@nyonyiholidaysafrica" target="_blank"><i className="fab fa-tiktok"></i></a>
@@ -40,7 +39,6 @@ const Footer = () => {
           <ul className="contact-info">
             <li><i className="fas fa-map-marker-alt"></i> {t('footer.contactUs.address')}</li>
             <li><i className="fas fa-phone"></i> {t('footer.contactUs.phone')}</li>
-            <li><i className="fas fa-phone"></i> Urgent Contact: {t('footer.contactUs.phone2')}</li>
             <li><i className="fas fa-envelope"></i> {t('footer.contactUs.email')}</li>
           </ul>
         </div>
