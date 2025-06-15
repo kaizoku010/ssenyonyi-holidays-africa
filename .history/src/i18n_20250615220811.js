@@ -56,8 +56,8 @@ const enTranslations = {
     contactUs: {
       title: "Contact Us",
       address: "187163 Kampala, Uganda",
-      phone: "+256 780 598 784",
-      phone2: "+ 256 751 174 311",
+      phone: "+256 701 261 427",
+            phone2: "+ 256 751 174 311",
 
       email: "info@Nyonyiholidayafrica.com"
     },

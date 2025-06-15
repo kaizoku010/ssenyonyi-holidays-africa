@@ -56,8 +56,8 @@ const enTranslations = {
     contactUs: {
       title: "Contact Us",
       address: "187163 Kampala, Uganda",
-      phone: "+256 780 598 784",
-      phone2: "+ 256 751 174 311",
+      phone: "+256 701 261 427",
+            phone2: "+ 256 751 174 311",
 
       email: "info@Nyonyiholidayafrica.com"
     },
@@ -481,7 +481,7 @@ const zhTranslations = {
     contactUs: {
       title: "联系我们",
       address: "187163 Kampala, Uganda",
-      phone: "+256 780 598 784",
+      phone: "+ 0780598784",
       email: "info@Nyonyiholidayafrica.com"
     },
     newsletter: {
@@ -669,11 +669,11 @@ const zhTranslations = {
       phone: {
         title: "电话号码",
         number1: "+256 701 261 427",
-        number2: "+256 780 598 784"
+        number2: "+256 750 323 993"
       },
       email: {
         title: "电子邮件地址",
-        address: "info@nyonyiholidaysafrica.com"
+        address: "info@Nyonyiholidaysafrica.com"
       },
       hours: {
         title: "工作时间",
