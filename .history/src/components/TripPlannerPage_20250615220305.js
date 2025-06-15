@@ -24,7 +24,7 @@ const TripPlannerPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // Send form data to email via Formspree (or similar service)
-    const response = await fetch('https://formspree.io/f/mldnnwgv', {
+  action="https://formspree.io/f/mldnnwgv"
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
