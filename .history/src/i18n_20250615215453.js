@@ -241,7 +241,8 @@ const enTranslations = {
       description: "Reach out to us through any of these channels",
       location: {
         title: "Our Location",
-        address: "187163 Kampala, Uganda"
+        address: "187163 Kampala, Uganda
+"
       },
       phone: {
         title: "Phone Number",
@@ -250,7 +251,7 @@ const enTranslations = {
       },
       email: {
         title: "Email Address",
-        address: "info@nyonyiholidaysafrica.com"
+        address: "info@Nyonyiholidaysafrica.com"
       },
       hours: {
         title: "Working Hours",

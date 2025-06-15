@@ -250,7 +250,7 @@ const enTranslations = {
       },
       email: {
         title: "Email Address",
-        address: "info@nyonyiholidaysafrica.com"
+        address: "info@Nyonyiholidaysafrica.com"
       },
       hours: {
         title: "Working Hours",
