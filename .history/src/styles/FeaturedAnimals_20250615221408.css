@@ -1,5 +1,5 @@
 .featured-animals {
-  padding: 40px 0;
+  padding: 6rem 0;
   background-color: #fff;
   color: #333;
 }
@@ -36,9 +36,9 @@
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-bottom: 30px;
   border-bottom: 1px solid #eee;
-  padding-bottom: 15px;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .filter-item {
@@ -69,6 +69,7 @@
 
 /* Masonry Gallery */
 .masonry-gallery {
+  margin-top: 6rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(200px, auto);

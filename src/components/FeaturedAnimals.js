@@ -159,7 +159,7 @@ const FeaturedAnimals = () => {
           <p className="subs">{t('featuredAnimals.subtitle')}</p>
         </div>
 
-        <div className="gallery-filters">
+        {/* <div className="gallery-filters">
           <div className="filter-item active">
             <span className="dot"></span>
             <span>{t('featuredAnimals.filters.people')}</span>
@@ -176,7 +176,7 @@ const FeaturedAnimals = () => {
           <div className="filter-item">
             <span>{t('featuredAnimals.filters.lifestyle')}</span>
           </div>
-        </div>
+        </div> */}
 
         <div className="masonry-gallery">
           {filteredItems.map((item) => (

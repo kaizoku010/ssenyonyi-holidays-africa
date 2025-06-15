@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import '../styles/FeaturedAnimals.css';
-import kitandra from '../media/kitandra.jpg';
-import kitandra2 from '../media/kitandra2.jpg';
-import Slide0 from '../media/slide.jpg';
+import kitandra from '../media/qq.jpg';
+import kitandra2 from '../media/b2.jpg';
+import Slide0 from '../media/sqaud.JPG';
 import Slide1 from '../media/slide1.jpg';
 import Slide2 from '../media/slide2.jpg';
 import Slide3 from '../media/slide3.jpg';
 import Slide4 from '../media/slide4.jpg';
-import Slide5 from '../media/slide5.jpg';
-import Slide6 from '../media/slide6.jpg';
-import Slide7 from '../media/slide7.jpg';
+import Slide7 from '../media/buf.jpg';
+import Slide8 from "../media/tt.jpg";
+import Slide6 from "../media/osc.jpg";
+import Slide10 from "../media/road.jpg";
+import Cha from "../media/cha.jpg"
 
 // Gallery items with both images and videos
 const galleryItems = [
@@ -24,7 +27,7 @@ const galleryItems = [
   {
     id: 2,
     type: 'image',
-    src: Slide2,
+    src: Cha,
     width: 'medium',
     height: 'medium'
   },
@@ -38,7 +41,7 @@ const galleryItems = [
   {
     id: 4,
     type: 'image',
-    src: kitandra2,
+    src: Slide2,
     width: 'medium',
     height: 'medium'
   },
@@ -49,10 +52,18 @@ const galleryItems = [
     width: 'medium',
     height: 'medium'
   },
-  {
+  // {
+  //   id: 6,
+  //   type: 'video',
+  //   src: 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&playlist=dQw4w9WgXcQ&controls=0',
+  //   thumbnail: Slide1,
+  //   width: 'wide',
+  //   height: 'medium'
+  // },
+    {
     id: 6,
-    type: 'video',
-    src: 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&playlist=dQw4w9WgXcQ&controls=0',
+    type: 'image',
+    src: Slide10,
     thumbnail: Slide1,
     width: 'wide',
     height: 'medium'
@@ -67,7 +78,7 @@ const galleryItems = [
   {
     id: 8,
     type: 'image',
-    src: Slide5,
+    src: kitandra2,
     width: 'medium',
     height: 'medium'
   },
@@ -88,7 +99,7 @@ const galleryItems = [
   {
     id: 11,
     type: 'image',
-    src: kitandra,
+    src: Slide8,
     width: 'wide',
     height: 'medium'
   },
@@ -102,11 +113,21 @@ const galleryItems = [
 ];
 
 const FeaturedAnimals = () => {
+  const { t } = useTranslation();
   const [loading, setLoading] = useState(true);
   const [loadedImages, setLoadedImages] = useState({});
+  const [showMobile, setShowMobile] = useState(false);
 
-  // Use the gallery items directly
-  const filteredItems = galleryItems;
+  useEffect(() => {
+    // Check if mobile (max-width: 768px)
+    const checkMobile = () => setShowMobile(window.innerWidth <= 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  // Use the gallery items directly, but only show 4 on mobile
+  const filteredItems = showMobile ? galleryItems.slice(0, 4) : galleryItems;
 
   // Simulate loading delay and then set loading to false
   useEffect(() => {
@@ -134,28 +155,28 @@ const FeaturedAnimals = () => {
     <section className="featured-animals">
       <div className="animals-container">
         <div className="gallery-header">
-          <h1 className="heading">Africa through our lens</h1>
-          <p className="subs">look through our eyes as we</p>
+          <h1 className="heading">{t('featuredAnimals.title')}</h1>
+          <p className="subs">{t('featuredAnimals.subtitle')}</p>
         </div>
 
-        <div className="gallery-filters">
+        {/* <div className="gallery-filters">
           <div className="filter-item active">
             <span className="dot"></span>
-            <span>PHOTOGRAPHY</span>
+            <span>{t('featuredAnimals.filters.people')}</span>
           </div>
           <div className="filter-item">
-            <span>DESIGN</span>
+            <span>{t('featuredAnimals.filters.art')}</span>
           </div>
           <div className="filter-item">
-            <span>NATURE</span>
+            <span>{t('featuredAnimals.filters.culture')}</span>
           </div>
           <div className="filter-item">
-            <span>FASHION</span>
+            <span>{t('featuredAnimals.filters.landscapes')}</span>
           </div>
           <div className="filter-item">
-            <span>LIFE STYLE</span>
+            <span>{t('featuredAnimals.filters.lifestyle')}</span>
           </div>
-        </div>
+        </div> */}
 
         <div className="masonry-gallery">
           {filteredItems.map((item) => (
