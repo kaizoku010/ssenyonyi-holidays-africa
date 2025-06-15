@@ -55,7 +55,7 @@ const enTranslations = {
     },
     contactUs: {
       title: "Contact Us",
-      address: "P.O Box 187163 Kampala, Uganda",
+      address: "P187163 Kampala, Uganda",
       phone: "+256 780 598 784",
       phone2: "+ 256 751 174 311",
 
@@ -241,7 +241,7 @@ const enTranslations = {
       description: "Reach out to us through any of these channels",
       location: {
         title: "Our Location",
-        address: "P.O Box 187163 Kampala, Uganda"
+        address: "187163 Kampala, Uganda"
       },
       phone: {
         title: "Phone Number",
@@ -480,7 +480,7 @@ const zhTranslations = {
     },
     contactUs: {
       title: "联系我们",
-      address: "P.O Box 187163 Kampala, Uganda",
+      address: "187163 Kampala, Uganda",
       phone: "+256 780 598 784",
       email: "info@Nyonyiholidayafrica.com"
     },
