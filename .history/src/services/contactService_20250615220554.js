@@ -17,7 +17,7 @@ const EMAIL_CONFIG = {
 // Send contact emails via Formspree
 export const sendContactEmails = async (contactData) => {
   try {
-    const response = await fetch('https://formspree.io/f/mldnnwgv', {
+    const response = await fetch('https://formspree.io/f/xwkgyyqg', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
