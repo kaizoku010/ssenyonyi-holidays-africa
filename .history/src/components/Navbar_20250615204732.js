@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
-import Logo from "../media/logo_white.png";
+import Logo from "../media/new_logo.png";
 import '../styles/Navbar.css';
 
 const Navbar = () => {
   const location = useLocation();
   const { t } = useTranslation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  
   // Close mobile menu when changing routes
   useEffect(() => {
     setMobileMenuOpen(false);
@@ -33,8 +33,7 @@ const Navbar = () => {
       <div className="navbar-left">
         <div className="logo">
           <Link to="/">
-          <img className='logo-img' src={Logo}/>
-            {/* <span className="logo-text">NYONI <span className="highlight">HOLIDAYS</span></span> */}
+          <img className='logo-img' src="https://res.cloudinary.com/dnko3bvt0/image/upload/fl_preserve_transparency/v1748506432/logo_white_o7zlvs.jpg?_s=public-apps"/>
           </Link>
         </div>
       </div>
@@ -42,6 +41,9 @@ const Navbar = () => {
         <ul className="nav-links">
           <li className={`nav-item ${location.pathname === '/' ? 'active' : ''}`}>
             <Link to="/">{t('navbar.home')}</Link>
+          </li>
+          <li className={`nav-item ${location.pathname === '/about' ? 'active' : ''}`}>
+            <Link to="/about">{t('navbar.about')}</Link>
           </li>
           <li className={`nav-item ${location.pathname === '/packages' ? 'active' : ''}`}>
             <Link to="/packages">{t('navbar.packages')}</Link>
@@ -55,11 +57,9 @@ const Navbar = () => {
           <li className={`nav-item ${location.pathname === '/contact' ? 'active' : ''}`}>
             <Link to="/contact">{t('navbar.contact')}</Link>
           </li>
-          <li className={`nav-item ${location.pathname === '/contact' ? 'active' : ''}`}>
-            <Link to="/contact">{t('navbar.contact')}</Link>
-          </li>
-          <li className="nav-item"><a href="#tours">{t('navbar.tours')}</a></li>
-          <li className="nav-item"><a href="#offers">{t('navbar.offers')}</a></li>
+
+          {/* <li className="nav-item"><a href="#tours">{t('navbar.tours')}</a></li> */}
+          {/* <li className="nav-item"><a href="#offers">{t('navbar.offers')}</a></li> */}
         </ul>
       </div>
       <div className="navbar-right">
@@ -85,6 +85,9 @@ const Navbar = () => {
             <li className={`mobile-nav-item ${location.pathname === '/' ? 'active' : ''}`}>
               <Link to="/">{t('navbar.home')}</Link>
             </li>
+            <li className={`mobile-nav-item ${location.pathname === '/about' ? 'active' : ''}`}>
+              <Link to="/about">{t('navbar.about')}</Link>
+            </li>
             <li className={`mobile-nav-item ${location.pathname === '/packages' ? 'active' : ''}`}>
               <Link to="/packages">{t('navbar.packages')}</Link>
             </li>
@@ -97,12 +100,12 @@ const Navbar = () => {
             <li className={`mobile-nav-item ${location.pathname === '/contact' ? 'active' : ''}`}>
               <Link to="/contact">{t('navbar.contact')}</Link>
             </li>
-            <li className="mobile-nav-item">
+            {/* <li className="mobile-nav-item">
               <a href="#tours">{t('navbar.tours')}</a>
             </li>
             <li className="mobile-nav-item">
               <a href="#offers">{t('navbar.offers')}</a>
-            </li>
+            </li> */}
           </ul>
           <div className="mobile-language-switcher">
             <LanguageSwitcher />

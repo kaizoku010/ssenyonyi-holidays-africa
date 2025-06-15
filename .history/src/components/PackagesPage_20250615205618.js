@@ -312,7 +312,11 @@ const PackageCard = ({ packageData, onInquire }) => {
         </div>
       </CardContent>
       <CardFooter className="pkg-card-footer">
-     
+        {/* <div className="pkg-price">
+          <span className="price-label">{t('packagesPage.from', 'From')}</span>
+          <span className="price-value">${packageData.price.split('–')[0].trim()}</span>
+          <span className="price-unit">{t('packagesPage.perPerson', 'per person')}</span>
+        </div> */}
         <Button
           className="button book-now-button"
           onClick={() => onInquire(packageData)}

@@ -142,7 +142,7 @@ const packages = [
     duration: "10 Days / 9 Nights",
     destinations: ["Kigali", "Volcanoes NP", "Lake Kivu (Rwanda)", "Bwindi", "Lake Bunyonyi (Uganda)"],
     highlights: [
-      "Gorilla trekking in Bwindi",
+      "Gorilla trekking in Bwindi",inq
       "Romantic lakeside dinners at Lake Kivu",
       "Canoeing on Lake Bunyonyi"
     ],

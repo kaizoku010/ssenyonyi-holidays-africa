@@ -11,7 +11,7 @@ const enTranslations = {
     packages: "PACKAGES",
     destinations: "DESTINATIONS",
     gallery: "GALLERY",
-    contact: "INQUIRE NOW",
+    contact: "INQ",
     tours: "TOURS",
     offers: "OFFERS"
   },
