@@ -59,7 +59,7 @@ const Footer = () => {
         <p>&copy; {new Date().getFullYear()} Nyonyi Holiday Africa. {t('footer.copyright')}</p>
         <div className="footer-bottom-links">
           <a href="/privacy-policy">{t('footer.privacyPolicy')}</a>
-          <a href="/terms-of-service">{t('footer.termsOfService')}</a>
+          <a href="#">{t('footer.termsOfService')}</a>
         </div>
       </div>
     </footer>
