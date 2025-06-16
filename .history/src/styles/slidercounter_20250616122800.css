@@ -112,13 +112,11 @@ color: white;
   margin-bottom: 8px;
 }
 
-.stat-description-{
+.stat-description- {
     font-size: 0.775rem;
     color: #c0c0c0;
     width: 9rem;
     line-height: 1.5;
-  
-  }
 
 @media (max-width: 992px) {
   .stats-container {
