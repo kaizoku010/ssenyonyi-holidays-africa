@@ -63,6 +63,7 @@ const HomePage = () => {
         </motion.div>
 {/* 
         <motion.div variants={itemVariant}>
+          {/* <SpecialFeatures /> */}
                     <VisitorStats />
 
         </motion.div> */}

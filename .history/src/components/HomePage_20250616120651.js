@@ -61,11 +61,12 @@ const HomePage = () => {
         <motion.div variants={itemVariant}>
           <FeaturedAnimals />
         </motion.div>
-{/* 
+
         <motion.div variants={itemVariant}>
+          {/* <SpecialFeatures /> */}
                     <VisitorStats />
 
-        </motion.div> */}
+        </motion.div>
 
         <motion.div variants={itemVariant}>
           <LatestNews />
