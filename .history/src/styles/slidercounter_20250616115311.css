@@ -1,0 +1,165 @@
+.visitor-stats {
+  padding: 8rem 20px;
+  background-color: #f5f5f7;
+  display: flex;
+
+}
+
+.stats-card- {
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  width: 100%;
+    max-width: 50rem;
+}
+
+.stats-header- {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.stats-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 8px 0;
+}
+
+.stats-subtitle {
+  font-size: 1rem;
+  color: #718096;
+  margin: 0;
+}
+
+.stats-buttons- {
+  display: flex;
+  gap: 12px;
+}
+
+.demo-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: transparent;
+  border: 1px solid #e2e8f0;
+  color: #4a5568;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.demo-btn:hover {
+  background-color: #f7fafc;
+}
+
+.btn-icon {
+  font-size: 1rem;
+  color: #4a5568;
+}
+
+.get-started-btn {
+    background-color: #168d61;
+      color: white;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.get-started-btn:hover {
+  background-color: #2d3748;
+}
+
+.btn-arrow {
+  margin-left: 4px;
+  font-size: 0.9rem;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stat-number- {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.stat-label- {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 8px;
+}
+
+.stat-description- {
+  font-size: 0.875rem;
+  color: #718096;
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px;
+  }
+
+  .stats-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .stats-buttons {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-card {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-title {
+    font-size: 1.75rem;
+  }
+
+  .stats-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .demo-btn, .get-started-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
