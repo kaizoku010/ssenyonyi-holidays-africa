@@ -44,6 +44,7 @@ const packages = [
       "Scenic drive through the Virunga Mountains"
     ],
     accommodation: "Luxury: Bisate Lodge (Rwanda), Clouds Mountain Gorilla Lodge (Uganda)",
+    price: "12,000–15,000",
     inclusions: "Private transfers, both gorilla permits, champagne sundowners.",
     image: kitandra2,
     featured: true
@@ -60,6 +61,7 @@ const packages = [
       "Sunset cruise on Lake Bunyonyi"
     ],
     accommodation: "Luxury: Chobe Safari Lodge, Kyangabi Crater Lake Resort",
+    price: "9,500–12,000",
     inclusions: "Domestic flights, exclusive guides, gourmet dining.",
     image: kitandra,
     featured: false
@@ -76,6 +78,7 @@ const packages = [
       "Gorilla trekking in Bwindi"
     ],
     accommodation: "Mid-range: Turaco Treehouse, Enganzi Lodge",
+    price: "3,200–4,000",
     inclusions: "All permits, meals, 4x4 transport.",
     image: kitandra2,
     featured: false
@@ -92,6 +95,7 @@ const packages = [
       "Gorilla trekking in Bwindi"
     ],
     accommodation: "Mid-range: Ruzizi Tented Lodge, Buffalo Safari Lodge",
+    price: "4,500–5,500",
     inclusions: "Cross-border permits, bilingual guide.",
     image: kitandra,
     featured: false
@@ -108,6 +112,7 @@ const packages = [
       "Gorillas"
     ],
     accommodation: "Luxury: Apoka Safari Lodge, Sanctuary Gorilla Forest Camp",
+    price: "15,000–18,000",
     inclusions: "Private charters, VIP experiences.",
     image: kitandra2,
     featured: false
@@ -124,6 +129,7 @@ const packages = [
       "Horseback riding in Lake Mburo"
     ],
     accommodation: "Mid-range: Sambiya River Lodge, Mihingo Lodge",
+    price: "3,000–4,000",
     inclusions: "Child-friendly guides, interactive activities.",
     image: kitandra,
     featured: false
@@ -140,6 +146,7 @@ const packages = [
       "Canoeing on Lake Bunyonyi"
     ],
     accommodation: "Luxury: One&Only Gorilla's Nest, BirdNest Resort",
+    price: "14,000–17,000",
     inclusions: "Couples' spa treatments, photography sessions.",
     image: kitandra2,
     featured: false
@@ -156,6 +163,7 @@ const packages = [
       "Guided forest walks in Bwindi and Gorrilla tracking"
     ],
     accommodation: "Mid-range: Mweya Safari Lodge, Gorilla Valley Lodge",
+    price: "4,800–5,800",
     inclusions: "Expert birding guide, binoculars provided.",
     image: kitandra,
     featured: false

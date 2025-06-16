@@ -124,6 +124,7 @@ const packages = [
       "Horseback riding in Lake Mburo"
     ],
     accommodation: "Mid-range: Sambiya River Lodge, Mihingo Lodge",
+    price: "3,000–4,000",
     inclusions: "Child-friendly guides, interactive activities.",
     image: kitandra,
     featured: false
@@ -140,6 +141,7 @@ const packages = [
       "Canoeing on Lake Bunyonyi"
     ],
     accommodation: "Luxury: One&Only Gorilla's Nest, BirdNest Resort",
+    price: "14,000–17,000",
     inclusions: "Couples' spa treatments, photography sessions.",
     image: kitandra2,
     featured: false
@@ -156,6 +158,7 @@ const packages = [
       "Guided forest walks in Bwindi and Gorrilla tracking"
     ],
     accommodation: "Mid-range: Mweya Safari Lodge, Gorilla Valley Lodge",
+    price: "4,800–5,800",
     inclusions: "Expert birding guide, binoculars provided.",
     image: kitandra,
     featured: false

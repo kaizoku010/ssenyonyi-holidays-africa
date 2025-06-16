@@ -156,6 +156,7 @@ const packages = [
       "Guided forest walks in Bwindi and Gorrilla tracking"
     ],
     accommodation: "Mid-range: Mweya Safari Lodge, Gorilla Valley Lodge",
+    price: "4,800–5,800",
     inclusions: "Expert birding guide, binoculars provided.",
     image: kitandra,
     featured: false
