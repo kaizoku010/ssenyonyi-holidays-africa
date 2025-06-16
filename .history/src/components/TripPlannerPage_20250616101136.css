@@ -85,35 +85,19 @@
 
 .input-group, .group-one, .group-two{
 width: 100%;
-gap: 3px;
+/* background-color: red; */
 }
-
-.group-two > label{
-  color: rgb(37, 37, 37);
-  font-size: .9rem;
-  margin-top: 1rem;
-}
-
-.group-one > label{
-  color: rgb(37, 37, 37);
-  font-size: .9rem;
-  margin-top: 1rem;}
 
 .group-one{
-background-color: #3341550e;
+background-color: #334155;
 padding: 1rem;
-    align-content: center;
 border-radius: 10px;
 }
 
 .group-two{
-background-color: #3341550e;
+background-color: #334155;
 padding: 1rem;
 border-radius: 10px;
-}
-
-.trip-options > label{
-font-size: .8rem;
 }
 
 .trip-checkbox-label, .trip-radio-label {

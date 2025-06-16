@@ -7,7 +7,6 @@ import kitandra2 from '../media/vic_.jpg';
 import Sere from "../media/gef.jpg"
 import Mount from "../media/mount.jpg"
 import Dance from "../media/danc.JPG"
-import { Link } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 

@@ -2,7 +2,6 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import '../styles/VisitorStats.css';
-import { Link } from 'react-router-dom';
 
 const VisitorStats = () => {
   const { t } = useTranslation();

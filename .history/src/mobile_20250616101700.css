@@ -455,10 +455,6 @@ width: 100%;
     max-width: 100% !important;
     margin: 0 auto;
 }
-.input-group{
-  display: flex;
-  flex-direction: column;
-}
 
   .destinations-hero {
     height: 44rem;

@@ -112,10 +112,6 @@ padding: 1rem;
 border-radius: 10px;
 }
 
-.trip-options > label{
-font-size: .8rem;
-}
-
 .trip-checkbox-label, .trip-radio-label {
   background: #f1f5f9;
   border-radius: 8px;

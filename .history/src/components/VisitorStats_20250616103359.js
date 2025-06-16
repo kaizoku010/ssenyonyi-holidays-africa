@@ -2,7 +2,6 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import '../styles/VisitorStats.css';
-import { Link } from 'react-router-dom';
 
 const VisitorStats = () => {
   const { t } = useTranslation();
@@ -48,9 +47,10 @@ const VisitorStats = () => {
               <span className="btn-icon">◎</span> {t('visitorStats.buttons.explore')}
             </button>
             </Link>
-            <Link to="/trip-planner">
-                        <button className="get-started-btn">{t('visitorStats.buttons.startHere')} <span className="btn-arrow">→</span></button>
+            <Link to="/trip">
+            
             </Link>
+            <button className="get-started-btn">{t('visitorStats.buttons.startHere')} <span className="btn-arrow">→</span></button>
           </div>
         </div>
 

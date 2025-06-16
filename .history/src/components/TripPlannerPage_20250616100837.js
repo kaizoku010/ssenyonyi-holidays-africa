@@ -66,7 +66,9 @@ const TripPlannerPage = () => {
           ) : (
             <form className="trip-planner-form" onSubmit={handleSubmit}>
    <div className='input-group'>
-  <div className='group-one'>
+
+   </div>
+   <div className='group-one'>
        <label className="trip-label">
                 Name <span className="required">*</span>
                 <input
@@ -137,8 +139,6 @@ const TripPlannerPage = () => {
                 />
               </label>
 </div>
-   </div>
- 
          
 
               <label className="trip-label">

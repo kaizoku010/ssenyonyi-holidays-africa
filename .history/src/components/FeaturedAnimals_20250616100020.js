@@ -60,6 +60,48 @@ const galleryItems = [
     thumbnail: Slide1,
     width: 'wide',
     height: 'medium'
+  },
+  {
+    id: 7,
+    type: 'image',
+    src: Slide4,
+    width: 'medium',
+    height: 'medium'
+  },
+  {
+    id: 8,
+    type: 'image',
+    src: kitandra2,
+    width: 'medium',
+    height: 'medium'
+  },
+  {
+    id: 9,
+    type: 'image',
+    src: Slide6,
+    width: 'medium',
+    height: 'medium'
+  },
+  {
+    id: 10,
+    type: 'image',
+    src: Slide7,
+    width: 'medium',
+    height: 'medium'
+  },
+  {
+    id: 11,
+    type: 'image',
+    src: Slide8,
+    width: 'wide',
+    height: 'medium'
+  },
+  {
+    id: 12,
+    type: 'image',
+    src: kitandra2,
+    width: 'wide',
+    height: 'medium'
   }
 ];
 
