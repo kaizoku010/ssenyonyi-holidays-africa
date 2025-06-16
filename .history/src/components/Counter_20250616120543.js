@@ -40,6 +40,7 @@ const Counter = () => {
   return (
     <section className="visitor-stats-">
       <div className="stats-card-">
+
         <div className="stats-container">
           {stats.map((stat, index) => (
             <motion.div
