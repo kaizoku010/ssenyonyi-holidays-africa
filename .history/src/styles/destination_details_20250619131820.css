@@ -1,0 +1,27 @@
+.package-details-page{
+    background-color: white;
+}
+
+.destination_deatils_name{
+    width: 100%;
+    background-color: blue;
+    width: 30rem;
+}
+
+.details-hero- {
+    height: 30rem;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+background-color: red;
+    display: flex;
+    /* background-color: #f8f9fa; */
+}
+
+.hero-content-destination  {padding-top: 12rem;
+    padding-left: 4rem;}
+
+  .hero-content-destination > h1 {    font-size: 4rem;
+    margin: 0 0 10px;
+    font-weight: bolder;
+    font-weight: 700;  }

@@ -1,0 +1,18 @@
+.package-details-page{
+    background-color: white;
+}
+
+.destination_deatils_name{
+    width: 100%;
+    background-color: blue;
+}
+
+.details-hero- {
+    height: 30rem;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+background-color: red;
+    display: flex;
+    /* background-color: #f8f9fa; */
+}

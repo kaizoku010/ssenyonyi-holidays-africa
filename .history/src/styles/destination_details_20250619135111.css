@@ -1,0 +1,41 @@
+.package-details-page {
+  background-color: white;
+}
+
+.destination_deatils_name {
+  width: 100%;
+  /* background-color: blue; */
+  /* width: 30rem; */
+}
+
+.details-hero- {
+  height: 23rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  background-color: #f8f9fa;
+}
+
+.hero-content-destination {
+      padding-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    padding-left: 4rem;
+    align-content: center
+}
+
+.hero-content-destination > h1 {
+  font-size: 3rem;
+  margin: 0 0 10px;
+}
+
+
+.spacer{
+    height: 10rem;
+}
+
+.destiation-header-desc{
+    
+}
