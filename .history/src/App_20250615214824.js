@@ -55,7 +55,7 @@ function App() {
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/inquire-now" element={<ContactPage />} />
           <Route path="/about" element={<EVChargingPage />} />
-          <Route path="/trip-planner" element={<TripPlannerPage />} />
+          <Route path="/inquiries" element={<TripPlannerPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/terms-of-service" element={<TermsOfServicePage />} />
         </Routes>

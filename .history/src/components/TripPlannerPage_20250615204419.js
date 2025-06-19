@@ -25,19 +25,19 @@ const TripPlannerPage = () => {
   };
 
   return (
-    <div className="trip-planner-page">
-      <header className="trip-planner-header">
+    <div className="inquiries-page">
+      <header className="inquiries-header">
         <h1>Custom Trip Planner</h1>
         <p>Create your own adventure by selecting destinations and packages tailored to your interests.</p>
       </header>
-      <main className="trip-planner-main">
+      <main className="inquiries-main">
         {submitted ? (
-          <div className="trip-planner-confirmation">
+          <div className="inquiries-confirmation">
             <h2>Trip Created!</h2>
             <p>Your custom trip "{tripName}" has been planned with {selectedDestinations.length} destination(s) and the "{selectedPackage}" package.</p>
           </div>
         ) : (
-          <form className="trip-planner-form" onSubmit={handleSubmit}>
+          <form className="inquiries-form" onSubmit={handleSubmit}>
             <label className="trip-label">
               Trip Name
               <input

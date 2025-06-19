@@ -47,7 +47,7 @@ const VisitorStats = () => {
               <span className="btn-icon">◎</span> {t('visitorStats.buttons.explore')}
             </button>
             </Link>
-            <Lin to="/trip-planner">
+            <Lin to="/inquiries">
                         <button className="get-started-btn">{t('visitorStats.buttons.startHere')} <span className="btn-arrow">→</span></button>
             </Link>
           </div>

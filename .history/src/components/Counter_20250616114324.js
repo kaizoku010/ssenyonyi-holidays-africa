@@ -51,7 +51,7 @@ const Counter = () => {
               <span className="btn-icon">◎</span> {t('visitorStats.buttons.explore')}
             </button>
             </Link>
-            <Link to="/trip-planner">
+            <Link to="/inquiries">
                         <button className="get-started-btn">{t('visitorStats.buttons.startHere')} <span className="btn-arrow">→</span></button>
             </Link>
           </div>

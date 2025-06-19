@@ -1,4 +1,4 @@
-.trip-planner-modal-overlay {
+.inquiries-modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,7 +11,7 @@
   z-index: 1000;
 }
 
-.trip-planner-modal {
+.inquiries-modal {
   background: #fff;
   border-radius: 12px;
   padding: 2rem;
@@ -31,6 +31,6 @@
   cursor: pointer;
 }
 
-.trip-planner-content {
+.inquiries-content {
   margin-top: 1.5rem;
 }

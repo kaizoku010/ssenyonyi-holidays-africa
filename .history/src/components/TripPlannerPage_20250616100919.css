@@ -1,4 +1,4 @@
-.trip-planner-page {
+.inquiries-page {
   min-height: 100vh;
   background: #f8fafc;
   display: flex;
@@ -7,27 +7,27 @@
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
 }
 
-.trip-planner-header {
+.inquiries-header {
   width: 100%;
   max-width: 600px;
   margin: 3rem auto 2rem auto;
   text-align: center;
 }
 
-.trip-planner-header h1 {
+.inquiries-header h1 {
   font-size: 2.5rem;
   font-weight: 700;
   color: #1a202c;
   margin-bottom: 0.5rem;
 }
 
-.trip-planner-header p {
+.inquiries-header p {
   color: #64748b;
   font-size: 1.1rem;
   margin: 0;
 }
 
-.trip-planner-main {
+.inquiries-main {
   width: 100%;
   max-width: 600px;
   background: #fff;
@@ -37,14 +37,14 @@
   margin-bottom: 3rem;
 }
 
-.trip-planner-form-placeholder {
+.inquiries-form-placeholder {
   color: #64748b;
   text-align: center;
   font-size: 1.1rem;
   padding: 2rem 0;
 }
 
-.trip-planner-form {
+.inquiries-form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -120,7 +120,7 @@ width: 100%;
   cursor: not-allowed;
 }
 
-.trip-planner-confirmation {
+.inquiries-confirmation {
   text-align: center;
   color: #059669;
   padding: 2rem 0;

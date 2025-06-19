@@ -59,12 +59,12 @@ const TripPlannerPage = () => {
       <main className="destinations-content">
         <div className="featured-destinations">
           {submitted ? (
-            <div className="trip-planner-confirmation">
+            <div className="inquiries-confirmation">
               <h2>Trip Inquiry Sent!</h2>
               <p>Thank you, {form.name}. We'll contact you at {form.email} soon.</p>
             </div>
           ) : (
-            <form className="trip-planner-form" onSubmit={handleSubmit}>
+            <form className="inquiries-form" onSubmit={handleSubmit}>
    <div className='input-group'>
   <div className='group-one'>
        <label className="trip-label">

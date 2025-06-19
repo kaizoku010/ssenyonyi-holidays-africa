@@ -47,20 +47,20 @@ const TripPlannerPage = () => {
   const isValid = form.name && form.email && form.days && form.people && form.date && form.message;
 
   return (
-    <div className="trip-planner-page">
-      <header className="trip-planner-header">
+    <div className="inquiries-page">
+      <header className="inquiries-header">
         <button className="trip-back-btn" onClick={() => navigate('/')}>{'< Back to Home'}</button>
         <h1>Trip Inquiry</h1>
         <p>Plan your adventure. Fill in your details and preferences below.</p>
       </header>
-      <main className="trip-planner-main">
+      <main className="inquiries-main">
         {submitted ? (
-          <div className="trip-planner-confirmation">
+          <div className="inquiries-confirmation">
             <h2>Trip Inquiry Sent!</h2>
             <p>Thank you, {form.name}. We'll contact you at {form.email} soon.</p>
           </div>
         ) : (
-          <form className="trip-planner-form" onSubmit={handleSubmit}>
+          <form className="inquiries-form" onSubmit={handleSubmit}>
             <label className="trip-label">
               Name <span className="required">*</span>
               <input

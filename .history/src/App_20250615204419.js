@@ -53,7 +53,7 @@ function App() {
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/about" element={<EVChargingPage />} />
-          <Route path="/trip-planner" element={<TripPlannerPage />} />
+          <Route path="/inquiries" element={<TripPlannerPage />} />
         </Routes>
         <ScrollToTop />
         <DevModeIndicator />

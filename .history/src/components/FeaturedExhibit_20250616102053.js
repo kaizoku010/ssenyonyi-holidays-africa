@@ -146,7 +146,7 @@ const FeaturedExhibit = () => {
                       <li key={i}><i className="fas fa-check"></i> {feature}</li>
                     ))}
                   </ul>
-                  <Link to="/trip-planner">
+                  <Link to="/inquiries">
                   <button className="book-now-button">
                     {t('featuredExhibit.bookButton')}
                   </button>

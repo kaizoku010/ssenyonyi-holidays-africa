@@ -1,0 +1,237 @@
+[
+  
+    {
+    "id": 1,
+    "title": "CLASSIC UGANDA GORILLA & WILDLIFE SAFARI",
+    "type": "Mid-Range",
+    "duration": "8 Days / 7 Nights",
+    "destinations": ["Entebbe", "Murchison Falls", "Kibale", "Queen Elizabeth", "Bwindi", "Lake Mburo"],
+    "highlights": [
+      "Game drives in Murchison Falls & Queen Elizabeth NP",
+      "Chimpanzee tracking in Kibale Forest",
+      "Gorilla trekking in Bwindi",
+      "Boat cruise on the Nile and Kazinga Channel"
+    ],
+    "accommodation": "Mid-range: Pakuba Safari Lodge, Kibale Forest Camp, Ishasha Jungle Lodge",
+    "price": "3,800 – 4,500",
+    "inclusions": "Gorilla permit, park fees, meals, transport, guide.",
+    "image": "kitandra.jpg",
+    "featured": true,
+    "description": "Uganda, often referred to as the Pearl of Africa, offers one of the most thrilling and awe-inspiring safari experiences on the continent. The Classic Uganda Gorilla & Wildlife Safari is a once-in-a-lifetime journey that takes you from the lush tropical forests of Bwindi to the savannah plains of Queen Elizabeth National Park, combining close-up encounters with endangered mountain gorillas, tree-climbing lions, and a stunning diversity of landscapes and cultures.",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Entebbe",
+        "description": "Welcome to Uganda! Upon arrival at Entebbe International Airport, you'll be met by your guide and transferred to your hotel. Depending on your arrival time, you may have the opportunity to explore the charming town of Entebbe, visit the botanical gardens, or simply relax and prepare for your adventure.",
+        "accommodation": "Papyrus Guest House or similar"
+      },
+      {
+        "day": 2,
+        "title": "Entebbe to Murchison Falls National Park",
+        "description": "After breakfast, depart for Murchison Falls National Park, Uganda's largest protected area. En route, visit the Ziwa Rhino Sanctuary for a guided rhino tracking experience on foot. Continue to Murchison Falls, arriving in the late afternoon with time to settle into your lodge and enjoy the sunset over the Nile.",
+        "accommodation": "Pakuba Safari Lodge or similar"
+      },
+      {
+        "day": 3,
+        "title": "Murchison Falls National Park",
+        "description": "Begin with an early morning game drive on the northern bank of the Nile, where you'll search for elephants, lions, giraffes, and more. In the afternoon, take a boat cruise up the Nile to the base of Murchison Falls, offering excellent opportunities for wildlife photography and bird watching. The cruise ends with a hike to the top of the falls (optional) for spectacular views.",
+        "accommodation": "Pakuba Safari Lodge or similar"
+      },
+      {
+        "day": 4,
+        "title": "Murchison Falls to Kibale Forest",
+        "description": "Depart Murchison Falls and journey south to Kibale Forest National Park, home to the highest concentration of primates in Africa. The scenic drive takes you through tea plantations and rural villages, offering glimpses of local life. Arrive at your accommodation in the late afternoon.",
+        "accommodation": "Kibale Forest Camp or similar"
+      },
+      {
+        "day": 5,
+        "title": "Chimpanzee Tracking & Queen Elizabeth National Park",
+        "description": "Morning chimpanzee tracking in Kibale Forest. Spend an hour observing these fascinating primates in their natural habitat. After lunch, transfer to Queen Elizabeth National Park, arriving in time for an evening game drive in the Ishasha sector, famous for its tree-climbing lions.",
+        "accommodation": "Ishasha Jungle Lodge or similar"
+      },
+      {
+        "day": 6,
+        "title": "Queen Elizabeth to Bwindi Impenetrable Forest",
+        "description": "Morning game drive in Queen Elizabeth National Park, followed by a boat cruise on the Kazinga Channel, home to the highest concentration of hippos in Africa. In the afternoon, continue to Bwindi Impenetrable Forest, home of the endangered mountain gorillas.",
+        "accommodation": "Gorilla Mist Camp or similar"
+      },
+      {
+        "day": 7,
+        "title": "Gorilla Trekking in Bwindi",
+        "description": "Early breakfast before your gorilla trekking experience. After a briefing at park headquarters, trek through the forest with experienced guides in search of a habituated gorilla family. Spend a magical hour with these gentle giants, observing their behavior and social interactions. Return to your lodge for a relaxing evening and to share your gorilla encounter stories.",
+        "accommodation": "Gorilla Mist Camp or similar"
+      },
+      {
+        "day": 8,
+        "title": "Bwindi to Lake Mburo & Departure",
+        "description": "Depart Bwindi and travel to Lake Mburo National Park for a game drive or boat safari. Continue to Entebbe, arriving in the evening for your onward flight or overnight stay (additional night not included in package).",
+        "accommodation": "N/A (departure day)"
+      }
+    ],
+    "activities": [
+      { "name": "Gorilla Trekking", "icon": "fa-paw" },
+      { "name": "Game Drives", "icon": "fa-car" },
+      { "name": "Boat Safaris", "icon": "fa-ship" },
+      { "name": "Chimpanzee Tracking", "icon": "fa-tree" },
+      { "name": "Hiking", "icon": "fa-hiking" },
+      { "name": "Cultural Visits", "icon": "fa-users" }
+    ],
+    "gallery": ["gols.jpg", "chimp.jpg", "mount.jpg", "mach.jpg"],
+    "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "mapCoordinates": { "lat": 0.3476, "lng": 32.5825 },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah Johnson",
+        "rating": 5,
+        "date": "March 15, 2023",
+        "comment": "The gorilla trekking experience was life-changing! Our guide was knowledgeable and made sure we had the best possible experience. Accommodations were comfortable and the food was excellent. Highly recommend this tour!"
+      },
+      {
+        "id": 2,
+        "name": "Michael Chen",
+        "rating": 4,
+        "date": "January 22, 2023",
+        "comment": "Great itinerary that showcases the best of Uganda. The gorillas were amazing and the game drives productive. Only suggestion would be more time in Queen Elizabeth National Park."
+      },
+      {
+        "id": 3,
+        "name": "Emma Williams",
+        "rating": 5,
+        "date": "April 8, 2023",
+        "comment": "From start to finish, this safari exceeded our expectations. The diversity of wildlife we saw was incredible, and the gorilla encounter was the highlight of our lives. The guides were professional and accommodations were perfect."
+      }
+    ]
+  },
+  
+  {
+    "id": 2,
+    "title": "RWANDA-UGANDA GORILLA DOUBLE TREK",
+    "type": "High-End",
+    "duration": "6 Days / 5 Nights",
+    "destinations": ["Kigali", "Volcanoes NP (Rwanda)", "Bwindi (Uganda)"],
+    "highlights": [
+      "Gorilla trekking in Rwanda and Uganda",
+      "Golden Monkey tracking in Volcanoes NP",
+      "Scenic drive through the Virunga Mountains"
+    ],
+    "accommodation": "Luxury: Bisate Lodge (Rwanda), Clouds Mountain Gorilla Lodge (Uganda)",
+    "inclusions": "Private transfers, both gorilla permits, champagne sundowners.",
+    "image": "kitandra2.jpg",
+    "featured": true
+  },
+
+
+  {
+    "id": 3,
+    "title": "LUXURY UGANDA SAFARI & GORILLA EXPERIENCE",
+    "type": "High-End",
+    "duration": "10 Days / 9 Nights",
+    "destinations": ["Entebbe", "Ziwa Rhino Sanctuary", "Murchison Falls", "Kibale", "Queen Elizabeth", "Bwindi", "Lake Bunyonyi"],
+    "highlights": [
+      "Helicopter tour over Murchison Falls",
+      "Private chimpanzee habituation experience",
+      "Sunset cruise on Lake Bunyonyi"
+    ],
+    "accommodation": "Luxury: Chobe Safari Lodge, Kyangabi Crater Lake Resort",
+    "inclusions": "Domestic flights, exclusive guides, gourmet dining.",
+    "image": "kitandra.jpg",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "title": "PRIMATE PARADISE: CHIMPS & GORILLAS",
+    "type": "Mid-Range",
+    "duration": "7 Days / 6 Nights",
+    "destinations": ["Entebbe", "Kibale", "Queen Elizabeth", "Bwindi"],
+    "highlights": [
+      "Chimpanzee tracking in Kibale",
+      "Tree-climbing lions in Ishasha",
+      "Gorilla trekking in Bwindi"
+    ],
+    "accommodation": "Mid-range: Turaco Treehouse, Enganzi Lodge",
+    "inclusions": "All permits, meals, 4x4 transport.",
+    "image": "kitandra2.jpg",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "title": "RWANDA TO UGANDA EXPLORER",
+    "type": "Mid-Range",
+    "duration": "9 Days / 8 Nights",
+    "destinations": ["Kigali", "Akagera NP (Rwanda)", "Lake Mburo", "Bwindi", "Queen Elizabeth", "Entebbe"],
+    "highlights": [
+      "Game drives in Akagera and Queen Elizabeth",
+      "Boat safari on Lake Ihema (Rwanda)",
+      "Gorilla trekking in Bwindi"
+    ],
+    "accommodation": "Mid-range: Ruzizi Tented Lodge, Buffalo Safari Lodge",
+    "inclusions": "Cross-border permits, bilingual guide.",
+    "image": "kitandra.jpg",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "title": "ULTIMATE GREAT LAKES ADVENTURE",
+    "type": "High-End",
+    "duration": "12 Days / 11 Nights",
+    "destinations": ["Entebbe", "Jinja", "Kidepo Valley", "Murchison Falls", "Kibale", "Bwindi", "Lake Bunyonyi"],
+    "highlights": [
+      "White-water rafting at the Nile Source",
+      "Cultural immersion with Karamojong tribes",
+      "Gorillas"
+    ],
+    "accommodation": "Luxury: Apoka Safari Lodge, Sanctuary Gorilla Forest Camp",
+    "inclusions": "Private charters, VIP experiences.",
+    "image": "kitandra2.jpg",
+    "featured": false
+  },
+  {
+    "id": 7,
+    "title": "FAMILY-FRIENDLY UGANDA SAFARI",
+    "type": "Mid-Range",
+    "duration": "8 Days / 7 Nights",
+    "destinations": ["Entebbe", "Ziwa Rhino Sanctuary", "Murchison Falls", "Kibale", "Lake Mburo"],
+    "highlights": [
+      "Rhino tracking at Ziwa",
+      "Family-friendly chimpanzee walks",
+      "Horseback riding in Lake Mburo"
+    ],
+    "accommodation": "Mid-range: Sambiya River Lodge, Mihingo Lodge",
+    "inclusions": "Child-friendly guides, interactive activities.",
+    "image": "kitandra.jpg",
+    "featured": false
+  },
+  {
+    "id": 8,
+    "title": "RWANDA-UGANDA HONEYMOON SPECIAL",
+    "type": "High-End",
+    "duration": "10 Days / 9 Nights",
+    "destinations": ["Kigali", "Volcanoes NP", "Lake Kivu (Rwanda)", "Bwindi", "Lake Bunyonyi (Uganda)"],
+    "highlights": [
+      "Gorilla trekking in Bwindi",
+      "Romantic lakeside dinners at Lake Kivu",
+      "Canoeing on Lake Bunyonyi"
+    ],
+    "accommodation": "Luxury: One&Only Gorilla's Nest, BirdNest Resort",
+    "inclusions": "Couples' spa treatments, photography sessions.",
+    "image": "kitandra2.jpg",
+    "featured": false
+  },
+  {
+    "id": 9,
+    "title": "UGANDA BIRDING & WILDLIFE EXTRAVAGANZA",
+    "type": "Mid-Range",
+    "duration": "10 Days / 9 Nights",
+    "destinations": ["Entebbe", "Mabamba Wetlands", "Queen Elizabeth", "Bwindi", "Lake Mburo"],
+    "highlights": [
+      "Shoebill stork spotting in Mabamba",
+      "Birding boat cruise in Queen Elizabeth",
+      "Guided forest walks in Bwindi and Gorrilla tracking"
+    ],
+    "accommodation": "Mid-range: Mweya Safari Lodge, Gorilla Valley Lodge",
+    "inclusions": "Expert birding guide, binoculars provided.",
+    "image": "kitandra.jpg",
+    "featured": false
+  }
+]
