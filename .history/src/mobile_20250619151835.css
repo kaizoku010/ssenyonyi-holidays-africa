@@ -458,8 +458,9 @@ width: 100%;
     max-width: 600px;
 }
 
-    .gallery-hero {
-        height: 20rem;
+.gallery-hero
+ {
+        height: 44rem;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: scroll;
@@ -507,7 +508,7 @@ width: 100%;
   }
 
   .spacer {
-    height: 0rem !important;
+    height: 0rem;
 }
 
 
@@ -515,18 +516,12 @@ width: 100%;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
-
-.hero-content-destination > h1 {
-    font-size: 2rem;
-    margin: 0 0 .8rem !important;
-}
-
     .hero-content-destination {
         padding-top: 5rem;
         display: flex;
         flex-direction: column;
-        justify-content: end !important;
-        padding-left: 2rem !important;
+        justify-content: end;
+        padding-left: 2rem;
         align-content: center;
     }
 

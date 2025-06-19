@@ -458,8 +458,9 @@ width: 100%;
     max-width: 600px;
 }
 
-    .gallery-hero {
-        height: 20rem;
+.gallery-hero
+ {
+        height: 44rem;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: scroll;
@@ -515,12 +516,6 @@ width: 100%;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
-
-.hero-content-destination > h1 {
-    font-size: 2rem;
-    margin: 0 0 .8rem !important;
-}
-
     .hero-content-destination {
         padding-top: 5rem;
         display: flex;

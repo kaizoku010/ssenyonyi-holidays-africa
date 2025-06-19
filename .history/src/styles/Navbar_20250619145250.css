@@ -146,7 +146,8 @@
   transition: all 0.3s ease-in-out;
   overflow-y: auto;
   padding-top: 80px;
-} 
+}
+
 .mobile-menu.open {
   opacity: 1;
   visibility: visible;

@@ -458,8 +458,9 @@ width: 100%;
     max-width: 600px;
 }
 
-    .gallery-hero {
-        height: 20rem;
+.gallery-hero
+ {
+        height: 44rem;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: scroll;
@@ -506,30 +507,6 @@ width: 100%;
     gap: 0;
   }
 
-  .spacer {
-    height: 0rem !important;
-}
-
-
-  .destiation-header-desc {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-
-.hero-content-destination > h1 {
-    font-size: 2rem;
-    margin: 0 0 .8rem !important;
-}
-
-    .hero-content-destination {
-        padding-top: 5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: end !important;
-        padding-left: 2rem !important;
-        align-content: center;
-    }
-
   .package-details-reviews-container {
     grid-template-columns: 1fr;
   }
@@ -538,7 +515,7 @@ width: 100%;
   .destinations-hero h1 {
     font-size: 1.8rem;
     font-weight: 700;
-    color: rgb(73, 73, 73);
+    color: white;
     width: 100% ;
     line-height: 1.2;
     margin-bottom: 0.8rem;
@@ -555,12 +532,12 @@ width: 100%;
 }
 
   .destinations-hero {
-    height: 20rem;
+    height: 44rem;
     background-size: cover;
-
     background-position: center;
     background-attachment: scroll;
     position: relative;
+    color: black;
     background-color: rgb(221, 221, 221);
 }
 

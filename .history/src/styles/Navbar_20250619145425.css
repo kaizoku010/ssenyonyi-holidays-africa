@@ -146,7 +146,13 @@
   transition: all 0.3s ease-in-out;
   overflow-y: auto;
   padding-top: 80px;
-} 
+}
+
+.hero-content- {
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
 .mobile-menu.open {
   opacity: 1;
   visibility: visible;

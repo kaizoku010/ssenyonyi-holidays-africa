@@ -229,13 +229,14 @@ color: #2d2c2c;
 .tabs-content {
     margin-top: 0.5rem;
     outline: none;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 .explore-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    border-radius: var(--radius);
     font-weight: 500;
     font-size: 0.875rem;
     line-height: 1.5;
@@ -244,6 +245,8 @@ color: #2d2c2c;
     padding: 0.5rem 1rem;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
     cursor: pointer;
+    background-color: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
     border: 1px solid transparent;
 }
 
@@ -458,8 +461,9 @@ width: 100%;
     max-width: 600px;
 }
 
-    .gallery-hero {
-        height: 20rem;
+.gallery-hero
+ {
+        height: 44rem;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: scroll;
@@ -506,30 +510,6 @@ width: 100%;
     gap: 0;
   }
 
-  .spacer {
-    height: 0rem !important;
-}
-
-
-  .destiation-header-desc {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-
-.hero-content-destination > h1 {
-    font-size: 2rem;
-    margin: 0 0 .8rem !important;
-}
-
-    .hero-content-destination {
-        padding-top: 5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: end !important;
-        padding-left: 2rem !important;
-        align-content: center;
-    }
-
   .package-details-reviews-container {
     grid-template-columns: 1fr;
   }
@@ -538,7 +518,7 @@ width: 100%;
   .destinations-hero h1 {
     font-size: 1.8rem;
     font-weight: 700;
-    color: rgb(73, 73, 73);
+    color: white;
     width: 100% ;
     line-height: 1.2;
     margin-bottom: 0.8rem;
@@ -555,13 +535,14 @@ width: 100%;
 }
 
   .destinations-hero {
-    height: 20rem;
+    height: 44rem;
     background-size: cover;
-
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)), url('./media/ants.jpg');
     background-position: center;
     background-attachment: scroll;
     position: relative;
-    background-color: rgb(221, 221, 221);
+    color: white;
 }
 
 

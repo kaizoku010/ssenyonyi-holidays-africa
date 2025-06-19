@@ -458,8 +458,9 @@ width: 100%;
     max-width: 600px;
 }
 
-    .gallery-hero {
-        height: 20rem;
+.gallery-hero
+ {
+        height: 44rem;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: scroll;
