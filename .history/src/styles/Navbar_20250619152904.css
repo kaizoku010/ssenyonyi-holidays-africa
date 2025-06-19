@@ -245,10 +245,6 @@
   .language-switcher {
     display: none;
   }
-
-  .mobile-menu {
-    z-index: 99999 !important;
-  }
 }
 
 .navbar--transparent .nav-links .nav-item a,

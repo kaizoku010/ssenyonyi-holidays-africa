@@ -466,11 +466,15 @@ width: 100%;
     gap: 10px;
 }
 
-.featured-animals {
+.featured-animals
+Specificity: (0,1,0)
+ {
     padding-top: 6rem;
     background-color: #fff;
     color: #333;
-    padding-bottom: 1rem;
+    padding-bottom: 1rem
+16px
+;
 }
 
     .gallery-hero {

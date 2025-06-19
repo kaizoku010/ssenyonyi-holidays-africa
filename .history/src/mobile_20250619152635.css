@@ -459,18 +459,11 @@ width: 100%;
 }
 
 .masonry-gallery {
-    margin-top: 2rem !important;
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(200px, auto);
     gap: 10px;
-}
-
-.featured-animals {
-    padding-top: 6rem;
-    background-color: #fff;
-    color: #333;
-    padding-bottom: 1rem;
 }
 
     .gallery-hero {
