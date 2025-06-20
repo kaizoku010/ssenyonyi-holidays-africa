@@ -279,7 +279,7 @@
     { "name": "Boat Safari", "icon": "fa-ship" },
     { "name": "Rhino Tracking", "icon": "fa-binoculars" }
   ],
-  "gallery": ["chimp.jpg", "mount.jpg", "mach.jpg"],
+  "gallery": ["gols.jpg", "chimp.jpg", "mount.jpg", "mach.jpg"],
   "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
   "mapCoordinates": { "lat": 1.3733, "lng": 32.2903 },
   "reviews": [

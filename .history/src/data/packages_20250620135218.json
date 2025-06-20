@@ -279,7 +279,7 @@
     { "name": "Boat Safari", "icon": "fa-ship" },
     { "name": "Rhino Tracking", "icon": "fa-binoculars" }
   ],
-  "gallery": ["chimp.jpg", "mount.jpg", "mach.jpg"],
+  "gallery": ["gols.jpg", "chimp.jpg", "mount.jpg", "mach.jpg"],
   "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
   "mapCoordinates": { "lat": 1.3733, "lng": 32.2903 },
   "reviews": [
@@ -322,7 +322,7 @@
   ],
   "accommodation": "Mid-range: Turaco Treehouse, Enganzi Lodge",
   "inclusions": "All permits, meals, 4x4 transport.",
-  "image": "chimp.jpg",
+  "image": "kitandra2.jpg",
   "featured": false,
   "description": "This primate-focused safari takes you deep into Uganda's tropical forests to meet our closest relatives — chimpanzees and mountain gorillas. From lush Kibale to misty Bwindi, you’ll track endangered species, explore diverse ecosystems, and spot wildlife on savannah plains in comfort and style.",
   "itinerary": [
@@ -652,7 +652,7 @@
   ],
   "accommodation": "Mid-range: Sambiya River Lodge, Mihingo Lodge",
   "inclusions": "Child-friendly guides, interactive activities.",
-  "image": "people.jpg",
+  "image": "kitandra.jpg",
   "featured": false,
   "description": "Designed with families in mind, this Ugandan safari offers wildlife encounters, nature-based play, and unforgettable moments. Track rhinos on foot, meet chimpanzees in Kibale, and ride horses alongside zebras in Lake Mburo. It's the perfect combination of adventure and bonding.",
   "itinerary": [
@@ -753,7 +753,7 @@
   ],
   "accommodation": "Luxury: One&Only Gorilla's Nest, BirdNest Resort",
   "inclusions": "Couples' spa treatments, photography sessions.",
-  "image": "louge.jpg",
+  "image": "kitandra2.jpg",
   "featured": false,
   "description": "Designed for adventurous couples, this luxurious honeymoon blends nature, romance, and unforgettable experiences. Trek mountain gorillas in Bwindi, sip champagne by Lake Kivu, and drift across Lake Bunyonyi's serene waters. A perfect beginning to your lifelong journey together.",
   "itinerary": [
@@ -866,7 +866,7 @@
   ],
   "accommodation": "Mid-range: Mweya Safari Lodge, Gorilla Valley Lodge",
   "inclusions": "Expert birding guide, binoculars provided.",
-  "image": "slide3.jpg",
+  "image": "kitandra.jpg",
   "featured": false,
   "description": "A haven for nature enthusiasts and avid birders, this Uganda safari is designed to showcase the country’s avian diversity and iconic wildlife. Spot shoebills in Mabamba, track gorillas in Bwindi, cruise the Kazinga Channel, and identify hundreds of bird species along the way.",
   "itinerary": [

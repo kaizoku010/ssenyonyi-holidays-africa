@@ -28,8 +28,7 @@ const imageMap = {
   "chimp.jpg": require("../media/chimp.jpg"),
   "buh.jpg": require("../media/buh.jpg"),
   "people.jpg": require("../media/people.jpg"),
-  "louge.jpg": require("../media/louge.jpg"),
-  "slide3.jpg": require("../media/slide3.jpg"),
+  "people.jpg": require("../media/louge.jpg"),
 
 };
 

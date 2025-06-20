@@ -279,7 +279,7 @@
     { "name": "Boat Safari", "icon": "fa-ship" },
     { "name": "Rhino Tracking", "icon": "fa-binoculars" }
   ],
-  "gallery": ["chimp.jpg", "mount.jpg", "mach.jpg"],
+  "gallery": ["gols.jpg", "chimp.jpg", "mount.jpg", "mach.jpg"],
   "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
   "mapCoordinates": { "lat": 1.3733, "lng": 32.2903 },
   "reviews": [
@@ -866,7 +866,7 @@
   ],
   "accommodation": "Mid-range: Mweya Safari Lodge, Gorilla Valley Lodge",
   "inclusions": "Expert birding guide, binoculars provided.",
-  "image": "slide3.jpg",
+  "image": "kitandra.jpg",
   "featured": false,
   "description": "A haven for nature enthusiasts and avid birders, this Uganda safari is designed to showcase the country’s avian diversity and iconic wildlife. Spot shoebills in Mabamba, track gorillas in Bwindi, cruise the Kazinga Channel, and identify hundreds of bird species along the way.",
   "itinerary": [

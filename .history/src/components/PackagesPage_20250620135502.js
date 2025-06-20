@@ -29,7 +29,7 @@ const imageMap = {
   "buh.jpg": require("../media/buh.jpg"),
   "people.jpg": require("../media/people.jpg"),
   "louge.jpg": require("../media/louge.jpg"),
-  "slide3.jpg": require("../media/slide3.jpg"),
+  "louge.jpg": require("../media/slide3.jpg"),
 
 };
 

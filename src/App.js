@@ -62,8 +62,8 @@ function App() {
           <Route path="/destination/:id" element={<DestinationDetailsPage />} />
         </Routes>
         <ScrollToTop />
-        {/* <DevModeIndicator />
-        <DevelopmentNotice /> */}
+        <DevModeIndicator />
+        <DevelopmentNotice />
       </Router>
     );
   }

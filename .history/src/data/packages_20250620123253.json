@@ -207,7 +207,7 @@
   ],
   "accommodation": "Luxury: Chobe Safari Lodge, Kyangabi Crater Lake Resort",
   "inclusions": "Domestic flights, exclusive guides, gourmet dining.",
-  "image": "buh.jpg",
+  "image": "kitandra.jpg",
   "featured": false,
   "description": "Discover the heart of Uganda with this luxury safari adventure. Encounter rhinos at Ziwa, cruise beneath the powerful Murchison Falls, track chimps in Kibale, explore the wildlife of Queen Elizabeth, and meet mountain gorillas in Bwindi. End with a serene retreat at Lake Bunyonyi.",
   "itinerary": [
@@ -279,7 +279,7 @@
     { "name": "Boat Safari", "icon": "fa-ship" },
     { "name": "Rhino Tracking", "icon": "fa-binoculars" }
   ],
-  "gallery": ["chimp.jpg", "mount.jpg", "mach.jpg"],
+  "gallery": ["gols.jpg", "chimp.jpg", "mount.jpg", "mach.jpg"],
   "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
   "mapCoordinates": { "lat": 1.3733, "lng": 32.2903 },
   "reviews": [
@@ -307,6 +307,219 @@
   ]
 },
 
+  
+ {
+  "id": 2,
+  "title": "RWANDA-UGANDA GORILLA DOUBLE TREK",
+  "type": "High-End",
+  "duration": "6 Days / 5 Nights",
+  "destinations": ["Kigali", "Volcanoes NP (Rwanda)", "Bwindi (Uganda)"],
+  "highlights": [
+    "Gorilla trekking in Rwanda and Uganda",
+    "Golden Monkey tracking in Volcanoes NP",
+    "Scenic drive through the Virunga Mountains"
+  ],
+  "accommodation": "Luxury: Bisate Lodge (Rwanda), Clouds Mountain Gorilla Lodge (Uganda)",
+  "inclusions": "Private transfers, both gorilla permits, champagne sundowners.",
+  "image": "kitandra2.jpg",
+  "featured": true,
+  "description": "Embark on an unforgettable journey across Rwanda and Uganda in search of the majestic mountain gorillas. Trek through mist-covered forests, experience golden monkey encounters, and enjoy the comforts of world-class eco-lodges nestled in Africa’s most iconic mountain ranges.",
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Kigali",
+      "description": "Arrive in Kigali, Rwanda's vibrant capital. Your guide will greet you and take you on a brief city tour including the Kigali Genocide Memorial and local cultural centers. Later, relax at your luxurious hotel.",
+      "accommodation": "The Retreat Kigali or similar"
+    },
+    {
+      "day": 2,
+      "title": "Transfer to Volcanoes National Park",
+      "description": "Enjoy a scenic drive to Volcanoes National Park through lush hills and villages. En route, stop by artisan markets or coffee cooperatives before checking in at your forest lodge with views of the Virunga peaks.",
+      "accommodation": "Bisate Lodge or similar"
+    },
+    {
+      "day": 3,
+      "title": "Gorilla Trekking in Rwanda",
+      "description": "After an early briefing at park headquarters, begin your trek into the forest in search of mountain gorillas. Spend a powerful hour in their presence before returning for a gourmet lunch and afternoon at leisure.",
+      "accommodation": "Bisate Lodge or similar"
+    },
+    {
+      "day": 4,
+      "title": "Golden Monkey Trek & Cross to Bwindi (Uganda)",
+      "description": "In the morning, enjoy a golden monkey trek or visit the Dian Fossey site. Then transfer across the Cyanika border into Uganda’s Bwindi Impenetrable Forest. Settle into your luxury lodge amidst the jungle.",
+      "accommodation": "Clouds Mountain Gorilla Lodge or similar"
+    },
+    {
+      "day": 5,
+      "title": "Gorilla Trekking in Bwindi",
+      "description": "Venture into Uganda’s side of the forest for another thrilling gorilla trek. Each trek offers a unique experience and group. Afterward, relax with a massage or enjoy the views from the lodge.",
+      "accommodation": "Clouds Mountain Gorilla Lodge"
+    },
+    {
+      "day": 6,
+      "title": "Depart via Kigali",
+      "description": "After breakfast, drive back to Kigali through the rolling hills and border towns. Depending on your flight schedule, enjoy lunch or some final shopping before airport drop-off.",
+      "accommodation": "N/A (Departure Day)"
+    }
+  ],
+  "activities": [
+    { "name": "Gorilla Trekking", "icon": "fa-paw" },
+    { "name": "Golden Monkey Trek", "icon": "fa-monkey" },
+    { "name": "Cultural Visits", "icon": "fa-users" },
+    { "name": "Hiking", "icon": "fa-hiking" },
+    { "name": "City Tour", "icon": "fa-city" }
+  ],
+  "gallery": ["gols.jpg", "chimp.jpg", "mount.jpg", "mach.jpg"],
+  "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+  "mapCoordinates": { "lat": 1.9403, "lng": 29.8739 },
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Liam Nkwanzi",
+      "rating": 5,
+      "date": "March 10, 2023",
+      "comment": "I’ve done safaris before, but nothing compares to seeing gorillas in both Rwanda and Uganda. Every detail was taken care of, and the experience felt truly personal. Volcanoes and Bwindi are both stunning."
+    },
+    {
+      "id": 2,
+      "name": "Anika Patel",
+      "rating": 4,
+      "date": "February 5, 2023",
+      "comment": "Loved the golden monkeys and the scenic drive between the two countries. The Uganda trek was more challenging, but also more rewarding. Only wish we had an extra day to unwind at the lodge."
+    },
+    {
+      "id": 3,
+      "name": "James Holloway",
+      "rating": 5,
+      "date": "April 1, 2023",
+      "comment": "A perfect blend of luxury, adventure, and culture. From the attentive guides to the gourmet meals, every part of the trip was flawless. I’ll remember those gorilla moments for the rest of my life."
+    }
+  ]
+},
+
+
+
+  {
+  "id": 3,
+  "title": "LUXURY UGANDA SAFARI & GORILLA EXPERIENCE",
+  "type": "High-End",
+  "duration": "10 Days / 9 Nights",
+  "destinations": [
+    "Entebbe",
+    "Ziwa Rhino Sanctuary",
+    "Murchison Falls",
+    "Kibale",
+    "Queen Elizabeth",
+    "Bwindi",
+    "Lake Bunyonyi"
+  ],
+  "highlights": [
+    "Helicopter tour over Murchison Falls",
+    "Private chimpanzee habituation experience",
+    "Sunset cruise on Lake Bunyonyi"
+  ],
+  "accommodation": "Luxury: Chobe Safari Lodge, Kyangabi Crater Lake Resort",
+  "inclusions": "Domestic flights, exclusive guides, gourmet dining.",
+  "image": "kitandra.jpg",
+  "featured": false,
+  "description": "Experience Uganda in unmatched style on this exclusive safari adventure. Encounter rare rhinos, fly over thunderous falls, share the forest with chimpanzees and gorillas, and unwind on the shores of Lake Bunyonyi. This high-end journey is the ultimate East African wildlife immersion.",
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Entebbe",
+      "description": "Arrive at Entebbe International Airport. Meet your guide and transfer to your hotel. Depending on your arrival time, enjoy a city tour of Entebbe including the Botanical Gardens or Uganda Wildlife Education Centre.",
+      "accommodation": "Hotel No.5 Entebbe or similar"
+    },
+    {
+      "day": 2,
+      "title": "Entebbe to Ziwa Rhino Sanctuary",
+      "description": "After breakfast, drive north to Ziwa Rhino Sanctuary. Enjoy a guided walking safari to track white rhinos. Continue toward Murchison Falls National Park with an evening at leisure.",
+      "accommodation": "Amuka Lodge or Pakuba Safari Lodge"
+    },
+    {
+      "day": 3,
+      "title": "Explore Murchison Falls",
+      "description": "Begin the day with a game drive in Murchison Falls National Park. In the afternoon, take a boat safari to the base of the falls. Optional: Helicopter tour over the mighty falls.",
+      "accommodation": "Chobe Safari Lodge"
+    },
+    {
+      "day": 4,
+      "title": "Murchison Falls to Kibale Forest",
+      "description": "Depart for Kibale via scenic countryside. This long but rewarding drive offers beautiful views of Albertine Rift landscapes. Arrive and settle in near the forest.",
+      "accommodation": "Kyaninga Lodge or Ndali Lodge"
+    },
+    {
+      "day": 5,
+      "title": "Chimpanzee Habituation Experience",
+      "description": "Embark on a full-day chimpanzee habituation experience in Kibale Forest. Spend extended time with a chimpanzee group as they go about their daily routines.",
+      "accommodation": "Kyaninga Lodge or similar"
+    },
+    {
+      "day": 6,
+      "title": "Kibale to Queen Elizabeth National Park",
+      "description": "After breakfast, transfer to Queen Elizabeth National Park. Optional crater lake visits en route. Enjoy an evening game drive spotting lions, elephants, and buffalo.",
+      "accommodation": "Kyambura Gorge Lodge or Kyangabi Crater Lake Resort"
+    },
+    {
+      "day": 7,
+      "title": "Game Drives & Boat Safari",
+      "description": "Morning game drive in Kasenyi plains. In the afternoon, enjoy a boat safari along the Kazinga Channel—famous for its hippo and bird populations.",
+      "accommodation": "Kyangabi Crater Lake Resort"
+    },
+    {
+      "day": 8,
+      "title": "Queen Elizabeth to Bwindi Impenetrable Forest",
+      "description": "Drive to Bwindi through the Ishasha sector, known for tree-climbing lions. Arrive in Bwindi for rest and briefing in preparation for gorilla trekking.",
+      "accommodation": "Sanctuary Gorilla Forest Camp or Mahogany Springs"
+    },
+    {
+      "day": 9,
+      "title": "Gorilla Trekking in Bwindi",
+      "description": "Begin early with a briefing from rangers before heading into the dense forest for a once-in-a-lifetime gorilla trekking experience. Spend up to an hour with a gorilla family.",
+      "accommodation": "Sanctuary Gorilla Forest Camp"
+    },
+    {
+      "day": 10,
+      "title": "Bwindi to Lake Bunyonyi & Return to Entebbe",
+      "description": "After breakfast, drive to Lake Bunyonyi for a relaxing boat ride or sunset cruise. Optional: Local market visit. Then fly back to Entebbe for your international departure.",
+      "accommodation": "N/A (Departure Day)"
+    }
+  ],
+  "activities": [
+    { "name": "Gorilla Trekking", "icon": "fa-paw" },
+    { "name": "Cultural Visits", "icon": "fa-users" },
+    { "name": "Hiking", "icon": "fa-hiking" },
+    { "name": "Boat Safari", "icon": "fa-ship" },
+    { "name": "Rhino Tracking", "icon": "fa-binoculars" }
+  ],
+  "gallery": ["gols.jpg", "chimp.jpg", "mount.jpg", "mach.jpg"],
+  "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+  "mapCoordinates": { "lat": 1.3733, "lng": 32.2903 },
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Nina Russell",
+      "rating": 5,
+      "date": "March 27, 2023",
+      "comment": "The helicopter flight over Murchison Falls was absolutely breathtaking! Every day felt like a new adventure. Our guide was incredible and the chimpanzee trek was a big surprise highlight."
+    },
+    {
+      "id": 2,
+      "name": "Kevin Obote",
+      "rating": 4,
+      "date": "February 14, 2023",
+      "comment": "Top-notch safari with impeccable logistics. I would have preferred an extra day at Lake Bunyonyi to just soak it in, but otherwise everything was smooth and luxurious."
+    },
+    {
+      "id": 3,
+      "name": "Monica Rojas",
+      "rating": 5,
+      "date": "April 3, 2023",
+      "comment": "Every lodge had its own charm, the food was amazing, and I truly felt spoiled the whole way through. Watching gorillas in Bwindi was surreal. Worth every penny."
+    }
+  ]
+},
+
 
   
   {
@@ -322,7 +535,7 @@
   ],
   "accommodation": "Mid-range: Turaco Treehouse, Enganzi Lodge",
   "inclusions": "All permits, meals, 4x4 transport.",
-  "image": "chimp.jpg",
+  "image": "kitandra2.jpg",
   "featured": false,
   "description": "This primate-focused safari takes you deep into Uganda's tropical forests to meet our closest relatives — chimpanzees and mountain gorillas. From lush Kibale to misty Bwindi, you’ll track endangered species, explore diverse ecosystems, and spot wildlife on savannah plains in comfort and style.",
   "itinerary": [
@@ -652,7 +865,7 @@
   ],
   "accommodation": "Mid-range: Sambiya River Lodge, Mihingo Lodge",
   "inclusions": "Child-friendly guides, interactive activities.",
-  "image": "people.jpg",
+  "image": "kitandra.jpg",
   "featured": false,
   "description": "Designed with families in mind, this Ugandan safari offers wildlife encounters, nature-based play, and unforgettable moments. Track rhinos on foot, meet chimpanzees in Kibale, and ride horses alongside zebras in Lake Mburo. It's the perfect combination of adventure and bonding.",
   "itinerary": [
@@ -753,7 +966,7 @@
   ],
   "accommodation": "Luxury: One&Only Gorilla's Nest, BirdNest Resort",
   "inclusions": "Couples' spa treatments, photography sessions.",
-  "image": "louge.jpg",
+  "image": "kitandra2.jpg",
   "featured": false,
   "description": "Designed for adventurous couples, this luxurious honeymoon blends nature, romance, and unforgettable experiences. Trek mountain gorillas in Bwindi, sip champagne by Lake Kivu, and drift across Lake Bunyonyi's serene waters. A perfect beginning to your lifelong journey together.",
   "itinerary": [
@@ -866,7 +1079,7 @@
   ],
   "accommodation": "Mid-range: Mweya Safari Lodge, Gorilla Valley Lodge",
   "inclusions": "Expert birding guide, binoculars provided.",
-  "image": "slide3.jpg",
+  "image": "kitandra.jpg",
   "featured": false,
   "description": "A haven for nature enthusiasts and avid birders, this Uganda safari is designed to showcase the country’s avian diversity and iconic wildlife. Spot shoebills in Mabamba, track gorillas in Bwindi, cruise the Kazinga Channel, and identify hundreds of bird species along the way.",
   "itinerary": [
