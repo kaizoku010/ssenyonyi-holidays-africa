@@ -145,7 +145,7 @@ font-size: .8rem;
   transition: background 0.2s;
 }
 .trip-submit-btn:disabled {
-  background: #0596686b;
+  background: #05966850;
   cursor: not-allowed;
 }
 

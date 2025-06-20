@@ -89,19 +89,19 @@ const PackagesPage = () => {
                 <div key={pkg.id} className="featured-pkg-card">
                   <div
                     className="pkg-image"
-                    style={{ backgroundImage: `url(${pkg.image})` }}
-                  >
+                    style={{ backgroundImage: `url(${pkg.image})` }}>
+
                     <div className="pkg-type">{pkg.type}</div>
                   </div>
                   <div className="pkg-details">
-                    <div className="pck-top-content">
-                      <h3>{pkg.title}</h3>
-                      <p className="pkg-duration">{pkg.duration}</p>
-                      <p className="pkg-mdx">
-                        <i className="fas fa-map-marker-alt"></i>{" "}
-                        {pkg.destinations.join(" → ")}
-                      </p>
-                    </div>
+                    
+                    <div className=""></div>
+                    <h3>{pkg.title}</h3>
+                    <p className="pkg-duration">{pkg.duration}</p>
+                    <p className="pkg-mdx">
+                      <i className="fas fa-map-marker-alt"></i>{" "}
+                      {pkg.destinations.join(" → ")}
+                    </p>
 
                     <div className="card-btn-group">
                       <button
@@ -201,17 +201,13 @@ const PackageCard = ({ packageData, onInquire }) => {
   const { t } = useTranslation();
 
   return (
-    <Card
-      className="card pkg-card"
-      onClick={() => (window.location.href = `/packages/${packageData.id}`)}
-    >
+    <Card className="card pkg-card">
       <div
         className="pkg-card-image"
         style={{ backgroundImage: `url(${packageData.image})` }}
       >
         <div className="pkg-type">{packageData.type}</div>
       </div>
-
       <CardHeader className="pkg-card-header">
         <CardTitle className="pkg-card-title" title={packageData.title}>
           {packageData.title}
@@ -250,12 +246,12 @@ const PackageCard = ({ packageData, onInquire }) => {
         </div>
       </CardContent>
       <CardFooter className="pkg-card-footer">
-        {/* <Button
+        <Button
           className="button book-now-button"
           onClick={() => onInquire(packageData)}
         >
           {t("packagesPage.inquireNow", "Inquire Now")}
-        </Button> */}
+        </Button>
         <Button
           className="button read-more-button"
           variant="outline"

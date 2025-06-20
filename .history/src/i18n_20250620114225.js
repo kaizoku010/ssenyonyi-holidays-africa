@@ -358,7 +358,7 @@ const enTranslations = {
       safari: {
         title: "CLASSIC UGANDA GORILLA & WILDLIFE SAFARI",
         date: "June 15, 2023",
-        excerpt: "The Pearl of Africa, offers one of the most thrilling and awe-inspiring safari experiences on the continent."
+        excerpt: "Tthe Pearl of Africa, offers one of the most thrilling and awe-inspiring safari experiences on the continent."
       },
       beaches: {
         title: "LUXURY UGANDA SAFARI & GORILLA EXPERIENCE",
@@ -378,7 +378,7 @@ const enTranslations = {
       subtitle: "Discover our most extraordinary travel adventures"
     },
     featuredExperience: "FEATURED EXPERIENCE",
-    bookButton: "Inquire Now",
+    bookButton: "Book This Adventure",
     experiences: {
       serengeti: {
         title: "Serengeti Safari Adventure",

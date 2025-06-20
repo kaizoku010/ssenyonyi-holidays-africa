@@ -358,17 +358,17 @@ const enTranslations = {
       safari: {
         title: "CLASSIC UGANDA GORILLA & WILDLIFE SAFARI",
         date: "June 15, 2023",
-        excerpt: "The Pearl of Africa, offers one of the most thrilling and awe-inspiring safari experiences on the continent."
+        excerpt: "Experience the thrill of African wildlife with our new comprehensive safari package."
       },
       beaches: {
-        title: "LUXURY UGANDA SAFARI & GORILLA EXPERIENCE",
+        title: "Top 10 Beach Destinations for 2023",
         date: "May 28, 2023",
         excerpt: "Discover the most pristine and breathtaking beaches around the world for your next vacation."
       },
       cultural: {
-        title: "RWANDA-UGANDA GORILLA DOUBLE TREK",
+        title: "Lake Bunyonyi is in south-western Uganda",
         date: "April 10, 2023",
-        excerpt: "Explore the Land of a Thousand Hills with this luxury gorilla trekking safari in Rwanda."
+        excerpt: "Dive deep into local traditions and authentic experiences with our new cultural tours."
       }
     }
   },
@@ -378,7 +378,7 @@ const enTranslations = {
       subtitle: "Discover our most extraordinary travel adventures"
     },
     featuredExperience: "FEATURED EXPERIENCE",
-    bookButton: "Inquire Now",
+    bookButton: "Book This Adventure",
     experiences: {
       serengeti: {
         title: "Serengeti Safari Adventure",

@@ -111,7 +111,6 @@
   font-weight: 600;
 }
 
-
 .tabs-list {
   margin-bottom: 30px;
   justify-content: flex-start;
@@ -119,10 +118,7 @@
   padding: 5px;
   border-radius: 35px !important;
 }
-.read-more-button{
-  border-radius: 35px !important;
-  background-color: #168d61 !important;
-}
+
 .pkg-details {
     width: 60%;
     padding: 25px;
@@ -286,7 +282,6 @@
 }
 
 .pkg-card:hover {
-  cursor: pointer;
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }

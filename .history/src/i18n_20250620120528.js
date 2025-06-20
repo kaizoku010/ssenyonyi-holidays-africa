@@ -378,7 +378,7 @@ const enTranslations = {
       subtitle: "Discover our most extraordinary travel adventures"
     },
     featuredExperience: "FEATURED EXPERIENCE",
-    bookButton: "Inquire Now",
+    bookButton: "Inquire Niw",
     experiences: {
       serengeti: {
         title: "Serengeti Safari Adventure",

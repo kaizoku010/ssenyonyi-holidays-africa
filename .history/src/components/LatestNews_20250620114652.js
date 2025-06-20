@@ -15,7 +15,7 @@ const LatestNews = () => {
       title: t('latestNews.newsItems.safari.title'),
       date: t('latestNews.newsItems.safari.date'),
       image: kitandra,
-      link:"1",
+      link:"3",
       excerpt: t('latestNews.newsItems.safari.excerpt')
     },
     {
@@ -23,7 +23,7 @@ const LatestNews = () => {
       title: t('latestNews.newsItems.beaches.title'),
       date: t('latestNews.newsItems.beaches.date'),
       image: kitandra2,
-      link: "3",
+      link: "",
       excerpt: t('latestNews.newsItems.beaches.excerpt')
     },
     {
@@ -53,8 +53,8 @@ const LatestNews = () => {
               <div className="news-content">
                 <h3>{item.title}</h3>
                 <p>{item.excerpt}</p>
-                <Link to={`/packages/${item.link}`}>
-                <p className="read-more-text">{t('latestNews.readMore')} <i className="fas fa-arrow-right"></i></p>
+                <Link to={`//packages${item.link}`}>
+                <a href="#" className="read-more">{t('latestNews.readMore')} <i className="fas fa-arrow-right"></i></a>
               </Link>
               </div>
             </div>

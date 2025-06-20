@@ -133,7 +133,7 @@ font-size: .8rem;
 }
 
 .trip-submit-btn {
-  background: #059669;
+  background: #38bdf8;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -145,7 +145,7 @@ font-size: .8rem;
   transition: background 0.2s;
 }
 .trip-submit-btn:disabled {
-  background: #0596686b;
+  background: #bae6fd;
   cursor: not-allowed;
 }
 

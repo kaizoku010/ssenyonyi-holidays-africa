@@ -54,7 +54,7 @@ const LatestNews = () => {
                 <h3>{item.title}</h3>
                 <p>{item.excerpt}</p>
                 <Link to={`/packages/${item.link}`}>
-                <p className="read-more-text">{t('latestNews.readMore')} <i className="fas fa-arrow-right"></i></p>
+                <a href="#" className="read-more">{t('latestNews.readMore')} <i className="fas fa-arrow-right"></i></a>
               </Link>
               </div>
             </div>
