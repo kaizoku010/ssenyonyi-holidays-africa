@@ -15,8 +15,6 @@ import CountdownTimer from './components/CountdownTimer';
 import NewsletterSignup from './components/NewsletterSignup';
 import SocialLinks from './components/SocialLinks';
 import LanguageSwitcher from './components/LanguageSwitcher';
-import DevModeIndicator from './components/DevModeIndicator';
-import DevelopmentNotice from './components/DevelopmentNotice';
 import { applyImageProtection } from './utils/imageProtection';
 import './mobile.css';
 import './styles.css';
@@ -62,8 +60,10 @@ function App() {
           <Route path="/destination/:id" element={<DestinationDetailsPage />} />
         </Routes>
         <ScrollToTop />
+{/*    
         <DevModeIndicator />
-        <DevelopmentNotice />
+        <DevelopmentNotice /> */}
+   
       </Router>
     );
   }

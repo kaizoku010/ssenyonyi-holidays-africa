@@ -11,11 +11,9 @@ import ContactPage from './components/ContactPage';
 import EVChargingPage from './pages/EVChargingPage';
 import ScrollToTop from './components/ScrollToTop';
 import ImageSlider from './components/ImageSlider';
-// CountdownTimer is imported but not used
-// import CountdownTimer from './components/CountdownTimer';
+import CountdownTimer from './components/CountdownTimer';
 import NewsletterSignup from './components/NewsletterSignup';
-// SocialLinks is imported but not used
-// import SocialLinks from './components/SocialLinks';
+import SocialLinks from './components/SocialLinks';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import DevModeIndicator from './components/DevModeIndicator';
 import DevelopmentNotice from './components/DevelopmentNotice';
@@ -23,6 +21,10 @@ import { applyImageProtection } from './utils/imageProtection';
 import './mobile.css';
 import './styles.css';
 import './styles/shadcn.css';
+import TripPlannerPage from './components/TripPlannerPage';
+import PrivacyPolicyPage from './components/PrivacyPolicyPage';
+import TermsOfServicePage from './components/TermsOfServicePage';
+import DestinationDetailsPage from './components/DestinationDetailsPage';
 
 function App() {
   // State to toggle between coming soon page and full homepage
@@ -43,7 +45,6 @@ function App() {
   const toggleView = () => {
     setShowFullSite(!showFullSite);
   };
-
   if (showFullSite) {
     return (
       <Router>
@@ -53,29 +54,18 @@ function App() {
           <Route path="/packages/:id" element={<PackageDetailsPage />} />
           <Route path="/destinations" element={<DestinationsPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
-          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/inquire-now" element={<ContactPage />} />
           <Route path="/about" element={<EVChargingPage />} />
+          <Route path="/inquiries" element={<TripPlannerPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/terms-of-service" element={<TermsOfServicePage />} />
+          <Route path="/destination/:id" element={<DestinationDetailsPage />} />
         </Routes>
         <ScrollToTop />
+{/*    
         <DevModeIndicator />
-        <DevelopmentNotice />
-        {/* <button
-          onClick={toggleView}
-          style={{
-            position: 'fixed',
-            bottom: '20px',
-            left: '20px',
-            zIndex: 1000,
-            padding: '10px 15px',
-            backgroundColor: '#333',
-            color: 'white',
-            border: 'none',
-            borderRadius: '5px',
-            cursor: 'pointer'
-          }}
-        >
-          {t('comingSoon.viewComingSoon')}
-        </button> */}
+        <DevelopmentNotice /> */}
+   
       </Router>
     );
   }
@@ -121,8 +111,8 @@ function App() {
           Preview Full Site
         </button> */}
       </div>
-      <DevModeIndicator />
-      <DevelopmentNotice />
+      {/* <DevModeIndicator />
+      <DevelopmentNotice /> */}
     </div>
   );
 }
