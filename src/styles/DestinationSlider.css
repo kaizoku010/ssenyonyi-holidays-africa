@@ -74,7 +74,7 @@
 }
 
 .destination-description {
-    font-size: .9rem;
+    font-size: .8rem;
     line-height: 1.4;
     font-weight: normal;
     color: #f0ede6;
@@ -231,7 +231,7 @@
   }
 
   .destination-description {
-    font-size: 1rem;
+    font-size: .8rem;
     max-width: 100%;
     margin-bottom: 1.2rem;
   }
