@@ -176,7 +176,7 @@ const PackageDetailsPage = () => {
                 <p>{selectedPackage.inclusions}</p>
               </div>
 
-              {/* <div className="video-section">
+              <div className="video-section">
                 <h3>Package Video</h3>
                 <div className="video-container">
                   <iframe
@@ -187,7 +187,7 @@ const PackageDetailsPage = () => {
                     allowFullScreen
                   ></iframe>
                 </div>
-              </div> */}
+              </div>
             </TabsContent>
 
             <TabsContent value="itinerary" className="tabs-content tab-content">

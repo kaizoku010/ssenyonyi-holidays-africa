@@ -176,18 +176,7 @@ const PackageDetailsPage = () => {
                 <p>{selectedPackage.inclusions}</p>
               </div>
 
-              {/* <div className="video-section">
-                <h3>Package Video</h3>
-                <div className="video-container">
-                  <iframe
-                    src={selectedPackage.video}
-                    title={`${selectedPackage.title} Video`}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div> */}
+          
             </TabsContent>
 
             <TabsContent value="itinerary" className="tabs-content tab-content">

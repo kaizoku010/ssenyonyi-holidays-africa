@@ -51,7 +51,7 @@ const enTranslations = {
       packages: "Packages",
       destinations: "Destinations",
       gallery: "Gallery",
-      contact: "Inquire Now"
+      contact: "Explore Now"
     },
     contactUs: {
       title: "Contact Us",
@@ -292,7 +292,7 @@ const enTranslations = {
     welcome: "Welcome to",
     companyName: "Nyonyi Holidays Africa",
     description: "We are a premier East African travel company dedicated to crafting unforgettable journeys across Uganda, Rwanda, and beyond. Rooted in the Swahili word for \"bird,\" Nyonyi represents freedom, elegance, and the boundless spirit of exploration that guides our brand.",
-    exploreButton: "EXPLORE NOW",
+    exploreButton: "INQUIRE NOW",
     destinations: {
       uganda: {
         location: "Uganda",
