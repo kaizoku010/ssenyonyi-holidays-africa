@@ -85,7 +85,7 @@ const HomePage = () => {
       </motion.main>
 
       <Footer />
-      <DevelopmentNotice />
+      {/* <DevelopmentNotice /> */}
     </div>
   );
 };

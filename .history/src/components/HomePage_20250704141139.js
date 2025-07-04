@@ -10,6 +10,7 @@ import FeaturedExhibit from './FeaturedExhibit';
 import Partners from './Partners';
 import CallToAction from './CallToAction';
 import Footer from './Footer';
+import DevelopmentNotice from './DevelopmentNotice';
 import '../styles/HomePage.css';
 
 const HomePage = () => {
@@ -40,7 +41,6 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <header className="hero-section">
-        <div clas>Website still under development</div>
         <Navbar />
         <DestinationSlider autoPlayInterval={5000} />
       </header>
@@ -53,16 +53,19 @@ const HomePage = () => {
         viewport={{ once: false, amount: 0.1 }}
       >
         <motion.div variants={itemVariant}>
-          <VisitorStats />
+                    {/* <SpecialFeatures /> */}
+
+          {/* <VisitorStats /> */}
         </motion.div>
 
         <motion.div variants={itemVariant}>
           <FeaturedAnimals />
         </motion.div>
-
+{/* 
         <motion.div variants={itemVariant}>
-          <SpecialFeatures />
-        </motion.div>
+                    <VisitorStats />
+
+        </motion.div> */}
 
         <motion.div variants={itemVariant}>
           <LatestNews />
@@ -82,6 +85,7 @@ const HomePage = () => {
       </motion.main>
 
       <Footer />
+      {/* <DevelopmentNotice /> */}
     </div>
   );
 };
