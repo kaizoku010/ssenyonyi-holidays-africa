@@ -7,14 +7,17 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Swril from "../media/deriq.jpg";
 import Nyoni from "../media/bird_.jpg";
-import B1 from "../media/b1.jpg";
-import B2 from "../media/b2.jpg";
-import B3 from "../media/b3.jpg";
+import B1 from '../media/b1.jpg';
+import B2 from '../media/b2.jpg';
+import B3 from '../media/b3.jpg';
+import P1 from '../media/p1.png';
+import P2 from '../media/p2.png';
+import P3 from '../media/p3.png';
+import P4 from '../media/p4.png';
 
 const EVChargingPage = () => {
   const { t } = useTranslation();
   const Partner = "https://res.cloudinary.com/dnko3bvt0/image/upload/fl_preserve_transparency/v1748506763/test_qaobiu.jpg?_s=public-apps"
-  // Team members data
   const teamMembers = [
     {
       id: 1,
@@ -38,11 +41,11 @@ const EVChargingPage = () => {
 
   // Partner logos
   const partners = [
-    { id: 1, logo: Partner, name: "Partner 1" },
-    { id: 2, logo: Partner, name: "Partner 2" },
-    { id: 3, logo: Partner, name: "Partner 3" },
-    { id: 4, logo: Partner, name: "Partner 4" },
-    { id: 5, logo: Partner, name: "Partner 5" },
+    { id: 1, logo: P1, name: "Partner 1" },
+    { id: 2, logo: P2, name: "Partner 2" },
+    { id: 3, logo: P3, name: "Partner 3" },
+    { id: 4, logo: P4, name: "Partner 4" },
+    { id: 5, logo: P1, name: "Partner 5" },
   ];
 
   return (
@@ -50,18 +53,10 @@ const EVChargingPage = () => {
       {/* Header Section */}
       <Navbar />
       <div className="ev-header-container">
-        <div className="spacer"></div>
-        <div className="ev-header-content">
-          <div className="ev-header-text">
-            <h1 className="ev-title">
-              {t('aboutPage.header.title')}
-            </h1>
-            <div className="ev-author-info">
-              <p className="ev-author">{t('aboutPage.header.author')}</p>
-              <p className="ev-date">{t('aboutPage.header.date')}</p>
-            </div>
-          </div>
-        </div>
+        <h1 className="ev-header">
+          Nyonyi Holidays Africa is a premier East African travel company
+           dedicated to crafting unforgettable journeys across Africa.
+           </h1>
       </div>
 
       {/* Mission Statement Section */}
@@ -69,9 +64,9 @@ const EVChargingPage = () => {
         <div className="ev-mission-content">
           <div className="ev-mission-text">
             <div>
-              <h2 className="ev-mission-title">
+              {/* <h2 className="ev-mission-title">
                 {t('aboutPage.mission.title')}
-              </h2>
+              </h2> */}
               <p className="ev-mission-description">
                 {t('aboutPage.mission.description1')}
               </p>

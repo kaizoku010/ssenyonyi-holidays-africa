@@ -7,9 +7,13 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Swril from "../media/deriq.jpg";
 import Nyoni from "../media/bird_.jpg";
-import B1 from "../media/b1.jpg";
-import B2 from "../media/b2.jpg";
-import B3 from "../media/b3.jpg";
+const B1 = process.env.NODE_ENV === 'production' ? '/media/b1.jpg' : require('../media/b1.jpg').default;
+const B2 = process.env.NODE_ENV === 'production' ? '/media/b2.jpg' : require('../media/b2.jpg').default;
+const B3 = process.env.NODE_ENV === 'production' ? '/media/b3.jpg' : require('../media/b3.jpg').default;
+import P1 from "../media/p1.png"
+import P2 from "../media/p2.png"
+import P3 from "../media/p3.png"
+import P4 from "../media/p4.png"
 
 const EVChargingPage = () => {
   const { t } = useTranslation();
@@ -37,11 +41,11 @@ const EVChargingPage = () => {
 
   // Partner logos
   const partners = [
-    { id: 1, logo: Partner, name: "Partner 1" },
-    { id: 2, logo: Partner, name: "Partner 2" },
-    { id: 3, logo: Partner, name: "Partner 3" },
-    { id: 4, logo: Partner, name: "Partner 4" },
-    { id: 5, logo: Partner, name: "Partner 5" },
+    { id: 1, logo: P1, name: "Partner 1" },
+    { id: 2, logo: P2, name: "Partner 2" },
+    { id: 3, logo: P3, name: "Partner 3" },
+    { id: 4, logo: P4, name: "Partner 4" },
+    { id: 5, logo: P1, name: "Partner 5" },
   ];
 
   return (
@@ -49,7 +53,10 @@ const EVChargingPage = () => {
       {/* Header Section */}
       <Navbar />
       <div className="ev-header-container">
-        <h1 className="ev-header">Nyonyi Holidays Africa is a premier East African travel company dedicated to crafting unforgettable journeys across Africa.</h1>
+        <h1 className="ev-header">
+          Nyonyi Holidays Africa is a premier East African travel company
+           dedicated to crafting unforgettable journeys across Africa.
+           </h1>
       </div>
 
       {/* Mission Statement Section */}
@@ -57,9 +64,9 @@ const EVChargingPage = () => {
         <div className="ev-mission-content">
           <div className="ev-mission-text">
             <div>
-              <h2 className="ev-mission-title">
+              {/* <h2 className="ev-mission-title">
                 {t('aboutPage.mission.title')}
-              </h2>
+              </h2> */}
               <p className="ev-mission-description">
                 {t('aboutPage.mission.description1')}
               </p>
