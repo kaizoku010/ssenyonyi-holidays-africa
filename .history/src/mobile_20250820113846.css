@@ -12,17 +12,7 @@
     color: white;
 }
 
-.blog {
-  height: 100vh;
-  background-size: cover;
-  padding: 0px;
-  display: flex;
-  justify-content: center;
-    padding: 0 3rem 0px 3rem;
-  flex-direction: column;
-  margin: 0px;
-  background-image: url("../media/slide3.jpg");
-}
+
 
     .test-layer{
       display: none;

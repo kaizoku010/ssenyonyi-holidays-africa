@@ -18,7 +18,8 @@
   padding: 0px;
   display: flex;
   justify-content: center;
-    padding: 0 3rem 0px 3rem;
+      padding-left: 5rem;
+
   flex-direction: column;
   margin: 0px;
   background-image: url("../media/slide3.jpg");
