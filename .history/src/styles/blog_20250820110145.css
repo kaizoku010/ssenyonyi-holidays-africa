@@ -1,0 +1,10 @@
+.blog {
+  height: 100vh;
+}
+
+.blog-title{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #333;
+}

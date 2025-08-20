@@ -60,7 +60,7 @@ const Navbar = () => {
             <Link to="/destinations">{t('navbar.destinations')}</Link>
           </li>
             <li className={`nav-item ${location.pathname === '/destinations' ? 'active' : ''}`}>
-            <Link to="/blog">BLOG</Link>
+            <Link to="/destinations">{t('navbar.destinations')}</Link>
           </li>
           <li className={`nav-item ${location.pathname === '/gallery' ? 'active' : ''}`}>
             <Link to="/gallery">{t('navbar.gallery')}</Link>

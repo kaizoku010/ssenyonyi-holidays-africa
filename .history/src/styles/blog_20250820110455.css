@@ -1,0 +1,15 @@
+.blog {
+  height: 100vh;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+  background-image: url("../media/eliz.jpg");
+}
+
+.blog-title{
+    text-align: center;
+    font-size: 2rem;
+    al
+    margin-top: 20px;
+    color: white;
+}

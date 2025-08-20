@@ -16,7 +16,6 @@ import NewsletterSignup from './components/NewsletterSignup';
 import SocialLinks from './components/SocialLinks';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import { applyImageProtection } from './utils/imageProtection';
-import Blog from "./components/Blog.js"
 import './mobile.css';
 import './styles.css';
 import './styles/shadcn.css';
@@ -58,7 +57,7 @@ function App() {
           <Route path="/inquiries" element={<TripPlannerPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/terms-of-service" element={<TermsOfServicePage />} />
-          <Route path="/blog" element={<Blog/>} />
+        
           <Route path="/destination/:id" element={<DestinationDetailsPage />} />
         </Routes>
         <ScrollToTop />
