@@ -2,12 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
+import LogoWhite from "../media/logo_white.png";
+import LogoGreen from "../media/new_logo.png";
 import '../styles/Navbar.css';
-
-const LogoWhite = '/media/logo_white.png';
-
-const LogoGreen = '/media/new_logo.png';
-
 
 const Navbar = () => {
   const location = useLocation();

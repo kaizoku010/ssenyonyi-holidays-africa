@@ -4,11 +4,6 @@ import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
 import '../styles/Navbar.css';
 
-const LogoWhite = '/media/logo_white.png';
-
-const LogoGreen = '/media/new_logo.png';
-
-
 const Navbar = () => {
   const location = useLocation();
   const { t } = useTranslation();

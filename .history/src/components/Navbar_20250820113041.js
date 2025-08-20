@@ -4,9 +4,13 @@ import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
 import '../styles/Navbar.css';
 
-const LogoWhite = '/media/logo_white.png';
+const LogoWhite = process.env.NODE_ENV === 'production' 
+  ? '/media/logo_white.png'
+  : require('../media/logo_white.png').default;
 
-const LogoGreen = '/media/new_logo.png';
+const LogoGreen = process.env.NODE_ENV === 'production'
+  ? '/media/new_logo.png'
+  : require('../media/new_logo.png').default;
 
 
 const Navbar = () => {

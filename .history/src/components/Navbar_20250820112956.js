@@ -2,12 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
+const LogoWhite = process.env.NODE_ENV === 'production' 
+  ? '/media/logo_white.png'
+  : require('../media/logo_white.png').default;
+
+const LogoGreen = process.env.NODE_ENV === 'production'
+  ? '/media/new_logo.png'
+  : require('../media/new_logo.png').default;
+
 import '../styles/Navbar.css';
-
-const LogoWhite = '/media/logo_white.png';
-
-const LogoGreen = '/media/new_logo.png';
-
 
 const Navbar = () => {
   const location = useLocation();
