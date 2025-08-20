@@ -10,24 +10,12 @@ import Nyoni from "../media/bird_.jpg";
 const B1 = process.env.NODE_ENV === 'production' 
   ? require('../media/b1.jpg').default 
   : require('../media/b1.jpg');
-const B2 = process.env.NODE_ENV === 'production' 
-  ? require('../media/b2.jpg').default 
-  : require('../media/b2.jpg');
-const B3 = process.env.NODE_ENV === 'production' 
-  ? require('../media/b3.jpg').default 
-  : require('../media/b3.jpg');
-const P1 = process.env.NODE_ENV === 'production' 
-  ? require('../media/p1.png').default 
-  : require('../media/p1.png');
-const P2 = process.env.NODE_ENV === 'production' 
-  ? require('../media/p2.png').default 
-  : require('../media/p2.png');
-const P3 = process.env.NODE_ENV === 'production' 
-  ? require('../media/p3.png').default 
-  : require('../media/p3.png');
-const P4 = process.env.NODE_ENV === 'production' 
-  ? require('../media/p4.png').default 
-  : require('../media/p4.png');
+import B2 from '../media/b2.jpg';
+import B3 from '../media/b3.jpg';
+import P1 from '../media/p1.png';
+import P2 from '../media/p2.png';
+import P3 from '../media/p3.png';
+import P4 from '../media/p4.png';
 
 const EVChargingPage = () => {
   const { t } = useTranslation();

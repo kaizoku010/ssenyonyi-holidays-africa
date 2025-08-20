@@ -4,12 +4,17 @@
  * @returns {string} The correct path to the image
  */
 export const getImagePath = (imageName) => {
-  // Use development path format in both environments
-  try {
-    return require(`../media/${imageName}`);
-  } catch (e) {
-    return `/media/${imageName}`;
+  // In development, use the src/media path
+  if (process.env.NODE_ENV === 'development') {
+    try {
+      const importedImage = require(`../media/${imageName}`);
+      if (importedImage) return importedImage;
+    } catch (error) {
+      console.warn(`Failed to load image from src/media/${imageName}`, error);
+    }
   }
+  // In production, use the public path
+  return `/media/${imageName}`;
 };
 
 /**
@@ -24,7 +29,7 @@ export const getImageSrc = (src) => {
     if (src.startsWith('./') || src.startsWith('../')) {
       const parts = src.split('/');
       const filename = parts[parts.length - 1];
-      return `../media/${filename}`;
+      return `/media/${filename}`;
     }
     return src;
   }
@@ -34,7 +39,7 @@ export const getImageSrc = (src) => {
     const srcString = src.toString();
     const match = srcString.match(/\/([^/]+\.(jpg|jpeg|png|gif|JPG))$/);
     if (match && match[1]) {
-      return `../media/${match[1]}`;
+      return `/media/${match[1]}`;
     }
   }
 

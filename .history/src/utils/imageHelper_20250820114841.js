@@ -4,10 +4,26 @@
  * @returns {string} The correct path to the image
  */
 export const getImagePath = (imageName) => {
-  // Use development path format in both environments
+  // First try to use the public URL which works in both environments
   try {
-    return require(`../media/${imageName}`);
-  } catch (e) {
+    const publicPath = `/media/${imageName}`;
+    // In development, verify the file exists in public/media
+    if (process.env.NODE_ENV === 'development') {
+      const img = new Image();
+      img.src = publicPath;
+      return publicPath;
+    }
+    return publicPath;
+  } catch (error) {
+    // Fallback to require in development if public path fails
+    if (process.env.NODE_ENV === 'development') {
+      try {
+        const importedImage = require(`../media/${imageName}`);
+        if (importedImage) return importedImage;
+      } catch (err) {
+        console.warn(`Failed to load image ${imageName}`, err);
+      }
+    }
     return `/media/${imageName}`;
   }
 };
@@ -24,7 +40,7 @@ export const getImageSrc = (src) => {
     if (src.startsWith('./') || src.startsWith('../')) {
       const parts = src.split('/');
       const filename = parts[parts.length - 1];
-      return `../media/${filename}`;
+      return `/media/${filename}`;
     }
     return src;
   }
@@ -34,7 +50,7 @@ export const getImageSrc = (src) => {
     const srcString = src.toString();
     const match = srcString.match(/\/([^/]+\.(jpg|jpeg|png|gif|JPG))$/);
     if (match && match[1]) {
-      return `../media/${match[1]}`;
+      return `/media/${match[1]}`;
     }
   }
 

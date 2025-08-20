@@ -4,19 +4,12 @@
  * @returns {string} The correct path to the image
  */
 export const getImagePath = (imageName) => {
-  // For development, try to use the imported image
-  if (process.env.NODE_ENV === 'development') {
-    try {
-      // Try to import from src/media
-      const importedImage = require(`../media/${imageName}`);
-      if (importedImage) return importedImage;
-    } catch (error) {
-      console.warn(`Failed to load image from src/media/${imageName}`, error);
-    }
+  // Use development path format in both environments
+  try {
+    return require(`../media/${imageName}`);
+  } catch (e) {
+    return `/media/${imageName}`;
   }
-
-  // For production or if import fails, use the public URL
-  return `/media/${imageName}`;
 };
 
 /**

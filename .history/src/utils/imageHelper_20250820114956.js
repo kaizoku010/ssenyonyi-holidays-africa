@@ -4,12 +4,8 @@
  * @returns {string} The correct path to the image
  */
 export const getImagePath = (imageName) => {
-  // Use development path format in both environments
-  try {
-    return require(`../media/${imageName}`);
-  } catch (e) {
-    return `/media/${imageName}`;
-  }
+  // Always use the public path format in both environments
+  return `/media/${imageName}`;
 };
 
 /**
@@ -24,7 +20,7 @@ export const getImageSrc = (src) => {
     if (src.startsWith('./') || src.startsWith('../')) {
       const parts = src.split('/');
       const filename = parts[parts.length - 1];
-      return `../media/${filename}`;
+      return `/media/${filename}`;
     }
     return src;
   }
@@ -34,7 +30,7 @@ export const getImageSrc = (src) => {
     const srcString = src.toString();
     const match = srcString.match(/\/([^/]+\.(jpg|jpeg|png|gif|JPG))$/);
     if (match && match[1]) {
-      return `../media/${match[1]}`;
+      return `/media/${match[1]}`;
     }
   }
 

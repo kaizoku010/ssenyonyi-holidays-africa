@@ -7,27 +7,14 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Swril from "../media/deriq.jpg";
 import Nyoni from "../media/bird_.jpg";
-const B1 = process.env.NODE_ENV === 'production' 
-  ? require('../media/b1.jpg').default 
-  : require('../media/b1.jpg');
-const B2 = process.env.NODE_ENV === 'production' 
-  ? require('../media/b2.jpg').default 
-  : require('../media/b2.jpg');
-const B3 = process.env.NODE_ENV === 'production' 
-  ? require('../media/b3.jpg').default 
-  : require('../media/b3.jpg');
-const P1 = process.env.NODE_ENV === 'production' 
-  ? require('../media/p1.png').default 
-  : require('../media/p1.png');
-const P2 = process.env.NODE_ENV === 'production' 
-  ? require('../media/p2.png').default 
-  : require('../media/p2.png');
-const P3 = process.env.NODE_ENV === 'production' 
-  ? require('../media/p3.png').default 
-  : require('../media/p3.png');
-const P4 = process.env.NODE_ENV === 'production' 
-  ? require('../media/p4.png').default 
-  : require('../media/p4.png');
+import { getImagePath } from '../utils/imageHelper';
+const B1 = getImagePath('b1.jpg');
+const B2 = getImagePath('b2.jpg');
+const B3 = getImagePath('b3.jpg');
+const P1 = getImagePath('p1.png');
+const P2 = getImagePath('p2.png');
+const P3 = getImagePath('p3.png');
+const P4 = getImagePath('p4.png');
 
 const EVChargingPage = () => {
   const { t } = useTranslation();

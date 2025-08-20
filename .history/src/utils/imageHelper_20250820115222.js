@@ -34,7 +34,7 @@ export const getImageSrc = (src) => {
     const srcString = src.toString();
     const match = srcString.match(/\/([^/]+\.(jpg|jpeg|png|gif|JPG))$/);
     if (match && match[1]) {
-      return `../media/${match[1]}`;
+      return `/media/${match[1]}`;
     }
   }
 
